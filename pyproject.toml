@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "solidstateleipzig-github-io"
+version = "0.1.0"
+description = ""
+authors = ["CrinaBerbecariu <crinaberbecariu25@gmail.com>"]
+readme = "README.md"
+packages = [{include = "solidstateleipzig"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyter-book = "^1.0.2"
+ipykernel = "^6.29.5"
+ghp-import = "^2.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
