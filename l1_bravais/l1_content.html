@@ -57,6 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'l1_bravais/l1_content';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -175,7 +177,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Welcome to your Jupyter Book
+                    Solid-State Physics lecture
                 </a>
             </li>
         </ul>
@@ -362,7 +364,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -378,6 +382,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bravais-lattice-and-unit-cell">Bravais lattice and unit cell</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -389,6 +401,14 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="content-of-lecture">
 <h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
+<section id="bravais-lattice-and-unit-cell">
+<h2>Bravais lattice and unit cell<a class="headerlink" href="#bravais-lattice-and-unit-cell" title="Link to this heading">#</a></h2>
+<p>Periodic pattern of the crystal can be described by a <strong>Bravais lattice</strong> defined as a set of points
+$<span class="math notranslate nohighlight">\( 
+\mathbf{R} = n_1 \mathbf{a} + n_2 \mathbf{b} + n_3 \mathbf{c}
+\)</span><span class="math notranslate nohighlight">\(
+where \)</span>n_1<span class="math notranslate nohighlight">\(, \)</span>n_2<span class="math notranslate nohighlight">\(, \)</span>n_3<span class="math notranslate nohighlight">\( are integers and \)</span>\mathbf{a}<span class="math notranslate nohighlight">\(, \)</span>\mathbf{b}<span class="math notranslate nohighlight">\(, \)</span>\mathbf{c}<span class="math notranslate nohighlight">\( are three vectors that do not lie in the same plane. They are known as **lattice translations** or **lattice vectors**. The parallelepiped spun by these three vectors is the repetition unit of the lattice or its **unit cell** with the **lattice parameters** (\)</span>a,b,c<span class="math notranslate nohighlight">\() and **lattice angles** (\)</span>\alpha,\beta,\gamma<span class="math notranslate nohighlight">\(). It is customary to define the angle between \)</span>\mathbf{b}<span class="math notranslate nohighlight">\( and \)</span>\mathbf{c}<span class="math notranslate nohighlight">\( as \)</span>\alpha<span class="math notranslate nohighlight">\(, the angle between \)</span>\mathbf{a}<span class="math notranslate nohighlight">\( and \)</span>\mathbf{c}<span class="math notranslate nohighlight">\( as \)</span>\beta<span class="math notranslate nohighlight">\(, and the angle between \)</span>\mathbf{a}<span class="math notranslate nohighlight">\( and \)</span>\mathbf{b}<span class="math notranslate nohighlight">\( as \)</span>\gamma$.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -445,6 +465,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bravais-lattice-and-unit-cell">Bravais lattice and unit cell</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
