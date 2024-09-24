@@ -57,6 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'l1_bravais/l1_method';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -175,7 +177,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    Welcome to your Jupyter Book
+                    Solid-State Physics lecture
                 </a>
             </li>
         </ul>
@@ -362,7 +364,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -378,6 +382,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-microscopy">Electron microscopy</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -389,6 +401,22 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="experimental-method">
 <h1>Experimental method<a class="headerlink" href="#experimental-method" title="Link to this heading">#</a></h1>
+<section id="electron-microscopy">
+<h2>Electron microscopy<a class="headerlink" href="#electron-microscopy" title="Link to this heading">#</a></h2>
+<p>Back in time researchers could only guess about lattice periodicity and packing. Nowadays it is possible to visualize the crystal lattice and even see individual atoms with the direct imaging done by electron microscopy. Electron microscopes are somewhat similar to common optical microscopes, but they use electrons as radiation with the much shorter wavelength, and of course they require a much more sophisticated system of electromagnetic lenses to direct and focus the electron beams.</p>
+<p>Electron microscopes come in two main varieties:</p>
+<ul class="simple">
+<li><p><strong>transmission electron microscopes</strong> (TEM) collect electrons on a detector behind the sample, just like an optical microscope does with visible light</p></li>
+<li><p><strong>scanning electron microscopes</strong> (SEM) collect secondary electrons that are produced when electrons are scattered on the sample
+SEM’s are more compact, because one does not need a long separation between the sample and detector. They can also map a larger area by scanning the sample with the electron beam (hence the name). Concurrently, they lack in resolution. A typical instrument of this type has the resolution of about 10 nm and can be used for imaging microstructures but not individual atoms. By contrast, modern TEM’s have the resolution of 1 <span class="math notranslate nohighlight">\(\mathring{A}\)</span>. They can operate in different imaging modes and highlight heavy or light atoms, or map out chemical composition and even electronic states on the sub-nm scale.</p></li>
+</ul>
+<p>Two points of concern when using electron microscopy are:</p>
+<ul class="simple">
+<li><p>small size of the probe; a region of only <span class="math notranslate nohighlight">\(20-30\)</span> nm is probed in a single image taken with the atomic resolution. This problem is partially mitigated by STEM (scanning TEM), but even in this case only a tiniest fraction of the sample volume can be studied</p></li>
+<li><p>sample damage caused by the strong electron beam and high vacuum</p></li>
+</ul>
+<p>Electron microscopy is the method of choice for studying defects and microstructures. When it comes to long-range-ordered crystals, electron microscopy plays a somewhat auxiliary role, while main information about the crystal structure comes from diffraction methods.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -445,6 +473,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electron-microscopy">Electron microscopy</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

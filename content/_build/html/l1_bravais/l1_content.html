@@ -388,6 +388,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bravais-lattice-and-unit-cell">Bravais lattice and unit cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#close-packing-and-structures-of-metals">Close packing and structures of metals</a></li>
 </ul>
             </nav>
         </div>
@@ -403,11 +404,22 @@ document.write(`
 <h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
 <section id="bravais-lattice-and-unit-cell">
 <h2>Bravais lattice and unit cell<a class="headerlink" href="#bravais-lattice-and-unit-cell" title="Link to this heading">#</a></h2>
-<p>Periodic pattern of the crystal can be described by a <strong>Bravais lattice</strong> defined as a set of points
-$<span class="math notranslate nohighlight">\( 
-\mathbf{R} = n_1 \mathbf{a} + n_2 \mathbf{b} + n_3 \mathbf{c}
-\)</span><span class="math notranslate nohighlight">\(
-where \)</span>n_1<span class="math notranslate nohighlight">\(, \)</span>n_2<span class="math notranslate nohighlight">\(, \)</span>n_3<span class="math notranslate nohighlight">\( are integers and \)</span>\mathbf{a}<span class="math notranslate nohighlight">\(, \)</span>\mathbf{b}<span class="math notranslate nohighlight">\(, \)</span>\mathbf{c}<span class="math notranslate nohighlight">\( are three vectors that do not lie in the same plane. They are known as **lattice translations** or **lattice vectors**. The parallelepiped spun by these three vectors is the repetition unit of the lattice or its **unit cell** with the **lattice parameters** (\)</span>a,b,c<span class="math notranslate nohighlight">\() and **lattice angles** (\)</span>\alpha,\beta,\gamma<span class="math notranslate nohighlight">\(). It is customary to define the angle between \)</span>\mathbf{b}<span class="math notranslate nohighlight">\( and \)</span>\mathbf{c}<span class="math notranslate nohighlight">\( as \)</span>\alpha<span class="math notranslate nohighlight">\(, the angle between \)</span>\mathbf{a}<span class="math notranslate nohighlight">\( and \)</span>\mathbf{c}<span class="math notranslate nohighlight">\( as \)</span>\beta<span class="math notranslate nohighlight">\(, and the angle between \)</span>\mathbf{a}<span class="math notranslate nohighlight">\( and \)</span>\mathbf{b}<span class="math notranslate nohighlight">\( as \)</span>\gamma$.</p>
+<p>Periodic pattern of the crystal can be described by a <strong>Bravais lattice</strong> defined as a set of points</p>
+<div class="math notranslate nohighlight" id="equation-eq-bravais">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eq-bravais" title="Link to this equation">#</a></span>\[ 
+    \mathbf{R} = n_1 \mathbf{a} + n_2 \mathbf{b} + n_3 \mathbf{c}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(n_1\)</span>, <span class="math notranslate nohighlight">\(n_2\)</span>, <span class="math notranslate nohighlight">\(n_3\)</span> are integers and <span class="math notranslate nohighlight">\(\mathbf{a}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{b}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{c}\)</span> are three vectors that do not lie in the same plane. They are known as <strong>lattice translations</strong> or <strong>lattice vectors</strong>. The parallelepiped spun by these three vectors is the repetition unit of the lattice or its <strong>unit cell</strong> with the <strong>lattice parameters</strong> (<span class="math notranslate nohighlight">\(a,b,c\)</span>) and <strong>lattice angles</strong> (<span class="math notranslate nohighlight">\(\alpha,\beta,\gamma\)</span>). It is customary to define the angle between <span class="math notranslate nohighlight">\(\mathbf{b}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{c}\)</span> as <span class="math notranslate nohighlight">\(\alpha\)</span>, the angle between <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{c}\)</span> as <span class="math notranslate nohighlight">\(\beta\)</span>, and the angle between <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{b}\)</span> as <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<p>Not every lattice is a Bravais lattice. Consider for example hexagonal (honeycomb) lattice, one of the popular geometries in modern solid-state physics. This lattice is clearly periodic, but it is not a Bravais lattice <em>per se</em>, because its lattice sites can not be described with Eq. <a class="reference internal" href="#equation-eq-bravais">(1)</a>. Bravais lattice of the honeycomb lattice is constructed by connecting second neighbors, as shown in <a class="reference internal" href="#fig-bravais"><span class="std std-numref">Fig. 1</span></a>. The unit cell then contains two sites of the parent honeycomb lattice, one at the corner and one in the interior. This situation is known as a Bravais lattice <strong>with basis</strong>. Here, basis is the group of atoms contained by the unit cell. Of course, it is also possible to choose hexagon as the repetition unit of the honeycomb lattice. However, such a choice would introduce a disparity with other lattices, such as square lattice where the repetition unit is obviously a square. The advantage of Eq.<a class="reference internal" href="#equation-eq-bravais">(1)</a> lies in the unified description of all periodic structures, so it is not surprising that Bravais lattice became the cornerstone of solid-state physics.</p>
+<figure class="align-default" id="fig-bravais">
+<img alt="../_images/ch1-lattice.svg" src="../_images/ch1-lattice.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Left: Bravais lattice, lattice vectors, and unit cell. Right: honeycomb lattice is not a Bravais lattice per se; its Bravais lattice is indicated by the red lines, with two atoms per unit cell.</span><a class="headerlink" href="#fig-bravais" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="close-packing-and-structures-of-metals">
+<h2>Close packing and structures of metals<a class="headerlink" href="#close-packing-and-structures-of-metals" title="Link to this heading">#</a></h2>
 </section>
 </section>
 
@@ -476,6 +488,7 @@ where \)</span>n_1<span class="math notranslate nohighlight">\(, \)</span>n_2<sp
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bravais-lattice-and-unit-cell">Bravais lattice and unit cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#close-packing-and-structures-of-metals">Close packing and structures of metals</a></li>
 </ul>
   </nav></div>
 
