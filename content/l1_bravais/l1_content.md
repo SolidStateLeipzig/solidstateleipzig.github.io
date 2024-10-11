@@ -19,3 +19,12 @@ Left: Bravais lattice, lattice vectors, and unit cell. Right: honeycomb lattice 
 ```
 
 ## Close packing and structures of metals
+
+A naive way of seeing crystals is arrays of atoms placed in the positions defined by Eq. {eq}`eq-Bravais`. The most dense packing is achieved when atoms touch each other. Consider atom as a sphere and put such atoms onto a simple cubic lattice. Its lattice parameter should be twice the radius of the sphere, $a=2r$. With one sphere per unit cell, the volume occupied by the sphere is $V_{sphere}=\frac{4}{3}\pi r^3=\pi a^3/6$. On the other hand, the unit-cell volume is $V_{cell}=a^3$. The ratio of these two volumes is the **packing fraction**, $p=V_{sphere}/V_{cell}$, and amounts to only 52 % for the simple cubic lattice. We can also introduce the **coordination number**, i.e., the number of neighboring atoms, which is as low as 6 in this case. Simple cubic lattice does not allow dense structures.
+
+Finding a dense packing of spheres (better known as **close packing** in solid-state physics) is in fact a common [mathematical problem](https://arxiv.org/abs/math/9811071v2). By solving it, or by using general intuition of putting together spherical objects like billiard balls, we know that each sphere can be surrounded by six other spheres, resulting in a close-packed honeycomb layer. The next layer should follow the dips formed by the first one. Different possible stackings give rise to a series of close-packed structures, including:
+ * ...ABABAB... (_hcp_ or hexagonal close packing)
+
+ * ...ABCABC... (_ccp_ or cubic close packing, or \textit{fcc} = face-centered cubic structure)
+ 
+ These two structures are much denser than the simple cubic lattice, thanks to the coordination number of 12 (six neighbors in each layer, plus three neighbors in each of the two adjacent layers). They are in fact common for simple metals, which are well described by this packing concept because only one type of atoms is present in the crystal and because denser packing allows higher electron concentration, which is favorable for the metallic bonding. Fig.~\ref{fig:metals} shows that more than half of simple metals adopt either hcp or fcc structures. Most of the remaining metals form a bcc (body-centered cubic) structure, which is only slightly less dense than the close-packed ones. 
