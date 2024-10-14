@@ -27,6 +27,29 @@ Finding a dense packing of spheres (better known as **close packing** in solid-s
 
  * ...ABCABC... (_ccp_ or cubic close packing, or \textit{fcc} = face-centered cubic structure)
 
- These two structures are much denser than the simple cubic lattice, thanks to the coordination number of 12 (six neighbors in each layer, plus three neighbors in each of the two adjacent layers). They are in fact common for simple metals, which are well described by this packing concept because only one type of atoms is present in the crystal and because denser packing allows higher electron concentration, which is favorable for the metallic bonding. Fig.~\ref{fig:metals} shows that more than half of simple metals adopt either hcp or fcc structures. Most of the remaining metals form a bcc (body-centered cubic) structure, which is only slightly less dense than the close-packed ones. 
+
+ ```{figure} /figures/ch1-metals.svg
+:name: fig-metals
+
+Structures of simple metals. \textit{dhcp} is the double-hexagonal close-packing, ...ABACABAC...
+```
+
+ These two structures are much denser than the simple cubic lattice, thanks to the coordination number of 12 (six neighbors in each layer, plus three neighbors in each of the two adjacent layers). They are in fact common for simple metals, which are well described by this packing concept because only one type of atoms is present in the crystal and because denser packing allows higher electron concentration, which is favorable for the metallic bonding. Fig. {numref}`fig-metals` shows that more than half of simple metals adopt either hcp or fcc structures. Most of the remaining metals form a bcc (body-centered cubic) structure, which is only slightly less dense than the close-packed ones. 
+
+
+
+| lattice type | packing fraction | coordination number|
+| :--: | :--: | :--: |
+| simple cubic | 0.52 | 6 |
+| body-centered cubic (bcc) | 0.68 | 8 |
+| hexagonal close-packed (hcp) | 0.74 | 12 |
+| face-centered cubic (fcc) | 0.74 | 12 |
+
+
+The choice between the bcc, fcc, and hcp structures for a given metal is far from trivial and depends on details of its band structure (Ch.~\ref{sec:bands}). Nevertheless, already at this point we can make a general prediction that bcc metals should transform into hcp or fcc structures on compression. This happens indeed in alkaline metals and also in iron that looses its magnetism upon transforming from bcc to hcp polymorph around 15 GPa (why denser structures are less likely to be magnetic is a separate and rather non-trivial question that will only be covered in the Advanced Solid-State Physics module). 
+
+
+
 
  
+
