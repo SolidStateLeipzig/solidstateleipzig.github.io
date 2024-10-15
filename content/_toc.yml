@@ -15,4 +15,5 @@ parts:
 - caption: Lecture 2 - Symmetry as the guiding principle
   chapters:
   - file: l2_symmetry/l2_objectives.md
+  - file: l2_symmetry/l2_content.md
 

@@ -34,7 +34,7 @@ Finding a dense packing of spheres (better known as **close packing** in solid-s
 Structures of simple metals. \textit{dhcp} is the double-hexagonal close-packing, ...ABACABAC...
 ```
 
- These two structures are much denser than the simple cubic lattice, thanks to the coordination number of 12 (six neighbors in each layer, plus three neighbors in each of the two adjacent layers). They are in fact common for simple metals, which are well described by this packing concept because only one type of atoms is present in the crystal and because denser packing allows higher electron concentration, which is favorable for the metallic bonding. Fig. {numref}`fig-metals` shows that more than half of simple metals adopt either hcp or fcc structures. Most of the remaining metals form a bcc (body-centered cubic) structure, which is only slightly less dense than the close-packed ones. 
+ These two structures are much denser than the simple cubic lattice, thanks to the coordination number of 12 (six neighbors in each layer, plus three neighbors in each of the two adjacent layers). They are in fact common for simple metals, which are well described by this packing concept because only one type of atoms is present in the crystal and because denser packing allows higher electron concentration, which is favorable for the metallic bonding. {numref}`fig-metals` shows that more than half of simple metals adopt either hcp or fcc structures. Most of the remaining metals form a bcc (body-centered cubic) structure, which is only slightly less dense than the close-packed ones. 
 
 
 
