@@ -42,9 +42,11 @@ Lattice centering is an important part of describing crystal symmetry, but it ma
 ## Rotational symmetry and birefringence
 
 The $p$-fold \emph{rotation axis} is defined as the rotation by $\varphi = 360^{\circ}/p$. Here, $p$ must be integer because applying the same operation several times should end up in the full $360^{\circ}$ rotation. Rotation axes are labeled with numbers: two-fold rotation axis is 2, four-rold rotation axis is 4, etc. For a clockwise rotation, the corresponding transformation matrix is 
+
 $$
     \mathbb{R} = \begin{pmatrix} \cos \varphi & \sin \varphi & 0 \\ -\sin \varphi & \cos \varphi & 0 \\ 0 & 0 & 1 \end{pmatrix}
-$$
+$$ (eq-rotation)
+
 for a $p$-fold rotation axis parallel to $z$.
 
 Rotation axes have some immediate ramifications. First, they impose constraints on lattice parameters. Consider a four-fold rotation axis along $c$. This symmetry operation transforms $\mathbf{a}$ into $\mathbf{b}$ and thus requires not only $a=b$, but also $\gamma=90^{\circ}$. Three of such axes render a crystal cubic!
@@ -53,3 +55,73 @@ Another ramification concerns crystal properties. A crystal with one 4-fold rota
 
 Historically, birefringence has been the very first tool used to identify crystal symmetries. It is still employed by geologists during field trips where advanced instruments are not available. It is also used technologically for a quick monitoring of product quality. Amorphous solids are normally isotropic and should not exhibit birefringence (for example, it's not seen in ordinary glass). However, strains lead to anisotropy and can be mapped out by shining a suitably polarized light on the sample. You can read more about it [here](https://en.wikipedia.org/wiki/Photoelasticity).
 
+## Reflection and inversion symmetry
+
+Eq. {eq}`eq-rotation` covers only some of the unitary transformations. Two further important operations are **inversion center** (labeled $\bar 1$ or $-1$) and **mirror plane** ($m$),
+
+$$
+ \mathbb{R}_{\rm inversion}=\begin{pmatrix} -1 & 0  & 0 \\ 0 & -1 & 0 \\ 0 & 0 & -1 \end{pmatrix}, \qquad\qquad
+ \mathbb{R}_{\rm reflection}=\begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & -1 \end{pmatrix},
+$$ (eq-inversion-reflection)
+where the latter describes a mirror plane perpendicular to $z$ ($m \perp \mathbb{c}$). These symmetry elements can be combined with the rotation axes, namely, both can be present in the crystal at the same time. 
+
+The reflection and inversion symmetries also have important implications. They determine polarity and chirality of the crystal. We will get back to this in Ch.~\ref{sec:symgroups} after we learn how individual symmetry elements build up a symmetry group.
+
+
+## Neumann's principle
+
+A general and very intuitive principle commonly attributed to Neumann is that **properties of a crystal should be invariant under its symmetry operations**. Neumann's principle is usually invoked in its mathematical form, which states that any tensor property $\mathbf{\sigma}$ should follow
+
+$$
+    \mathbf{\sigma} = \mathbb{R}^{-1} \mathbf{\sigma} \mathbb{R}
+$$ (eq-neumann)
+
+Consider linear-response properties, such as conductivity $\mathbf{\sigma}$ defined by Ohm's law $\mathbf{j}=\mathbf{\sigma}\,\mathbf{E}$ ($\mathbb{j}$ is electric current density and $\mathbf{E}$ is electric field) or permittivity $\mathbf{\varepsilon}$ defined by $\mathbf{P}=(\mathbf{\varepsilon}-1)\varepsilon_0\mathbf{E}$ ($\mathbf{P}$ is electric polarization). Both $\mathbf{\sigma}$ and $\\mathbf{\varepsilon}$ are second-rank tensors because electric field applied along one direction causes a response, polarization or current, along all three directions of the crystal. We express this idea by writing
+
+$$
+ j_{\alpha}=\sigma_{\alpha\beta}E_{\beta}
+$$
+
+and implying that conductivity has the general form of 
+
+$$
+    \mathbf{\sigma}=\begin{pmatrix}{\sigma_{xx}} &{\sigma_{xy}} & {\sigma_{xz}} \\ {\sigma_{yx}} & {\sigma_{yy}}&{\sigma_{yz}}\\{\sigma_{zx}}&{\sigma_{zy}}&{\sigma_{zz}} \end{pmatrix}
+$$
+
+with up to 9 independent components. 
+
+Such tensors are usually symmetric, $\sigma_{\alpha\beta}=\sigma_{\beta\alpha}$. Their symmetry is rooted in some fundamental physical principles. For thermodynamic (equilibrium) properties it follows simply from their definition via change of free energy in the applied field,
+
+$$
+dG=-S\,dT+V\,dp-\mathbf{P}\,d\mathbf{E} \Rightarrow \mathbf{P}=-\left(\frac{\partial G}{\partial \mathbf{E}}\right)_{T,p}.
+$$
+
+Permittivity is then related to the second derivative of $G$ with respect to $\mathbf{E}$, and mixed derivatives must be equal,
+
+$$
+    \frac{\partial^2 G}{\partial E_{\alpha}\partial E_{\beta}}=\frac{\partial^2 G}{\partial E_{\beta}\partial E_{\alpha}} \Rightarrow \varepsilon_{\alpha\beta}=\varepsilon_{\beta\alpha}.
+$$
+
+A similar statement for transport properties is known as [Onsager reciprocal relations](https://journals.flvc.org/cee/article/download/122425/121384/). Without going into details we only mention here that these relations need to be amended in the presence of a magnetic field where conductivity tensor becomes antisymmetric (more on this in Ch.~\ref{sec:drude}).
+
+Symmetry of the tensor reduces the number of independent components from 9 to 6. Additional constraints can be derived from crystal symmetry using Eq {eq}`eq-neumann`. For example, consider the 4-fold rotation axis parallel to $z$. According to Eq. {eq}`eq-rotation`, it leads to the transformation $(x,y,z)\rightarrow (y,-x,z)$ that converts $\mathbf{\sigma}$ into an equivalent tensor $\mathbf{\sigma}'$,
+
+$$
+    \mathbf{\sigma}'=\begin{pmatrix}{\sigma_{yy}}&{-\sigma_{yx}}&{\sigma_{yz}}\\{-\sigma_{xy}}&{\sigma_{xx}}&{-\sigma_{xz}}\\{\sigma_{zy}}&{-\sigma_{zx}}&{\sigma_{zz}}\end{pmatrix}\qquad{\rm vs.}\qquad\mathbf{\sigma}=
+ \begin{pmatrix}{\sigma_{xx}}&{\sigma_{xy}}&{\sigma_{xz}}\\{\sigma_{yx}}&{\sigma_{yy}}&{\sigma_{yz}}\\{\sigma_{zx}}&{\sigma_{zy}}&{\sigma_{zz}}\end{pmatrix}.
+$$
+
+The tensor components should be pairwise equal, so $\sigma_{yy}=\sigma_{xx}$, whereas $-\sigma_{yx}=\sigma_{xy}$. For a symmetric tensor it means that all off-diagonal components vanish, leading to the final form of
+
+$$
+    \mathbf{\sigma} = \begin{pmatrix} \sigma_{xx} & 0 & 0\\ 0& \sigma_{xx} & 0 \\ 0 & 0 & \sigma_{zz} \end{pmatrix}
+$$
+
+for a crystal with the 4-fold symmetry axis.
+
+Tensor form for a given crystal symmetry can be checked on the [Bilbao server](https://cryst.ehu.es/cgi-bin/cryst/programs/tensor.pl).
+
+## Rotation vs. periodicity
+Different symmetry operations have been friends until now, but they can be foes too. Specifically, not every kind of rotational symmetry is compatible with periodicity of the lattice. One can show that only 2-fold, 3-fold, 4-fold, and 6-fold rotations do not forbid periodicity in two and three dimensions and can be thus present in periodic crystals. This statement is known as [crystallographic restriction theorem](https://en.wikipedia.org/wiki/Crystallographic_restriction_theorem}). Its mathematical proof can be found [here](http://doi.org/10.2307/3647934).
+
+Forbidden symmetries are not entirely impossible. For example, one may consider a crystal with the 5-fold symmetry and, therefore, without periodicity. Such crystals have been discovered in 1980's and dubbed **quasicrystals**. They are typically metallic and combine several chemical elements in rather weird proportions like Al $_{65}$ Cu $_{20}$ Fe $_{15}$. They serve as examples of aperiodic crystals. 

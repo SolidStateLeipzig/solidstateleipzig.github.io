@@ -15,5 +15,20 @@ parts:
 - caption: Lecture 2 - Symmetry as the guiding principle
   chapters:
   - file: l2_symmetry/l2_objectives.md
+  - file: l2_symmetry/l2_definitions.md
   - file: l2_symmetry/l2_content.md
+  - file: l2_symmetry/l2_method.md
+  - file: l2_symmetry/l2_problem.md
+
+- caption: Lecture 3 - Systematics of crystals - symmetry groups
+  chapters:
+  - file: l3_groups/l3_objectives.md
+  - file: l3_groups/l3_definitions.md
+  - file: l3_groups/l3_content.md
+  - file: l3_groups/l3_method.md
+  - file: l3_groups/l3_problem.md
+
+  
+
+  
 
