@@ -205,6 +205,14 @@
 <li class="toctree-l1"><a class="reference internal" href="l3_method.html">Experimental method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="l3_problem.html">Example problem</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 4 - Unpacking the crystal structure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_objectives.html">Lecture objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_definitions.html">Main definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_content.html">Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_problem.html">Example problem</a></li>
+</ul>
 
     </div>
 </nav></div>
@@ -404,6 +412,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-systems">Crystal systems</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-symmetry-elements">Open symmetry elements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chirality">Chirality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#space-groups">Space groups</a></li>
 </ul>
             </nav>
         </div>
@@ -546,6 +555,41 @@ document.write(`
 <p>More generally, <strong>chirality</strong> is defined as the property of an object not to match its mirror image. Mirror-plane symmetry renders an object non-chiral because the object does not change under this operation at all. On the other hand, any symmetry group that does not contain mirror operations (nor it contains inversion centers and rotoinversion axes, which are equivalent to the rotation-reflection axes) is chiral. Examples of chiral point groups are <span class="math notranslate nohighlight">\(2\,2\,2\)</span> and <span class="math notranslate nohighlight">\(3\,2\)</span>. Note that some symmetry groups are polar and non-chiral or chiral and non-polar. Both polarity and chirality are rooted in the crystal symmetry, but different aspects of the symmetry are relevant in each case.</p>
 <p>Chiral objects are interesting because they exist in (at least) two forms, known as left and right <strong>enantiomers</strong> (for molecules) and <strong>enantiomorphs</strong> (for crystals). These forms are almost indistinguishable, yet they may show drastically different properties. For example, many of the aminoacids, carbohydrates, and other biologically relevant molecules are chiral. Only one enantiomer is usually present in nature, and this choice of chirality has tremendous repercussions for biological systems.</p>
 </section>
+<section id="space-groups">
+<h2>Space groups<a class="headerlink" href="#space-groups" title="Link to this heading">#</a></h2>
+<p>Full symmetry of the crystal is defined by its:</p>
+<ul class="simple">
+<li><p>lattice centering that contains all translations allowed in this crystal (Ch.~\ref{sec:centering})</p></li>
+<li><p>point symmetry elements (Ch.~\ref{sec:symelements})</p></li>
+<li><p>open symmetry elements (Ch.~\ref{sec:open})</p></li>
+</ul>
+<p>The combination of the three makes a <strong>space group</strong>. Space groups are labeled by four symbols: the first one indicates lattice centering, while the three others stand for symmetry elements along three nonequivalent directions. For example, <span class="math notranslate nohighlight">\(Pnma\)</span> means:</p>
+<ul class="simple">
+<li><p>primitive lattice</p></li>
+<li><p><span class="math notranslate nohighlight">\(n\)</span> glide plane perpendicular to <span class="math notranslate nohighlight">\(\mathbf{a}\)</span></p></li>
+<li><p>mirror plane (<span class="math notranslate nohighlight">\(m\)</span>) perpendicular to <span class="math notranslate nohighlight">\(\mathbf{b}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a\)</span> glide plane perpendicular to <span class="math notranslate nohighlight">\(\mathbf{c}\)</span></p></li>
+</ul>
+<p>Absent symmetry elements are usually not written. For example, <span class="math notranslate nohighlight">\(P2/m=P\,1\,2/m\,1\)</span>. On the other hand, <span class="math notranslate nohighlight">\(P\,4_2/m\,b\,c\)</span> means</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(4_2\)</span> screw axis along <span class="math notranslate nohighlight">\(\mathbf{c}\)</span> and a mirror plane (<span class="math notranslate nohighlight">\(m\)</span>) perpendicular to <span class="math notranslate nohighlight">\(\mathbf{c}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(b\)</span> glide plane perpendicular to <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> (and, respectively, <span class="math notranslate nohighlight">\(a\)</span> glide plane perpendicular to <span class="math notranslate nohighlight">\(\mathbf{b}\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(c\)</span> glide planes perpendicular to <span class="math notranslate nohighlight">\(\mathbf{a}\pm\mathbf{b}\)</span></p></li>
+</ul>
+<p>(check again Ch.~\ref{sec:pointgroup} for the choice of directions in the 4-fold symmetric case).</p>
+<p>An exhaustive list of \emph{230 space groups} can be found on the <a class="reference external" href="https://cryst.ehu.es/cgi-bin/cryst/programs/nph-table?from=getwp">Bilbao Crystallographic Server</a> and in<a class="reference external" href="https://it.iucr.org/">International Tables for Crystallography</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Many of the universities, including Leipzig, do not have access to this book. Fortunately, symmetry diagrams for many of the space groups can be also obtained free of charge from the <a class="reference external" href="https://crystalsymmetry.wordpress.com/space-group-diagrams/">The Fascination of Crystals and Symmetry</a> website by Frank Hoffmann.</p>
+</div>
+<p>While 230 may look like a huge number, it still means that the number of possible symmetries is finite, so it is possible to go through each of them when necessary. Many of the interesting crystal properties become possible for selected symmetries only. Then the classification of crystals by their space groups helps one to identify those specific materials where the property of interest is likely to appear. This approach has been common in many recent studies, for example <a class="reference external" href="https://doi.org/10.1038/s41467-017-00133-2">here</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Beware that you will need a quite advanced knowledge to understand the content of this paper.</p>
+</div>
+<p>The crystal class is determined by both point and open symmetry elements of the space group, because open symmetry elements have the same effect on lattice symmetry as the point ones. For example, <span class="math notranslate nohighlight">\(Pnma\)</span> belongs to the <span class="math notranslate nohighlight">\(mmm\)</span> crystal class and orthorhombic crystal system. <span class="math notranslate nohighlight">\(P4_2/mbc\)</span> belongs to the <span class="math notranslate nohighlight">\(4/mmm\)</span> crystal class and tetragonal crystal system. Both space groups are non-polar and non-chiral.</p>
+<p>One tricky thing about space groups is that their different settings are usually possible. For example, <span class="math notranslate nohighlight">\(Pmmn\)</span>, <span class="math notranslate nohighlight">\(Pnmm\)</span>, and <span class="math notranslate nohighlight">\(Pmnm\)</span> are all the same space group with the different choices of <span class="math notranslate nohighlight">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span>. Likewise, <span class="math notranslate nohighlight">\(P2/a\)</span> and <span class="math notranslate nohighlight">\(P2/c\)</span> are the same space group, with the <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{c}\)</span> axes swapped. Such an ambiguity is unavoidable, but it has been mitigated by creating a catalog of space groups in their standard settings, again at the Bilbao server and in related sources. Each space group has got a unique number, which is often supplied in publications along with the space group symbol. Crystalloghers have also done a great job in enforcing standard settings and standard notations for the crystal symmetry. You can take a peek into their very systematic and perfectly organized world by visiting the website of International Union of Crystallography with its own <a class="reference external" href="https://dictionary.iucr.org">dictionary</a>, <a class="reference external" href="https://www.iucr.org/education/pamphlets">teaching pamphlets</a>, and a lot more.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -617,6 +661,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-systems">Crystal systems</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-symmetry-elements">Open symmetry elements</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chirality">Chirality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#space-groups">Space groups</a></li>
 </ul>
   </nav></div>
 

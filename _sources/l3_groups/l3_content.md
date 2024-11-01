@@ -116,3 +116,40 @@ Helical chains formed by the $3_1$ and $3_2$ screw axes in elemental tellurium. 
 More generally, **chirality** is defined as the property of an object not to match its mirror image. Mirror-plane symmetry renders an object non-chiral because the object does not change under this operation at all. On the other hand, any symmetry group that does not contain mirror operations (nor it contains inversion centers and rotoinversion axes, which are equivalent to the rotation-reflection axes) is chiral. Examples of chiral point groups are $2\,2\,2$ and $3\,2$. Note that some symmetry groups are polar and non-chiral or chiral and non-polar. Both polarity and chirality are rooted in the crystal symmetry, but different aspects of the symmetry are relevant in each case.
 
 Chiral objects are interesting because they exist in (at least) two forms, known as left and right **enantiomers** (for molecules) and **enantiomorphs** (for crystals). These forms are almost indistinguishable, yet they may show drastically different properties. For example, many of the aminoacids, carbohydrates, and other biologically relevant molecules are chiral. Only one enantiomer is usually present in nature, and this choice of chirality has tremendous repercussions for biological systems.
+
+## Space groups
+
+Full symmetry of the crystal is defined by its:
+* lattice centering that contains all translations allowed in this crystal (Ch.~\ref{sec:centering})
+* point symmetry elements (Ch.~\ref{sec:symelements})
+* open symmetry elements (Ch.~\ref{sec:open})
+
+The combination of the three makes a **space group**. Space groups are labeled by four symbols: the first one indicates lattice centering, while the three others stand for symmetry elements along three nonequivalent directions. For example, $Pnma$ means:
+
+* primitive lattice
+* $n$ glide plane perpendicular to $\mathbf{a}$
+* mirror plane ($m$) perpendicular to $\mathbf{b}$
+* $a$ glide plane perpendicular to $\mathbf{c}$
+
+Absent symmetry elements are usually not written. For example, $P2/m=P\,1\,2/m\,1$. On the other hand, $P\,4_2/m\,b\,c$ means 
+* $4_2$ screw axis along $\mathbf{c}$ and a mirror plane ($m$) perpendicular to $\mathbf{c}$
+* $b$ glide plane perpendicular to $\mathbf{a}$ (and, respectively, $a$ glide plane perpendicular to $\mathbf{b}$)
+* $c$ glide planes perpendicular to $\mathbf{a}\pm\mathbf{b}$ 
+
+(check again Ch.~\ref{sec:pointgroup} for the choice of directions in the 4-fold symmetric case).
+
+An exhaustive list of \emph{230 space groups} can be found on the [Bilbao Crystallographic Server](https://cryst.ehu.es/cgi-bin/cryst/programs/nph-table?from=getwp) and in[International Tables for Crystallography](https://it.iucr.org/).
+```{note} Many of the universities, including Leipzig, do not have access to this book. Fortunately, symmetry diagrams for many of the space groups can be also obtained free of charge from the [The Fascination of Crystals and Symmetry](https://crystalsymmetry.wordpress.com/space-group-diagrams/) website by Frank Hoffmann.
+
+```
+
+
+
+While 230 may look like a huge number, it still means that the number of possible symmetries is finite, so it is possible to go through each of them when necessary. Many of the interesting crystal properties become possible for selected symmetries only. Then the classification of crystals by their space groups helps one to identify those specific materials where the property of interest is likely to appear. This approach has been common in many recent studies, for example [here](https://doi.org/10.1038/s41467-017-00133-2).
+
+```{note} Beware that you will need a quite advanced knowledge to understand the content of this paper.
+```
+
+The crystal class is determined by both point and open symmetry elements of the space group, because open symmetry elements have the same effect on lattice symmetry as the point ones. For example, $Pnma$ belongs to the $mmm$ crystal class and orthorhombic crystal system. $P4_2/mbc$ belongs to the $4/mmm$ crystal class and tetragonal crystal system. Both space groups are non-polar and non-chiral.
+
+One tricky thing about space groups is that their different settings are usually possible. For example, $Pmmn$, $Pnmm$, and $Pmnm$ are all the same space group with the different choices of $\mathbf{a},\mathbf{b},\mathbf{c}$. Likewise, $P2/a$ and $P2/c$ are the same space group, with the $\mathbf{a}$ and $\mathbf{c}$ axes swapped. Such an ambiguity is unavoidable, but it has been mitigated by creating a catalog of space groups in their standard settings, again at the Bilbao server and in related sources. Each space group has got a unique number, which is often supplied in publications along with the space group symbol. Crystalloghers have also done a great job in enforcing standard settings and standard notations for the crystal symmetry. You can take a peek into their very systematic and perfectly organized world by visiting the website of International Union of Crystallography with its own [dictionary](https://dictionary.iucr.org), [teaching pamphlets](https://www.iucr.org/education/pamphlets), and a lot more.
