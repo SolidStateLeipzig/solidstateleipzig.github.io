@@ -28,6 +28,15 @@ parts:
   - file: l3_groups/l3_method.md
   - file: l3_groups/l3_problem.md
 
+- caption: Lecture 4 - Unpacking the crystal structure
+  chapters:
+  - file: l4_structure/l4_objectives.md
+  - file: l4_structure/l4_definitions.md
+  - file: l4_structure/l4_content.md
+  - file: l4_structure/l4_method.md
+  - file: l4_structure/l4_problem.md
+
+
   
 
   
