@@ -7,7 +7,7 @@ Long-range order of a crystal reflects its underlying symmetry. Most generally, 
 $$
     \rm{symmetry\ operation} = \mathbb{R} \oplus \mathbf{t} = \begin{pmatrix} R_{xx} & R_{xy} & R_{xz} \\ R_{yx} & R_{yy} & R_{yz} \\ R_{zx} & R_{zy} & R_{zz}\end{pmatrix} \oplus \begin{pmatrix}  t_x \\ t_y \\ t_z \end{pmatrix}
 
-$$
+$$ (eq-symmetryop)
 
 where $\mathbb{R}$ is a unitary transformation, such as rotation, and $\mathbf{t}$ is a translation in space by a given vector.
 
@@ -16,13 +16,13 @@ where $\mathbb{R}$ is a unitary transformation, such as rotation, and $\mathbf{t
 The simplest translational symmetry of a crystal is its periodicity. From Eq. {eq}`eq-Bravais` we know that $\mathbf{a},\mathbf{b},\mathbf{c}$ and their linear combinations are allowed translations, so all of them are symmetry operations of a crystal, as long as this crystal is periodic. Some other translations may be allowed too, leading to a classification of lattices by **lattice centering** into:
 
 * **Primitive lattice** ($P$) has only $\mathbf{a},\mathbf{b},\mathbf{c}$ and their linear combinations as allowed translations
-* **Face-centered lattice** ($F$) features additional translations $\mathbb{t}=\frac{1}{2}(\mathbb{a} \pm \mathbb{b}),\frac{1}{2}(\pm\mathbb{c}),\frac12(\mathbb{b}\pm\mathbb{c})$ (half of the face diagonal for each face)
+* **Face-centered lattice** ($F$) features additional translations $\mathbf{t}=\frac{1}{2}(\mathbf{a} \pm \mathbf{b}),\frac{1}{2}(\pm\mathbf{c}),\frac12(\mathbf{b}\pm\mathbf{c})$ (half of the face diagonal for each face)
 
-* **Body-centered lattice** ($I$) features additional translations $\mathbb{t}=\frac12(\mathbb{a}\pm\mathbb{b}\pm\mathbb{c})$ (half of the body diagonals)
+* **Body-centered lattice** ($I$) features additional translations $\mathbf{t}=\frac12(\mathbf{a}\pm\mathbf{b}\pm\mathbf{c})$ (half of the body diagonals)
 
-* **Base-centered lattice** ($A,B,C$) features additional translations by half of the face diagonal, but only for two faces out of six. For example, the $C$-centered lattice allows $\mathbb{t}=\frac12(\mathbb{a}\pm\mathbb{b})$
+* **Base-centered lattice** ($A,B,C$) features additional translations by half of the face diagonal, but only for two faces out of six. For example, the $C$-centered lattice allows $\mathbf{t}=\frac12(\mathbf{a}\pm\mathbf{b})$
 
-* **Rhombohedral lattice** ($R$) features an additional translation by $\mathbb{t}=\frac13(\mathbb{a}+\mathbb{b}+\mathbb{c})$ (one third of the body diagonal)
+* **Rhombohedral lattice** ($R$) features an additional translation by $\mathbf{t}=\frac13(\mathbf{a}+\mathbf{b}+\mathbf{c})$ (one third of the body diagonal)
 
 One could then ask why these additional vectors $\mathbf{t}$ are needed. Should they exist, lattice vectors can be re-defined as the shortest repetition vectors of the crystal, and every lattice will be primitive. True indeed, but some rotational symmetry may be lost on the way, as shown in Fig.~\ref{fig:cell}. Therefore, in a centered lattice one distinguishes:
 
