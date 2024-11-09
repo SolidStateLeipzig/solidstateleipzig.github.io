@@ -102,7 +102,7 @@ Otherwise, repeated application of the glide plane would generate a new translat
 
 ## Chirality
 
-Screw axes impart their sense of rotation to the atomic arrangement and, therefore, to the crystal as a whole. For example $3_1$ and $3_2$ produce similar helical chains with the counter-clockwise and clockwise rotations, respectively (Fig.{numref}`fig-chirality`). It is an example of chirality.
+Screw axes impart their sense of rotation to the atomic arrangement and, therefore, to the crystal as a whole. For example $3_1$ and $3_2$ produce similar helical chains with the counter-clockwise and clockwise rotations, respectively ({numref}`fig-chirality`). It is an example of chirality.
 
 ```{figure} /figures/ch3-chirality.svg
 :name: fig-chirality
