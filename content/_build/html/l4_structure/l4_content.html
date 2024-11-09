@@ -410,6 +410,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-coordinates-and-wyckoff-positions">Atomic coordinates and Wyckoff positions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-structure">Crystal structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bragg-s-law">Bragg’s law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-experiments-and-x-ray-diffraction">Scattering experiments and x-ray diffraction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lattice-planes-and-miller-indices">Lattice planes and Miller indices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-faces-and-crystal-directions">Crystal faces and crystal directions</a></li>
 </ul>
             </nav>
         </div>
@@ -437,7 +440,12 @@ document.write(`
 <p>Crystallographers use bars to indicate minus sign in front of the coordinate.</p>
 </div>
 <p>A two-fold rotation axis, <span class="math notranslate nohighlight">\(2\parallel\mathbf{a}\)</span>, creates a counterpart at <span class="math notranslate nohighlight">\((x,\bar y,\bar z)\)</span> and so on. In this way, symmetry elements generate a <strong>Wyckoff position</strong>.</p>
-<p>Figure</p>
+<figure class="align-default" id="fig-wickhoff">
+<img alt="figures/ch4-Wyckhoff.svg" src="figures/ch4-Wyckhoff.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Selected Wyckoff positions of the space group <span class="math notranslate nohighlight">\(Pmm2\)</span> (No.~25). <span class="math notranslate nohighlight">\(4i\)</span> is the general position not lying on any symmetry element. <span class="math notranslate nohighlight">\(2f\)</span> and <span class="math notranslate nohighlight">\(1a\)</span> are special positions with the lower multiplicity. In this figure, we used some standard notation of the symmetry diagrams: solid lines show the mirror planes, whereas gray pointed ovals are the two-fold rotation axes. You can find more of the symbols [here]{<a class="reference external" href="https://crystalsymmetry.wordpress.com/space-group-diagrams/">https://crystalsymmetry.wordpress.com/space-group-diagrams/</a>}.</span><a class="headerlink" href="#fig-wickhoff" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>These Wyckoff positions can be general or special. A <strong>general</strong> Wyckoff position does not lie on any point symmetry element and shows the highest multiplicity allowed by the given space group. A <strong>special</strong> Wyckoff position lies on at least one point symmetry element, which then does not act on this atom, resulting in a lower multiplicity. For example, the general position in the space group <span class="math notranslate nohighlight">\(Pmm2\)</span> has the multiplicity of 4; it is labeled <span class="math notranslate nohighlight">\(4i\)</span>. By contrast, the position <span class="math notranslate nohighlight">\((0,0,z)\)</span> on the two-fold rotation axis has the multiplicity of 1 (it is labeled <span class="math notranslate nohighlight">\(1a\)</span>) because it stays invariant under all symmetry operations (Fig.~\ref{fig:wyckoff}).</p>
 <p>Wyckoff positions have two implications. First, they help us to make the description of crystal structures more systematic. Lists of possible Wyckoff positions are available for every space group (again, on the <a class="reference external" href="https://cryst.ehu.es/cryst/get_wp.html">Bilbao server</a> or in the International Tables for Crystallography). Second, the distribution of atoms over different Wyckoff positions has ramifications for crystal properties, such as the type of phonon modes and their response in infrared and Raman experiments. We will briefly touch on this issue in Ch.~\ref{sec:optical}. You can also learn more by trying the <a class="reference external" href="https://cryst.ehu.es/rep/sam.html">SAM utility</a> at the Bilbao server.</p>
 </section>
@@ -466,6 +474,70 @@ In databases that together contain over a million of crystal structures that hav
 <section id="bragg-s-law">
 <h2>Bragg’s law<a class="headerlink" href="#bragg-s-law" title="Link to this heading">#</a></h2>
 <p>At first glance, there is not much more in a crystal than what we already considered: the atoms and their exact positions in space that can be extracted from Wyckoff positions with the use of lattice parameters and symmetry. However, we can also see this in a different light when shining light (with a properly chosen photon energy) on a crystal. In fact, most of the information about the crystal structure comes from scattering experiments where radiation with the short wavelength (<span class="math notranslate nohighlight">\(\lambda\sim 1 \mathring{A}\)</span>) in order to match the typical interatomic distances) is used. The simplest model of this scattering is given by Bragg’s law.</p>
+<p>Consider atomic planes separated by a distance <span class="math notranslate nohighlight">\(d\)</span> from each other (<a class="reference internal" href="#fig-bragg"><span class="std std-numref">Fig. 7</span></a>). The waves reflected by two adjacent planes accumulate the path difference of <span class="math notranslate nohighlight">\(2d\sin\theta\)</span> where <span class="math notranslate nohighlight">\(\theta\)</span> is the angle between the incident beam and the atomic plane. These waves interfere constructively when the path difference equals an integer number of wavelengths (<span class="math notranslate nohighlight">\(m\)</span>), leading to the simple condition</p>
+<div class="math notranslate nohighlight" id="equation-eq-bragg">
+<span class="eqno">(6)<a class="headerlink" href="#equation-eq-bragg" title="Link to this equation">#</a></span>\[ 
+ 2d\sin\theta=m\lambda
+\]</div>
+<p>known as <strong>Bragg’s law</strong>. It is customary to choose <span class="math notranslate nohighlight">\(m=1\)</span>. Higher-order interference maxima may occur too, but we don’t need to take them into account. In Ch.~\ref{sec:recbragg} we will see that these <span class="math notranslate nohighlight">\(m\neq 1\)</span> maxima are in fact due to the <span class="math notranslate nohighlight">\(m=1\)</span> scattering but from different planes.</p>
+<figure class="align-default" id="fig-bragg">
+<img alt="../_images/ch4-bragg.svg" src="../_images/ch4-bragg.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Bragg’s law. Reflection of waves from parallel atomic planes gives rise to a constructive interference when the path difference is equal to an integer number of wavelengths. Experimentally, the angle <span class="math notranslate nohighlight">\(2\theta\)</span> between the incident and scattered waves is measured.</span><a class="headerlink" href="#fig-bragg" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Bragg’s law shows that by scattering waves such as x-rays on a crystal, one expects to see a series of intensity maxima known as <strong>Bragg peaks</strong> or simply <strong>reflections</strong>. Experimentally, the angle <span class="math notranslate nohighlight">\(\theta\)</span> can not be measured, but the angle <span class="math notranslate nohighlight">\(2\theta\)</span> between the incident and scattered wave is easy to monitor. The <span class="math notranslate nohighlight">\(2\theta\)</span> positions of the Bragg peaks correspond to the distances <span class="math notranslate nohighlight">\(d\)</span> that contain information on the periodicity of the crystal. It is the basics of crystal structure determination, although by no means a complete procedure yet, as we will see in the following.</p>
+</section>
+<section id="scattering-experiments-and-x-ray-diffraction">
+<h2>Scattering experiments and x-ray diffraction<a class="headerlink" href="#scattering-experiments-and-x-ray-diffraction" title="Link to this heading">#</a></h2>
+<p>The setup described by Bragg’s law is an example of a scattering experiment. One generally distinguishes</p>
+<ul class="simple">
+<li><p><strong>elastic scattering</strong> where the scattered beam has the same energy as the incident beam</p></li>
+<li><p>\emph{inelastic scattering} where some energy is exchanged between the incident beam and the crystal</p></li>
+</ul>
+<p>Elastic scattering is resolved in the angle <span class="math notranslate nohighlight">\(2\theta\)</span>. When Bragg peaks in the sense of Eq. <a class="reference internal" href="#equation-eq-bragg">(6)</a> are observed, this experiment is called <strong>diffraction</strong>. Inelastic scattering can be resolved in both angle <span class="math notranslate nohighlight">\(\theta\)</span> and energy transfer <span class="math notranslate nohighlight">\(\mathbb{E}\)</span>. This experiment is in fact similar to spectroscopy, although spectroscopy is a somewhat broader term that also includes experiments that are done at the fixed scattering angle and resolved in energy, only.</p>
+<p>Scattering experiments can be done with any kind of waves. We will see such examples later in these lecture notes, but for now our favorite type will be x-rays because their wavelength is matched to the typical interatomic distances and lattice parameters. Other types of radiation can be neutrons and electrons, as we will see in Ch.~\ref{sec:diffraction}.</p>
+<p><strong>X-ray diffraction</strong>, better known as <strong>XRD</strong>, is one of the most common experimental tools in solid-state research. It is essentially the scattering of monochromatic x-rays (photons with the single wavelength <span class="math notranslate nohighlight">\(\lambda\)</span>) on a crystalline sample. The scattered radiation is collected by a detector, and the angle <span class="math notranslate nohighlight">\(2\theta\)</span> between the incident and scattered beams is measured. A diffraction pattern with a series of Bragg peaks is recorded. The positions and intensities of the Bragg peaks can be used for:</p>
+<ul class="simple">
+<li><p>identifying the sample and identifying different chemical compounds in mixed, multi-phase samples; each crystal structure gives rise to a unique series of Bragg peaks that serves as a fingerprint of this structure and underlying chemical compound.</p></li>
+<li><p>determining orientation of a crystal surface or a thin film</p></li>
+<li><p>resolving the crystal structure (more on this in Ch.~\ref{sec:diffraction})</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The role of the intensities will become clear in Ch.~\ref{sec:diffraction}</p>
+</div>
+<p>XRD is a much more versatile technique compared to electron microscopy (Ch.~\ref{sec:microscopy}). It does not destroy the sample and does not require high vacuum. It is compatible with different sample environments and can be performed in a broad range of temperatures, pressures, electric and magnetic fields.</p>
+</section>
+<section id="lattice-planes-and-miller-indices">
+<h2>Lattice planes and Miller indices<a class="headerlink" href="#lattice-planes-and-miller-indices" title="Link to this heading">#</a></h2>
+<p>The concept of atomic or \emph{lattice planes} used in Bragg’s law requires their proper classification. Importantly, in the derivation of Bragg’s law one uses not a single lattice plane, but a series of periodically spaced planes of the whole crystal. Consider now two of these planes, the one that goes through origin and the plane adjacent to it. The latter crosses lattice vectors <span class="math notranslate nohighlight">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span> at the positions <span class="math notranslate nohighlight">\(d_a,d_b,d_c\)</span> away from the origin (<a class="reference internal" href="#fig-hkl"><span class="std std-numref">Fig. 8</span></a>). Then <strong>Miller indices</strong> <span class="math notranslate nohighlight">\(h,k,l\)</span> for this family of atomic planes are defined as</p>
+<div class="math notranslate nohighlight" id="equation-eq-hkl">
+<span class="eqno">(7)<a class="headerlink" href="#equation-eq-hkl" title="Link to this equation">#</a></span>\[
+ h=a/d_a,\qquad k=b/d_b,\qquad l=c/d_c.\]</div>
+<figure class="align-default" id="fig-hkl">
+<img alt="../_images/ch4-hkl.svg" src="../_images/ch4-hkl.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Left: definition of Miller indices <span class="math notranslate nohighlight">\(h,k,l\)</span>. The leftmost plane goes through the origin. An adjacent plane crosses the lattice vectors <span class="math notranslate nohighlight">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span> at <span class="math notranslate nohighlight">\(d_a=a/h\)</span>, <span class="math notranslate nohighlight">\(d_b=b/k\)</span>, and <span class="math notranslate nohighlight">\(d_c=c/l\)</span>. The distance between the planes is <span class="math notranslate nohighlight">\(d_{hkl}\)</span>. Middle and right: the (200) planes are similar to the (100) planes but show a twice smaller spacing.</span><a class="headerlink" href="#fig-hkl" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The Miller index of zero means that the lattice plane never crosses the respective axis, i.e., it is parallel to this axis. Three faces of the unit cell will then have indices of <span class="math notranslate nohighlight">\((100)\)</span>, <span class="math notranslate nohighlight">\((010)\)</span>, and <span class="math notranslate nohighlight">\((001)\)</span>. Increasing the Miller indices shortens the spacing between the planes. For example, <span class="math notranslate nohighlight">\((200)\)</span> are the same lattice planes as <span class="math notranslate nohighlight">\((100)\)</span>, but with the twice shorter spacing (<a class="reference internal" href="#fig-hkl"><span class="std std-numref">Fig. 8</span></a>).</p>
+<p>The Miller indices must be integer to comply with periodicity of the lattice. Later we will come to see that they also describe a position in the reciprocal space and can be arbitrary in this sense. However, only integer values of <span class="math notranslate nohighlight">\(h,k,l\)</span> describe something that matches periodicity of the crystal.</p>
+<p>The Miller indices can be used to determine the <span class="math notranslate nohighlight">\(d\)</span> value in Bragg’s law. For a crystal with <span class="math notranslate nohighlight">\(\alpha=\beta=\gamma=90^{\circ}\)</span>,</p>
+<div class="math notranslate nohighlight" id="equation-eq-d-distance">
+<span class="eqno">(8)<a class="headerlink" href="#equation-eq-d-distance" title="Link to this equation">#</a></span>\[
+ \frac{1}{d_{hkl}^{\,2}}=\frac{h^2}{a^2}+\frac{k^2}{b^2}+\frac{l^2}{c^2}.
+\]</div>
+<p>We will prove this relation shortly (Ch.~\ref{sec:recbragg}). For now let’s explain how the actual experiment works. An XRD measurement returns a set of peak positions <span class="math notranslate nohighlight">\(\theta_i\)</span> that can be re-calculated into <span class="math notranslate nohighlight">\(d_i\)</span>’s using Bragg’s law. Then one has to find the values of <span class="math notranslate nohighlight">\(a,b,c,\alpha,\beta,\gamma\)</span> such that every <span class="math notranslate nohighlight">\(d_i\)</span> is described by some integer values of <span class="math notranslate nohighlight">\(h,k,l\)</span>. This procedure is known as <strong>indexing</strong> of the Bragg peaks. A successful indexing returns lattice parameters of the crystal.</p>
+</section>
+<section id="crystal-faces-and-crystal-directions">
+<h2>Crystal faces and crystal directions<a class="headerlink" href="#crystal-faces-and-crystal-directions" title="Link to this heading">#</a></h2>
+<p>It should be clear from the above that crystal faces (and, consequently, surfaces) are labeled with the same Miller indices <span class="math notranslate nohighlight">\(h,k,l\)</span>. Here, one considers a single plane only, so there will be no difference between <span class="math notranslate nohighlight">\((100)\)</span>, <span class="math notranslate nohighlight">\((200)\)</span>, <span class="math notranslate nohighlight">\((300)\)</span>, and so on, hence the smallest indices are always used.</p>
+<p>The notation of lattice planes and crystal faces should not be confused with the notation of crystal directions, even though three integer numbers <span class="math notranslate nohighlight">\(u,v,w\)</span> are also involved in this case,</p>
+<div class="math notranslate nohighlight" id="equation-eq-direction">
+<span class="eqno">(9)<a class="headerlink" href="#equation-eq-direction" title="Link to this equation">#</a></span>\[
+ \mathbf{R}_{[u\,v\,w]}=u\,\mathbf{a}+v\,\mathbf{b}+w\,\mathbf{c}.\]</div>
+<p>In simple cases, these vectors <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> are perpendicular to the lattice planes with the same indices. For example, viewing a cubic crystal along the <span class="math notranslate nohighlight">\([100]\)</span> direction means that you look at the <span class="math notranslate nohighlight">\((100)\)</span> face of the cube. However, this is not true in general. We will see very soon that the <span class="math notranslate nohighlight">\(h,k,l\)</span> values define a vector in the reciprocal space, whereas Eq. <a class="reference internal" href="#equation-eq-direction">(9)</a> corresponds to a real-space direction. Note also the different type of brackets used for the (lattice planes) vs. [crystal directions].</p>
 </section>
 </section>
 
@@ -536,6 +608,9 @@ In databases that together contain over a million of crystal structures that hav
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-coordinates-and-wyckoff-positions">Atomic coordinates and Wyckoff positions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-structure">Crystal structure</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bragg-s-law">Bragg’s law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scattering-experiments-and-x-ray-diffraction">Scattering experiments and x-ray diffraction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lattice-planes-and-miller-indices">Lattice planes and Miller indices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-faces-and-crystal-directions">Crystal faces and crystal directions</a></li>
 </ul>
   </nav></div>
 
