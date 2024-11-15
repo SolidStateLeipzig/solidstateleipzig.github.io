@@ -26,7 +26,7 @@ from multiplechoice import MultipleChoice
 
 
 ```{code-cell} ipython3
-:tags: [remove-cell]
+:tags: [remove-input]
 
 question = (
     "How would the topological degeneracy of the ground state that comes from the loop configurations "
