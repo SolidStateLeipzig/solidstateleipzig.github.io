@@ -36,6 +36,14 @@ parts:
   - file: l4_structure/l4_method.md
   - file: l4_structure/l4_problem.md
 
+- caption: Lecture 5 - Spaces of crystallography - Reciprocal lattice
+  chapters:
+  - file: l5_reciprocal/l5_objectives.md
+  - file: l5_reciprocal/l5_definitions.md
+  - file: l5_reciprocal/l5_content.md
+  - file: l5_reciprocal/l5_method.md
+  - file: l5_reciprocal/l5_problem.md
+
 
   
 

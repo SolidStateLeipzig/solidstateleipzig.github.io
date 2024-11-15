@@ -42,10 +42,7 @@ answers = [
     "so the degeneracy increases from 4 to 8.",
 ]
 
-explanation = (
-    "The additional hole introduces the possibility of 2 values of parity on each extra cycle. This adds a "
-    "factor of $2 \\times 2=4$."
-)
+explanation = ()
 
 MultipleChoice(
     question=question, answers=answers, correct_answer=1, explanation=explanation
