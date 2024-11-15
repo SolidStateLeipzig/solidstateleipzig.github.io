@@ -1,0 +1,64 @@
+Traceback (most recent call last):
+  File "/home/codespace/.cache/pypoetry/virtualenvs/solidstateleipzig-github-io-HqKGpYYK-py3.12/lib/python3.12/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/home/codespace/.cache/pypoetry/virtualenvs/solidstateleipzig-github-io-HqKGpYYK-py3.12/lib/python3.12/site-packages/nbclient/client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/codespace/.cache/pypoetry/virtualenvs/solidstateleipzig-github-io-HqKGpYYK-py3.12/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 684, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/codespace/.cache/pypoetry/virtualenvs/solidstateleipzig-github-io-HqKGpYYK-py3.12/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/home/codespace/.cache/pypoetry/virtualenvs/solidstateleipzig-github-io-HqKGpYYK-py3.12/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/codespace/.cache/pypoetry/virtualenvs/solidstateleipzig-github-io-HqKGpYYK-py3.12/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+question = (
+    "How would the topological degeneracy of the ground state that comes from the loop configurations "
+    "change if we put it on a torus (donut) with two holes?"
+)
+
+answers = [
+    "Since there is still an infinite number of loop configurations, the degeneracy would be infinite.",
+    "Since there is one additional hole there are two more distinct cycles. "
+    "So  the number of ground states increases by a factor of 4.",
+    "It still remains 4 since the loops is topologically forbidden from going around the extra loops.",
+    "Since there is one additional hole the loops can go around this hole an even or an odd number of time, "
+    "so the degeneracy increases from 4 to 8.",
+]
+
+explanation = (
+    "The additional hole introduces the possibility of 2 values of parity on each extra cycle. This adds a "
+    "factor of $2 \\times 2=4$."
+)
+
+MultipleChoice(
+    question=question, answers=answers, correct_answer=1, explanation=explanation
+)
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[2], line 20[0m
+[1;32m      6[0m answers [38;5;241m=[39m [
+[1;32m      7[0m     [38;5;124m"[39m[38;5;124mSince there is still an infinite number of loop configurations, the degeneracy would be infinite.[39m[38;5;124m"[39m,
+[1;32m      8[0m     [38;5;124m"[39m[38;5;124mSince there is one additional hole there are two more distinct cycles. [39m[38;5;124m"[39m
+[0;32m   (...)[0m
+[1;32m     12[0m     [38;5;124m"[39m[38;5;124mso the degeneracy increases from 4 to 8.[39m[38;5;124m"[39m,
+[1;32m     13[0m ]
+[1;32m     15[0m explanation [38;5;241m=[39m (
+[1;32m     16[0m     [38;5;124m"[39m[38;5;124mThe additional hole introduces the possibility of 2 values of parity on each extra cycle. This adds a [39m[38;5;124m"[39m
+[1;32m     17[0m     [38;5;124m"[39m[38;5;124mfactor of $2 [39m[38;5;130;01m\\[39;00m[38;5;124mtimes 2=4$.[39m[38;5;124m"[39m
+[1;32m     18[0m )
+[0;32m---> 20[0m [43mMultipleChoice[49m(
+[1;32m     21[0m     question[38;5;241m=[39mquestion, answers[38;5;241m=[39manswers, correct_answer[38;5;241m=[39m[38;5;241m1[39m, explanation[38;5;241m=[39mexplanation
+[1;32m     22[0m )
+
+[0;31mNameError[0m: name 'MultipleChoice' is not defined
+

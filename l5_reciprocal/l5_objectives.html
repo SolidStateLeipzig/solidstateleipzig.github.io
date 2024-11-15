@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Example problem &#8212; My sample book</title>
+    <title>&lt;no title&gt; &#8212; My sample book</title>
   
   
   
@@ -57,11 +57,9 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'l3_groups/l3_problem';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'l5_reciprocal/l5_objectives';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lecture objectives" href="../l4_structure/l4_objectives.html" />
-    <link rel="prev" title="Experimental method" href="l3_method.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,6 +121,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -196,12 +196,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../l2_symmetry/l2_problem.html">Example problem</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 3 - Systematics of crystals - symmetry groups</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="l3_objectives.html">Learning objectives</a></li>
-<li class="toctree-l1"><a class="reference internal" href="l3_definitions.html">Main definitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="l3_content.html">Content of lecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="l3_method.html">Experimental method</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example problem</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_objectives.html">Learning objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_definitions.html">Main definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_problem.html">Example problem</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 4 - Unpacking the crystal structure</span></p>
 <ul class="nav bd-sidenav">
@@ -281,7 +281,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fl3_groups/l3_problem.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fl5_reciprocal/l5_objectives.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -311,7 +311,7 @@
       
       
       
-      <li><a href="../_sources/l3_groups/l3_problem.md" target="_blank"
+      <li><a href="../_sources/l5_reciprocal/l5_objectives.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -382,7 +382,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -393,11 +395,19 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Example problem</h1>
+    <h1><no title></h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -407,47 +417,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="example-problem">
-<h1>Example problem<a class="headerlink" href="#example-problem" title="Link to this heading">#</a></h1>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">question</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="s2">&quot;How would the topological degeneracy of the ground state that comes from the loop configurations &quot;</span>
-    <span class="s2">&quot;change if we put it on a torus (donut) with two holes?&quot;</span>
-<span class="p">)</span>
-
-<span class="n">answers</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">&quot;Since there is still an infinite number of loop configurations, the degeneracy would be infinite.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Since there is one additional hole there are two more distinct cycles. &quot;</span>
-    <span class="s2">&quot;So  the number of ground states increases by a factor of 4.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;It still remains 4 since the loops is topologically forbidden from going around the extra loops.&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;Since there is one additional hole the loops can go around this hole an even or an odd number of time, &quot;</span>
-    <span class="s2">&quot;so the degeneracy increases from 4 to 8.&quot;</span><span class="p">,</span>
-<span class="p">]</span>
-
-<span class="n">explanation</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="s2">&quot;The additional hole introduces the possibility of 2 values of parity on each extra cycle. This adds a &quot;</span>
-    <span class="s2">&quot;factor of $2 </span><span class="se">\\</span><span class="s2">times 2=4$.&quot;</span>
-<span class="p">)</span>
-
-<span class="n">MultipleChoice</span><span class="p">(</span>
-    <span class="n">question</span><span class="o">=</span><span class="n">question</span><span class="p">,</span> <span class="n">answers</span><span class="o">=</span><span class="n">answers</span><span class="p">,</span> <span class="n">correct_answer</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">explanation</span><span class="o">=</span><span class="n">explanation</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><h4>How would the topological degeneracy of the ground state that comes from the loop configurations change if we put it on a torus (donut) with two holes?</h4><form><input type="radio" name="answer" value="Since there is still an infinite number of loop configurations, the degeneracy would be infinite.">Since there is still an infinite number of loop configurations, the degeneracy would be infinite.<br><input type="radio" name="answer" value="Since there is one additional hole there are two more distinct cycles. So  the number of ground states increases by a factor of 4.">Since there is one additional hole there are two more distinct cycles. So  the number of ground states increases by a factor of 4.<br><input type="radio" name="answer" value="It still remains 4 since the loops is topologically forbidden from going around the extra loops.">It still remains 4 since the loops is topologically forbidden from going around the extra loops.<br><input type="radio" name="answer" value="Since there is one additional hole the loops can go around this hole an even or an odd number of time, so the degeneracy increases from 4 to 8.">Since there is one additional hole the loops can go around this hole an even or an odd number of time, so the degeneracy increases from 4 to 8.<br></form>
-<button title="Click to show/hide content" type="button"
-onclick="if(document.getElementById('QLD2ojuW8Tof2sAZ_72u7XY4KEw')
- .style.display=='none') {document.getElementById('QLD2ojuW8Tof2sAZ_72u7XY4KEw')
- .style.display=''}else{document.getElementById('QLD2ojuW8Tof2sAZ_72u7XY4KEw')
- .style.display='none'}">Show answer</button>
-
-<div id="QLD2ojuW8Tof2sAZ_72u7XY4KEw" style="display:none">The correct answer is: <br>Since there is one additional hole there are two more distinct cycles. So  the number of ground states increases by a factor of 4.<br><i>The additional hole introduces the possibility of 2 values of parity on each extra cycle. This adds a factor of $2 \times 2=4$.</i></div></div></div>
-</div>
-</section>
-
+  
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -461,7 +431,7 @@ onclick="if(document.getElementById('QLD2ojuW8Tof2sAZ_72u7XY4KEw')
         },
         kernelOptions: {
             name: "python3",
-            path: "./l3_groups"
+            path: "./l5_reciprocal"
         },
         predefinedOutput: true
     }
@@ -478,30 +448,27 @@ onclick="if(document.getElementById('QLD2ojuW8Tof2sAZ_72u7XY4KEw')
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="l3_method.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Experimental method</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../l4_structure/l4_objectives.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Lecture objectives</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
