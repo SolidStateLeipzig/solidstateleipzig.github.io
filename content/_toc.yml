@@ -44,6 +44,15 @@ parts:
   - file: l5_reciprocal/l5_method.md
   - file: l5_reciprocal/l5_problem.md
 
+- caption: Lecture 6 - Structure factor - all shades of diffraction
+  chapters:
+  - file: l6_factor/l6_objectives.md
+  - file: l6_factor/l6_definitions.md
+  - file: l6_factor/l6_content.md
+  - file: l6_factor/l6_method.md
+  - file: l6_factor/l6_problem.md
+
+
 
   
 

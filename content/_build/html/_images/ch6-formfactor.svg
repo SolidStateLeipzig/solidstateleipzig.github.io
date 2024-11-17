@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="546.66669"
+   height="176"
+   viewBox="0 0 546.66669 176"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <g
+     id="g8"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,176)">
+    <g
+       id="g10"
+       transform="scale(0.1)">
+      <path
+         d="M 26.457,42.7656 C 269.664,43.7891 369.531,146.707 532.707,252.773 830.832,446.52 1407.39,102.148 1780.52,72.7734"
+         style="fill:none;stroke:#00a650;stroke-width:22.6772;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path12" />
+      <path
+         d="M 2179.45,1027.5 C 2323.9,260.461 2574.63,122.504 3857.11,67.9883"
+         style="fill:none;stroke:#00a650;stroke-width:22.6772;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path14" />
+      <path
+         d="M 21.8164,1145.18 C 313.441,195.102 870.121,115.004 1787.37,73.9102"
+         style="fill:none;stroke:#f47216;stroke-width:22.6772;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path16" />
+      <g
+         id="g18"
+         transform="scale(10)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.999998,-0.00183447,-0.00183447,-0.999998,24.4023,74.798)"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-size:8.99987px;font-family:Calibri;-inkscape-font-specification:Calibri-NormalItalic;writing-mode:lr-tb;fill:#f47216;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text24"><tspan
+             x="0 4.3019366 6.3719058 10.673842 14.417788 17.432743 20.519697 25.136629 29.76256 31.79653 36.422462 40.7244 45.35033 48.85128 50.921249 53.936203"
+             y="0"
+             id="tspan20">electron density</tspan><tspan
+             x="261.41891 265.09235 267.84631 270.93326 275.5592"
+             y="19.805593"
+             id="tspan22">x-ray</tspan></text>
+      </g>
+      <g
+         id="g26"
+         transform="scale(10)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.999998,-0.00183447,-0.00183447,-0.999998,11.6945,29.1332)"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-size:8.99987px;font-family:Calibri;-inkscape-font-specification:Calibri-NormalItalic;writing-mode:lr-tb;fill:#0994dc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text34"><tspan
+             x="0 4.6259317 9.2518635 12.995809 15.065778 19.367714 23.993647"
+             y="0"
+             id="tspan28">nuclear</tspan><tspan
+             x="367.30688 371.9328 376.23474 380.86069 383.87564 386.96259 391.57953"
+             y="-72.287575"
+             id="tspan30">neutron</tspan><tspan
+             x="365.4902 368.21716 372.84308 377.46902 381.21295 383.28293 387.58487 392.21078 395.29776"
+             y="-63.498692"
+             id="tspan32">(nuclear)</tspan></text>
+      </g>
+      <g
+         id="g36"
+         transform="scale(10)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.999998,-0.00183447,-0.00183447,-0.999998,227.268,18.8137)"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-size:8.99987px;font-family:Calibri;-inkscape-font-specification:Calibri-NormalItalic;writing-mode:lr-tb;fill:#00a650;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text44"><tspan
+             x="0 4.6259317 8.9278679 13.5538 16.568756 19.65571 24.272642"
+             y="0"
+             id="tspan38">neutron</tspan><tspan
+             x="-5.3170881 -2.5901287 4.5287662 9.1546984 13.78063 18.406561 22.662258 25.677214 27.747183 31.491127"
+             y="8.7886772"
+             id="tspan40">(magnetic)</tspan><tspan
+             x="-106.54205 -103.04111 -98.415176 -96.345207 -91.719276 -89.685303 -85.059372 -80.757439 -76.131508 -72.630554 -70.560585 -67.545631"
+             y="-8.351017"
+             id="tspan42">spin density</tspan></text>
+      </g>
+      <g
+         id="g46"
+         transform="scale(10)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.999998,-0.00183447,-0.00183447,-0.999998,222.879,125.098)"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-size:8.99987px;font-family:Calibri;-inkscape-font-specification:Calibri-NormalItalic;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text52"><tspan
+             x="0 2.7449596 5.4719191 10.097851"
+             y="0"
+             id="tspan48">f(q)</tspan><tspan
+             x="182.84694"
+             y="122.92996"
+             id="tspan50">q</tspan></text>
+      </g>
+      <path
+         d="M 2176.62,1024.67 C 2522.09,598.875 3033,271.543 3858.52,115.777"
+         style="fill:none;stroke:#f47216;stroke-width:22.6772;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path54" />
+      <path
+         d="M 2171.01,1027.95 H 3745.06"
+         style="fill:none;stroke:#00adef;stroke-width:22.6772;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path56" />
+      <path
+         d="M 2172.87,1273.08 V 34.2031 h 1828.57"
+         style="fill:none;stroke:#231f20;stroke-width:8.4983;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path58" />
+      <path
+         d="m 2172.87,1298.86 13.06,-26.12 h -26.13 z"
+         style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path60" />
+      <path
+         d="M 4027.22,34.2031 4001.1,47.2656 V 21.1367 Z"
+         style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path62" />
+      <g
+         id="g64"
+         transform="scale(10)">
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,190.766,1.77695)"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-size:8.99986px;font-family:Calibri;-inkscape-font-specification:Calibri-NormalItalic;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text68"><tspan
+             x="0"
+             y="0"
+             id="tspan66">r</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,8.157,124.96495)"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-size:8.99986px;font-family:Arial;-inkscape-font-specification:ArialMT-NormalItalic;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text72"><tspan
+             x="0 5.1554718 8.1524248 11.149379"
+             y="0"
+             id="tspan70">ρ(r)</tspan></text>
+      </g>
+      <path
+         d="M 24.3906,1041.29 C 110.012,876.289 -57.4844,36.2891 241.891,40.0391 L 1787.83,39.1016"
+         style="fill:none;stroke:#0994dc;stroke-width:22.6772;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path74" />
+      <path
+         d="M 21.1133,1276.09 V 37.2109 H 1849.69"
+         style="fill:none;stroke:#231f20;stroke-width:8.4983;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path76" />
+      <path
+         d="m 21.1133,1301.88 13.0664,-26.13 H 8.05078 Z"
+         style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path78" />
+      <path
+         d="m 1875.47,37.2109 -26.13,13.0664 V 24.1484 Z"
+         style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path80" />
+    </g>
+  </g>
+</svg>
