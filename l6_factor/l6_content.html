@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Content of lecture &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'l6_factor/l6_content';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Experimental method" href="l6_method.html" />
+    <link rel="prev" title="Main deifinitions" href="l6_definitions.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Solid-State Physics lecture
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 1 - Bravais lattice, or how to pack a crystal?</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l1_bravais/l1_objectives.html">Learning objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l1_bravais/l1_definitions.html">Main definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l1_bravais/l1_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l1_bravais/l1_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l1_bravais/l1_problem.html">Example of problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 2 - Symmetry as the guiding principle</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l2_symmetry/l2_objectives.html">Learning objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l2_symmetry/l2_definitions.html">Main definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l2_symmetry/l2_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l2_symmetry/l2_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l2_symmetry/l2_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 3 - Systematics of crystals - symmetry groups</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_objectives.html">Learning objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_definitions.html">Main definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 4 - Unpacking the crystal structure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_objectives.html">Lecture objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_definitions.html">Main definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_content.html">Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 5 - Spaces of crystallography - Reciprocal lattice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l5_reciprocal/l5_objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l5_reciprocal/l5_definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l5_reciprocal/l5_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l5_reciprocal/l5_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l5_reciprocal/l5_problem.html">Example of problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 6 - Structure factor - all shades of diffraction</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="l6_objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="l6_definitions.html">Main deifinitions</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="l6_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="l6_problem.html">Example problem</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fl6_factor/l6_content.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/l6_factor/l6_content.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Content of lecture</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-factor">Structure factor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-approximation">Atomic approximation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extinction-condition">Extinction condition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-strucutre-determination">Crystal strucutre determination</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-form-factors">Atomic form factors</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="content-of-lecture">
+<h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
+<section id="structure-factor">
+<h2>Structure factor<a class="headerlink" href="#structure-factor" title="Link to this heading">#</a></h2>
+<p>Reciprocal lattice serves as a connection between positions of Bragg peaks and lattice parameters of the crystal. Similarly, structure factor connects intensities of Bragg peaks to the atomic coordinates.</p>
+<p>To calculate intensity of a Bragg peak, we go back to Laue’s representation of the scattering process and take the scattering mechanism into account. Atoms are not point-like objects, and atoms are not scatterers <em>per se</em>. Instead, one should consider periodic scattering density <span class="math notranslate nohighlight">\(\rho(\mathbf{r})\)</span> that satisfies <span class="math notranslate nohighlight">\(\rho(\mathbf{r}+\mathbf{r})=\rho(\mathbf{r})\)</span> for every lattice vector <span class="math notranslate nohighlight">\(\mathbf{r}\)</span>.</p>
+<p>Every small volume element <span class="math notranslate nohighlight">\(\mathbf{dr}\)</span> scatters the incident wave. The phase of the scattered wave depends on the position of <span class="math notranslate nohighlight">\(\mathbf{dr}\)</span> inside the crystal. Indeed, from Laue’s argument (Ch.~\ref{sec:laue}) the path difference for a given position <span class="math notranslate nohighlight">\(\mathbf{r}\)</span> relative to the origin is</p>
+<div class="math notranslate nohighlight">
+\[
+ \frac{\lambda}{2\pi}\,\mathbf{r}(\mathbf{k}-\mathbf{k}')=\frac{\lambda}{2\pi}\,\mathbf{G}\,\mathbf{r}
+\]</div>
+<p>and the corresponding phase shift is <span class="math notranslate nohighlight">\(\Delta\varphi=\mathbf{G}\,\mathbf{r}\)</span> where <span class="math notranslate nohighlight">\(\mathbf{G}\)</span> is a reciprocal-lattice vector. The scattered wave is obtained by integrating such phase shifts over the unit cell, taking into account <span class="math notranslate nohighlight">\(\rho(\mathbf{r})\)</span> as the concentration of scatterers in a given position <span class="math notranslate nohighlight">\(\mathbf{r}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+ e^{i(\mathbf{k}'\tilde{\mathbf{r}}-\omega t)}\cdot\int \rho(\mathbf{r})\,e^{i\mathbf{G}\mathbf{r}}\,\mathbf{dr}=e^{i(\mathbf{k}'\tilde{\mathbf{r}}-\omega t)}\,F(\mathbf{G})
+\]</div>
+<p>where the newly introduced \emph{structure factor} <span class="math notranslate nohighlight">\(F(\mathbf{G})\)</span> is the amplitude of the scattered wave that travels away from the crystal into some arbitrary position <span class="math notranslate nohighlight">\(\tilde{\mathbf{r}}\)</span>. Intensity is proportional to the squared amplitude,</p>
+<div class="math notranslate nohighlight" id="equation-eq-strfactor">
+<span class="eqno">(14)<a class="headerlink" href="#equation-eq-strfactor" title="Link to this equation">#</a></span>\[
+ I(\mathbf{G})\sim |F(\mathbf{G})|^2,\qquad F(\mathbf{G})=\int\limits_{\rm UC} \rho(\mathbf{r})\,e^{i\mathbf{G}\mathbf{r}}\,\mathbf{dr}.
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Experimentally, intensity depends on the exposure time and can be defined up to a scale factor, only.</p>
+</div>
+<p>Considering the periodicity of <span class="math notranslate nohighlight">\(\rho(\mathbf{r})\)</span>, it is sufficient to integrate over the unit cell (UC) when calculating <span class="math notranslate nohighlight">\(F(\mathbf{G})\)</span>, because other unit cells will simply lead to an additional pre-factor, which should be the same for every reflection.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An adverse consequence of this multiplication is that <span class="math notranslate nohighlight">\(F(\mathbf{G})\)</span> and <span class="math notranslate nohighlight">\(I(\mathbf{G})\)</span> go to infinity in thermodynamic limit (for an infinite crystal). This is the drawback of the kinematic theory that neglects multiple scattering, although, as a matter of fact, a scattered wave should scatter again, and again, and again when the crystal is infinite. Such a multiple scattering is taken into account in the <a class="reference external" href="http://doi.org/10.1107/S0108767311040219">dynamic theory of diffraction</a> that we will not consider here because for many practical purposes the kinematic theory suffices.}</p>
+</div>
+<p>It is instructive to compare the structure factor, Eq. <a class="reference internal" href="#equation-eq-strfactor">(14)</a>, with the Fourier decomposition of the scattering density,</p>
+<div class="math notranslate nohighlight">
+\[
+ \rho(\mathbf{r})=\sum_{\mathbf{G}}\rho_{\mathbf{G}}\,e^{i\mathbf{G}\mathbf{r}},\qquad \rho_{\mathbf{G}}=\frac{1}{V}\int \rho(\mathbf{r})\,e^{i\mathbf{G}\mathbf{r}}\,\mathbf{dr},
+\]</div>
+<p>where we restricted the summation to the reciprocal-lattice vectors <span class="math notranslate nohighlight">\(\mathbf{G}\)</span> because <span class="math notranslate nohighlight">\(\rho(\mathbf{r})\)</span> is periodic in direct space. In fact, structure factor is merely the Fourier component of the scattering density, up to a pre-factor.</p>
+</section>
+<section id="atomic-approximation">
+<h2>Atomic approximation<a class="headerlink" href="#atomic-approximation" title="Link to this heading">#</a></h2>
+<p>Strictly speaking, it is not necessary to think of atoms when we calculate <span class="math notranslate nohighlight">\(F(\mathbf{G})\)</span>, but life becomes easier when we do, namely, when the scattering density <span class="math notranslate nohighlight">\(\rho(\mathbf{r})\)</span> is represented as a superposition of scattering densities <span class="math notranslate nohighlight">\(\rho_j(\mathbf{r}')\)</span> from individual atoms. Consider <span class="math notranslate nohighlight">\(j=1,\ldots N\)</span> atoms located at the positions <span class="math notranslate nohighlight">\(\mathbf{r}_1,\ldots \mathbf{r}_N\)</span> within the unit cell. By introducing the volume element <span class="math notranslate nohighlight">\(\mathbf{dr}'\)</span> within an atom, we represent <span class="math notranslate nohighlight">\(\mathbf{r}=\mathbf{r}_j+\mathbf{r}'\)</span> (Fig.~\ref{fig:atoms}) and re-write the structure factor as a sum over individual atoms,</p>
+<div class="math notranslate nohighlight" id="equation-eq-strfactor-2">
+<span class="eqno">(15)<a class="headerlink" href="#equation-eq-strfactor-2" title="Link to this equation">#</a></span>\[
+ F(\mathbf{G})=\int \rho(\mathbf{r})\,e^{i\mathbf{G}\mathbf{r}}\,\mathbf{dr}=\sum_{j=1}^N\,\,e^{i\mathbf{G}\mathbf{r}_j}\int\limits_{\rm atom} \rho_j(\mathbf{r}')\,e^{i\mathbf{G}\mathbf{r}'}\mathbf{dr}'=\sum_{j=1}^N f_j(\mathbf{G})\,e^{i\mathbf{G}\mathbf{r}_j}.\]</div>
+<p>Here, we introduced the <strong>atomic form factor</strong> <span class="math notranslate nohighlight">\(f_j(\mathbf{G})\)</span> that describes the scattering of the wave by a given atom <span class="math notranslate nohighlight">\(j\)</span> in the direction of <span class="math notranslate nohighlight">\(\mathbf{G}\)</span>.</p>
+<figure class="align-default" id="fig-atoms">
+<img alt="../_images/ch6-atoms.svg" src="../_images/ch6-atoms.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Scattering density of the crystal, <span class="math notranslate nohighlight">\(\rho(\mathbf{r})\)</span>, is represented as a superposition of the scattering densities of individual atoms, <span class="math notranslate nohighlight">\(\rho_j(\mathbf{r}')\)</span>, with the vector <span class="math notranslate nohighlight">\(\mathbf{r}\)</span> decomposed into <span class="math notranslate nohighlight">\(\mathbf{r}_1+\mathbf{r}'\)</span>.</span><a class="headerlink" href="#fig-atoms" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>To a first approximation, any given atom scatters waves in the same way regardless of the chemical environment of this atom. Then the same set of atomic form factors can be used for all crystals, and the variation of the Bragg peak intensity with <span class="math notranslate nohighlight">\(\mathbf{G}\)</span> arises from two ingredients:</p>
+<ul class="simple">
+<li><p><em>material-specific:</em> positions of atoms <span class="math notranslate nohighlight">\(\mathbf{r}_j\)</span> within the unit cell</p></li>
+<li><p><em>generic:</em> angular dependence of the scattering by a given atom, as defined by <span class="math notranslate nohighlight">\(f_j(\mathbf{G})\)</span>, regardless of the exact nature of the crystal</p></li>
+</ul>
+</section>
+<section id="extinction-condition">
+<h2>Extinction condition<a class="headerlink" href="#extinction-condition" title="Link to this heading">#</a></h2>
+<p>The structure factor defined by Eq. <a class="reference internal" href="#equation-eq-strfactor">(14)</a> reflects the arrangement of atoms inside the crystal. Experimental structure factors can be used to determine atomic positions, as we will further discuss in Ch.~\ref{sec:structure-determination}. Interestingly, using only a simple maths one can draw some conclusions on the symmetry of the crystal when lattice centering (Ch.~\ref{sec:centering}) or open symmetry elements (Ch.~\ref{sec:open}) connect different atoms therein.</p>
+<p>i) Lattice centering. Consider a body-centered crystal structure with the lattice translation of <span class="math notranslate nohighlight">\(\mathbf{t}=\frac12(\mathbf{a}+\mathbf{b}+\mathbf{c})\)</span>. Then an atom located at <span class="math notranslate nohighlight">\((x,y,z)\)</span> has a counterpart at <span class="math notranslate nohighlight">\((x+\frac12,y+\frac12,z+\frac12)\)</span>. Using the standard representation <span class="math notranslate nohighlight">\(\mathbf{G}=h\mathbf{a}^*+k\mathbf{b}^*+l\mathbf{c}^*\)</span>, one finds</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathbf{G}\,\mathbf{r}_j=(h\mathbf{a}^*+k\mathbf{b}^*+l\mathbf{c}^*)(x_j\mathbf{a}+y_j\mathbf{b}+z_j\mathbf{c})=2\pi(hx_j+ky_j+lz_j)
+\]</div>
+<p>(note an immediate advantage of fractional atomic coordinates in conjunction with the reciprocal lattice!) We can now write the structure factor as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+ F(\mathbf{G})= \sum_{j=1}^N f_j(\mathbf{G})\,e^{i\mathbf{G}\mathbf{r}_j}= &amp;\sum_{j=1}^{N/2} f_j(\mathbf{G})\left[ e^{2\pi i(hx_j+ky_j+lz_j)} + e^{2\pi i \left[ h(x_j+\frac12) + k(y_j+\frac12) + l(z_j+\frac12)\right]} \right] \notag\\
+ = &amp; \sum_{j=1}^{N/2} f_j(\mathbf{G})\,e^{2\pi i(hx_j+ky_j+lz_j)} \left[ 1+e^{\pi i(h+k+l)} \right]
+\end{align}
+\end{split}\]</div>
+<p>The expression in square brackets can be either 0 or 2 depending on whether <span class="math notranslate nohighlight">\(h+k+l\)</span> is odd or even, respectively. We thus see that lattice centering defines a special rule for the reflection intensities. Only reflections with <span class="math notranslate nohighlight">\(h+k+l=2n\)</span> (even) are observed. This is the <strong>reflection condition</strong> for a body-centered crystal. The systematic absence of reflections is known as an <strong>extinction</strong>, so we could also introduce an extinction condition <span class="math notranslate nohighlight">\(h+k+l=2n+1\)</span> (odd).</p>
+<p>ii) Open symmetry elements. Glide planes and screw axes cause their own extinctions. Consider the glide plane <span class="math notranslate nohighlight">\(a\perp\mathbf{c}\)</span>. It leads to the transformation <span class="math notranslate nohighlight">\((x,y,z)\rightarrow (x+\frac12,y,\bar z)\)</span>. Then the structure factor becomes</p>
+<div class="math notranslate nohighlight">
+\[
+  F(\mathbf{G})=\sum_{j=1}^{N/2} f_j(\mathbf{G})\left[ e^{2\pi i(hx_j+ky_j+lz_j)} + e^{2\pi i \left[ h(x_j+\frac12) + ky_j-lz_j\right]} \right].
+\]</div>
+<p>This expression does not look very spectacular, but it becomes simpler in the special case of <span class="math notranslate nohighlight">\(l=0\)</span>. Then,</p>
+<div class="math notranslate nohighlight">
+\[
+ F_{hk0}= \sum_{j=1}^{N/2} f_j(hk0)\,e^{2\pi i(hx_j+ky_j)} \left[ 1+e^{\pi ih} \right]
+\]</div>
+<p>and we expect the reflection condition <span class="math notranslate nohighlight">\(hk0, h=2n\)</span> for the <span class="math notranslate nohighlight">\(a\)</span>-glide plane perpendicular to <span class="math notranslate nohighlight">\(\mathbf{c}\)</span>.</p>
+<p>Reflection conditions for a given space group can be obtained from the <a class="reference external" href="https://cryst.ehu.es/cryst/get_hkl.html">HKLCOND</a> utility at the Bilbao Server. By analyzing extinctions, crystal symmetry can be determined or, more precisely, narrowed down to a list of possible space groups.</p>
+<p>More generally, one can see the reflection (extinction) conditions as a manifestation of the periodicity. The reciprocal lattice defined using three lattice vectors, Eq. <a class="reference internal" href="../l5_reciprocal/l5_content.html#equation-eq-recdef">(12)</a>, corresponds to the situation when no additional translations are allowed. Crystals with lattice centering have a shorter periodicity indicated by the primitive cell, so their reciprocal lattices should be more sparse. This effect is achieved by removing some of the reciprocal-lattice points via extinctions. For example, reciprocal lattice of a bcc lattice is an fcc lattice with the periodicity of <span class="math notranslate nohighlight">\(4\pi/a\)</span>.</p>
+</section>
+<section id="crystal-strucutre-determination">
+<h2>Crystal strucutre determination<a class="headerlink" href="#crystal-strucutre-determination" title="Link to this heading">#</a></h2>
+<p>Crystal structures are determined from diffraction experiments that involve an accurate measurement of both position and intensity for every Bragg peak. The structure solution includes three consecutive steps:</p>
+<ul class="simple">
+<li><p><em>indexing</em> of the Bragg peaks, finding lattice parameters from the peak positions</p></li>
+<li><p><em>analyzing</em> extinctions in order to determine the crystal symmetry</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>More precisely, lattice centering can be determined, and a subset of possible space groups defined. Space groups that contain neither lattice centering nor open symmetry elements do not have any reflection conditions and can not be distinguished in this way.</p>
+</div>
+<ul class="simple">
+<li><p><em>finding</em> a structural model that gives the best fit to the experimental Bragg peak intensities</p></li>
+</ul>
+<p>The principal advantage of the diffraction methods is that many Bragg peaks can be measured in order to determine atomic positions with a very high accuracy. A typical diffraction experiment covers thousands of Bragg peaks, and interatomic distances are determined with an uncertainty of less than 0.01,\r A. Such a high spatial resolution is only possible with the reciprocal-space technique (measurement of Bragg peaks in the reciprocal space) and can not be matched by the direct-space imaging with electron microscopy (Ch.~\ref{sec:microscopy}).</p>
+</section>
+<section id="atomic-form-factors">
+<h2>Atomic form factors<a class="headerlink" href="#atomic-form-factors" title="Link to this heading">#</a></h2>
+<p>From Eq. <a class="reference internal" href="#equation-eq-strfactor-2">(15)</a>, atomic form factor is defined as the Fourier-transformed scattering density <span class="math notranslate nohighlight">\(\rho(\mathbf{r})\)</span> of a single atom,</p>
+<div class="math notranslate nohighlight" id="equation-eq-formfactor">
+<span class="eqno">(16)<a class="headerlink" href="#equation-eq-formfactor" title="Link to this equation">#</a></span>\[
+ f(\mathbf{q})=\int\rho(\mathbf{r})\,e^{i\mathbf{q}\mathbf{r}}\,\mathbf{dr}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathbf{q}\)</span> is a vector in the reciprocal space (the vectors <span class="math notranslate nohighlight">\(\mathbf{q}\)</span> are no longer restricted to the reciprocal-lattice vectors <span class="math notranslate nohighlight">\(\mathbf{G}\)</span>, because atom is not periodic). Spherical symmetry of an atom implies that <span class="math notranslate nohighlight">\(f\)</span> depends only on <span class="math notranslate nohighlight">\(|\mathbf{q}|\)</span> and not on the direction of <span class="math notranslate nohighlight">\(\mathbf{q}\)</span>. It is then customary to represent <span class="math notranslate nohighlight">\(|\mathbf{q}|\)</span> as <span class="math notranslate nohighlight">\(2\pi/d\)</span> similar to Ch.~\ref{sec:recbragg} and consider <span class="math notranslate nohighlight">\(1/d\sim \sin\theta/\lambda\)</span> from Bragg’s law. Therefore, atomic form factors are tabulated as a function of <span class="math notranslate nohighlight">\(\sin\theta/\lambda\)</span>, measured in \r A<span class="math notranslate nohighlight">\(^{-1}\)</span>. They can be found in the International Tables for Crystallography and <a class="reference external" href="http://lampx.tugraz.at/~hadley/ss1/crystaldiffraction/atomicformfactors/formfactors.php">on the web</a>.</p>
+<figure class="align-default" id="fig-formfactor">
+<img alt="../_images/ch6-formfactor.svg" src="../_images/ch6-formfactor.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Scattering densities (left) and the resulting atomic form factors (right) for the x-ray and neutron scattering. Different densities are not drawn to the scale. Spin density is typically associated with the <span class="math notranslate nohighlight">\(d\)</span>- and <span class="math notranslate nohighlight">\(f\)</span>-atomic orbitals that have nodes at <span class="math notranslate nohighlight">\(r=0\)</span>.</span><a class="headerlink" href="#fig-formfactor" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The scattering density in Eq. <a class="reference internal" href="#equation-eq-formfactor">(16)</a> depends on the nature of the wave being scattered. Several cases are of special importance (<a class="reference internal" href="#fig-formfactor"><span class="std std-numref">Fig. 13</span></a>):</p>
+<ul class="simple">
+<li><p><em>x-rays</em> are scattered by electrons, so <span class="math notranslate nohighlight">\(\rho(\mathbf{r})\)</span> is electron density that gradually decreases away from the atom. Then <span class="math notranslate nohighlight">\(f(\mathbf{q})\)</span> is also a slowly decreasing function. Larger values of <span class="math notranslate nohighlight">\(|\mathbf{q}|\)</span> correspond to smaller values of <span class="math notranslate nohighlight">\(d_{hkl}\)</span> that, in turn, correspond to the higher angles <span class="math notranslate nohighlight">\(\theta\)</span>. Therefore, one sees lower intensities in XRD patterns at high angles</p></li>
+<li><p><em>neutrons</em> are scattered by the atomic nuclei, which are very small. Then, <span class="math notranslate nohighlight">\(\rho(\mathbf{r})\)</span> looks more like a <span class="math notranslate nohighlight">\(\delta\)</span>-function, while its Fourier transform is a constant. In a neutron diffraction experiment, reflection intensities only weakly depend on the angle <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
+<li><p><em>neutrons</em> are also scattered by the spin density, namely, by valence electrons with an unpaired spin. This is the primary experimental tool for studying magnetic order in crystals. The corresponding magnetic form factor decreases even faster than the x-ray one because only valence electrons are involved, so magnetic Bragg peaks are observed at low angles only</p></li>
+<li><p><em>electrons</em> are scattered by other electrons, so their <span class="math notranslate nohighlight">\(f(\mathbf{q})\)</span> is similar to that of x-rays. The intensities decrease with the angle. However, electrons are impatient and will usually scatter several times as they travel through the crystal. Intensities of Bragg peaks in electron diffraction are, therefore, strongly affected by multiple scattering.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./l6_factor"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="l6_definitions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Main deifinitions</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="l6_method.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Experimental method</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-factor">Structure factor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-approximation">Atomic approximation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extinction-condition">Extinction condition</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crystal-strucutre-determination">Crystal strucutre determination</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#atomic-form-factors">Atomic form factors</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
