@@ -52,6 +52,14 @@ parts:
   - file: l6_factor/l6_method.md
   - file: l6_factor/l6_problem.md
 
+- caption: Lecture 7 - Bonding in crystals - ionic
+  chapters:
+  - file: l7_ionic/l7_objectives.md
+  - file: l7_ionic/l7_definitions.md
+  - file: l7_ionic/l7_content.md
+  - file: l7_ionic/l7_method.md
+  - file: l7_ionic/l7_problem.md
+
 
 
   
