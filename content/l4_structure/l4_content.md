@@ -83,7 +83,7 @@ The setup described by Bragg's law is an example of a scattering experiment. One
 * **elastic scattering** where the scattered beam has the same energy as the incident beam
 * \emph{inelastic scattering} where some energy is exchanged between the incident beam and the crystal
 
-Elastic scattering is resolved in the angle $2\theta$. When Bragg peaks in the sense of Eq. {eq}`eq-bragg` are observed, this experiment is called **diffraction**. Inelastic scattering can be resolved in both angle $\theta$ and energy transfer $\mathbb{E}$. This experiment is in fact similar to spectroscopy, although spectroscopy is a somewhat broader term that also includes experiments that are done at the fixed scattering angle and resolved in energy, only.
+Elastic scattering is resolved in the angle $2\theta$. When Bragg peaks in the sense of Eq. {eq}`eq-bragg` are observed, this experiment is called **diffraction**. Inelastic scattering can be resolved in both angle $\theta$ and energy transfer $\mathcal{E}$. This experiment is in fact similar to spectroscopy, although spectroscopy is a somewhat broader term that also includes experiments that are done at the fixed scattering angle and resolved in energy, only.
 
 Scattering experiments can be done with any kind of waves. We will see such examples later in these lecture notes, but for now our favorite type will be x-rays because their wavelength is matched to the typical interatomic distances and lattice parameters. Other types of radiation can be neutrons and electrons, as we will see in Ch.~\ref{sec:diffraction}.
 
