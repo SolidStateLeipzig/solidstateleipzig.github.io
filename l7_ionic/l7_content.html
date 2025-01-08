@@ -471,70 +471,78 @@ document.write(`
 </div>
 <p>The cohesive and lattice energies are equal for metallic crystals and for simple covalent crystals like diamond. However, they are very different in molecular crystals where molecules formed by covalent bonds are held together by van der Waals bonds. In this case, only lattice energy is the relevant energy scale because it shows the energy cost of breaking the crystal into individual molecules (think of sublimation of iodine into a gas of <span class="math notranslate nohighlight">\(I_2\)</span> molecules). A somewhat similar situation occurs in ionic crystals. Compare</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
+\[ \begin{align}\begin{aligned}\begin{split}
 \begin{align*}
- {\rm AB}_{(s)}+\en_{\rm coh}\ &amp; \longrightarrow\ \ {\rm A}_{(g)} + {\rm B}_{(g)},  \smallskip\\
- {\rm AB}_{(s)}+\en_{\rm lat}\ &amp; \longrightarrow\ \ {\rm A}^+_{(g)} + {\rm B}^-_{(g)} 
-\end{align*}\end{split}\]</div>
+ {\rm AB}_{(s)}+\mathcal{E}_{\rm coh}\ &amp; \longrightarrow\ \ {\rm A}_{(g)} + {\rm B}_{(g)},  \\
+ {\rm AB}_{(s)}+\mathcal{E}_{\rm lat}\ &amp; \longrightarrow\ \ {\rm A}^+_{(g)} + {\rm B}^-_{(g)} \end{split}\\\end{align*}\end{aligned}\end{align} \]</div>
 <p>where the subscripts <span class="math notranslate nohighlight">\((s)\)</span> and <span class="math notranslate nohighlight">\((g)\)</span> denote the solid and gas states, respectively.</p>
-<p>Lattice energies are obtained from \emph{calorimetry experiments} where the amount of heat released or absorbed in a given process is measured. Sublimation enthalpy of a metallic, covalent, or molecular crystal is a direct measure of its lattice energy.\footnote{In thermochemistry, enthalpies are commonly used instead of energies because measurements are performed at a constant pressure rather than constant volume. Then, strictly speaking, lattice \textit{enthalpy} is obtained. This difference is usually unimportant, since solids show only a minor difference between energy and enthalpy owing to the small thermal expansion, see also Ch.~\ref{sec:expansion}.} More often, though, the quantity measured in the experiment is the formation enthalpy <span class="math notranslate nohighlight">\(\Delta_fH\)</span>, which is neither cohesive nor lattice energy of the crystal:
-$<span class="math notranslate nohighlight">\( {\rm Na}_{(s)}+\tfrac12{\rm Cl}_2\,_{(g)}\ \longrightarrow\ \ {\rm NaCl}_{(s)}+\Delta_fH\)</span>$</p>
-<p>This formation enthalpy can be related to the lattice energy by considering all intermediate processes (Fig.~\ref{fig:born-haber}) and adding up relevant energies: sublimation energy of the Na metal, ionization potential of the Na atom, bond dissociation energy of the Cl<span class="math notranslate nohighlight">\(_2\)</span> molecule, and electron affinity of the Cl atom. All these quantities can be measured in separate experiments, and eventually lattice energy of NaCl can be obtained from <span class="math notranslate nohighlight">\(\Delta_fH\)</span> of NaCl. This method is known as the \emph{Born-Haber cycle}. Thermochemistry data can be found in multiple sources, such as \href{<a class="reference external" href="https://webbook.nist.gov/chemistry/">https://webbook.nist.gov/chemistry/</a>}{NIST Chemistry WebBook} and \href{<a class="reference external" href="https://hbcp.chemnetbase.com">https://hbcp.chemnetbase.com</a>}{CRC Handbook of Chemistry and Physics}.</p>
+<p>Lattice energies are obtained from <strong>calorimetry experiments</strong> where the amount of heat released or absorbed in a given process is measured. Sublimation enthalpy of a metallic, covalent, or molecular crystal is a direct measure of its lattice energy.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In thermochemistry, enthalpies are commonly used instead of energies because measurements are performed at a constant pressure rather than constant volume. Then, strictly speaking, lattice <em>enthalpy</em> is obtained. This difference is usually unimportant, since solids show only a minor difference between energy and enthalpy owing to the small thermal expansion, see also Ch.~\ref{sec:expansion}.</p>
+</div>
+<p>More often, though, the quantity measured in the experiment is the formation enthalpy <span class="math notranslate nohighlight">\(\Delta_fH\)</span>, which is neither cohesive nor lattice energy of the crystal:
+$<span class="math notranslate nohighlight">\( {\rm Na}_{(s)}+\tfrac12{\rm Cl}_{2(g)}\ \longrightarrow \ \ {\rm NaCl}_{(s)}+\Delta_fH\)</span>$</p>
+<p>This formation enthalpy can be related to the lattice energy by considering all intermediate processes (Fig.~\ref{fig:born-haber}) and adding up relevant energies: sublimation energy of the Na metal, ionization potential of the Na atom, bond dissociation energy of the Cl<span class="math notranslate nohighlight">\(_2\)</span> molecule, and electron affinity of the Cl atom. All these quantities can be measured in separate experiments, and eventually lattice energy of NaCl can be obtained from <span class="math notranslate nohighlight">\(\Delta_fH\)</span> of NaCl. This method is known as the <strong>Born-Haber cycle</strong>. Thermochemistry data can be found in multiple sources, such as <a class="reference external" href="https://webbook.nist.gov/chemistry/">NIST Chemistry WebBook</a> and <a class="reference external" href="https://hbcp.chemnetbase.com">CRC Handbook of Chemistry and Physics</a>.</p>
 <p>\begin{figure}
 \hspace{0.2cm}
 \begin{minipage}{8cm}
 \includegraphics[scale=1.15]{ch7-energy}
-\end{minipage}
+\mathcal{E}d{minipage}
 \hfill
 \begin{minipage}{7cm}
 \caption{\label{fig:energy-r}
-Crystal energy <span class="math notranslate nohighlight">\(\en_{\rm tot}\)</span> as a function of the interatomic distance <span class="math notranslate nohighlight">\(r\)</span>. Lattice parameters define the equilibrium value <span class="math notranslate nohighlight">\(r_0\)</span>, while the depth of the energy minimum is the lattice energy <span class="math notranslate nohighlight">\(\en_{\rm lat}\)</span>.
+Crystal energy <span class="math notranslate nohighlight">\(\mathcal{E}_{\rm tot}\)</span> as a function of the interatomic distance <span class="math notranslate nohighlight">\(r\)</span>. Lattice parameters define the equilibrium value <span class="math notranslate nohighlight">\(r_0\)</span>, while the depth of the energy minimum is the lattice energy <span class="math notranslate nohighlight">\(\mathcal{E}_{\rm lat}\)</span>.
 }
 \vspace{0.5cm}
-\end{minipage}
-\end{figure}</p>
-<p>It is also helpful to represent crystal energy as a function of an effective interatomic distance, <span class="math notranslate nohighlight">\(\en(r)\)</span>, as shown in Fig.~\ref{fig:energy-r}. Then the position of the energy minimum yields the equilibrium distance <span class="math notranslate nohighlight">\(r_0\)</span> and, consequently, the lattice parameter of the crystal. The depth of the minimum is the lattice energy <span class="math notranslate nohighlight">\(\en_{\rm lat}\)</span>.</p>
+\mathcal{E}d{minipage}
+\mathcal{E}d{figure}</p>
+<p>It is also helpful to represent crystal energy as a function of an effective interatomic distance, <span class="math notranslate nohighlight">\(\mathcal{E}(r)\)</span>, as shown in Fig.~\ref{fig:energy-r}. Then the position of the energy minimum yields the equilibrium distance <span class="math notranslate nohighlight">\(r_0\)</span> and, consequently, the lattice parameter of the crystal. The depth of the minimum is the lattice energy <span class="math notranslate nohighlight">\(\mathcal{E}_{\rm lat}\)</span>.</p>
 </section>
 <section id="madelung-constant">
 <h2>Madelung constant<a class="headerlink" href="#madelung-constant" title="Link to this heading">#</a></h2>
-<p>We will now concentrate on the ionic crystals and try to calculate <span class="math notranslate nohighlight">\(\en(r)\)</span>. To this end, we assume that the interatomic forces are Coulomb in nature and determine the electrostatic potential at a given site <span class="math notranslate nohighlight">\(i\)</span>,
-\be
-\mathcal V_i=\frac{e}{4\pi\eps_0}\sum_j\frac{z_j}{r_{ij}}
-\label{eq:ionic-potential}
-\ee
-where <span class="math notranslate nohighlight">\(z_j\)</span> is the ionic charge and <span class="math notranslate nohighlight">\(r_{ij}\)</span> is the distance between ions. This summation can be replaced with
-\be
-\mathcal V_i=\frac{e}{4\pi\eps_0}\frac{\alpha_i}{r}
-\ee
-where <span class="math notranslate nohighlight">\(r\)</span> stands for the nearest-neighbor distance and <span class="math notranslate nohighlight">\(\alpha_i\)</span> is the \emph{Madelung constant} for the site~<span class="math notranslate nohighlight">\(i\)</span>. This Madelung constant is defined for a given structure type and ionic charge and does not depend on the exact lattice parameter. Getting the actual values of <span class="math notranslate nohighlight">\(\alpha_i\)</span> is far from trivial because Coulomb interactions are long-range, and the series defined by Eq.~\eqref{eq:ionic-potential} is \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Conditional_convergence">https://en.wikipedia.org/wiki/Conditional_convergence</a>}{conditionally convergent}.\footnote{Some instructive examples of the conditional convergence of electrostatic energy in ionic crystals can be found \href{<a class="reference external" href="https://doi.org/10.1021/ed078p1198">https://doi.org/10.1021/ed078p1198</a>}{here} and \href{<a class="reference external" href="https://doi.org/10.1021/ed052p58">https://doi.org/10.1021/ed052p58</a>}{here}.} One practical approach to this problem is the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Ewald_summation">https://en.wikipedia.org/wiki/Ewald_summation</a>}{Ewald summation}.</p>
-<p>Coulomb energy of the crystal can be then written as
-\be
-\en_{\rm Coul}=\tfrac12\sum_i ez_i\mathcal V_i= \tfrac12\sum_i\frac{e^2z_i\alpha_i}{4\pi\eps_0r}
-\ee
-with the pre-factor <span class="math notranslate nohighlight">\(\frac12\)</span> to avoid double-counting. This summation will include several terms according to the number of different atomic positions in the crystal. In a simple AB crystal, symmetry requires that <span class="math notranslate nohighlight">\(\alpha_+=\alpha_-=\alpha\)</span>. Using <span class="math notranslate nohighlight">\(z_+=-z_-=z\)</span>, one finds
-\be
-\en_{\rm Coul}=-\frac{\alpha z^2e^2}{4\pi\eps_0r}
-\ee</p>
-<p>This energy does not have a minimum, and indeed an ionic crystal with only Coulomb forces should collapse. An energy minimum in the vein of Fig.~\ref{fig:energy-r} appears when Coulomb energy is augmented by a repulsive energy,
-\be
-\en_{\rm tot}(r)=-\frac{\alpha z^2e^2}{4\pi\eps_0r}+\frac{C_{\rm rep}}{r^m}
-\label{eq:enionic}
-\ee
-where <span class="math notranslate nohighlight">\(C_{\rm rep}={\rm const}\)</span> and <span class="math notranslate nohighlight">\(m\)</span> is also a constant that takes values between 6 and 10 depending on the ions. This repulsive potential is empirical in nature and mimics the intuitive understanding that different atoms cannot penetrate into each other. Beyond this common intuition, the repulsion goes back to the Pauli exclusion principle, as explained \href{<a class="reference external" href="https://doi.org/10.1063/1.5081060">https://doi.org/10.1063/1.5081060</a>}{here}.</p>
+<p>We will now concentrate on the ionic crystals and try to calculate <span class="math notranslate nohighlight">\(\mathcal{E}(r)\)</span>. To this end, we assume that the interatomic forces are Coulomb in nature and determine the electrostatic potential at a given site <span class="math notranslate nohighlight">\(i\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+ \mathcal V_i=\frac{e}{4\pi\varepsilon_0}\sum_j\frac{z_j}{r_{ij}}
+$$ `eq-ionic-potential`\\where $z_j$ is the ionic charge and $r_{ij}$ is the distance between ions. This summation can be replaced with\end{aligned}\end{align} \]</div>
+<p>\mathcal V_i=\frac{e}{4\pi\varepsilon_0}\frac{\alpha_i}{r}
+$$</p>
+<p>where <span class="math notranslate nohighlight">\(r\)</span> stands for the nearest-neighbor distance and <span class="math notranslate nohighlight">\(\alpha_i\)</span> is the <strong>Madelung constant</strong> for the site~<span class="math notranslate nohighlight">\(i\)</span>. This Madelung constant is defined for a given structure type and ionic charge and does not depend on the exact lattice parameter. Getting the actual values of <span class="math notranslate nohighlight">\(\alpha_i\)</span> is far from trivial because Coulomb interactions are long-range, and the series defined by Eq.~\eqref{eq:ionic-potential} is <a class="reference external" href="https://en.wikipedia.org/wiki/Conditional_convergence">conditionally convergent</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some instructive examples of the conditional convergence of electrostatic energy in ionic crystals can be found <a class="reference external" href="https://doi.org/10.1021/ed078p1198">here</a> and <a class="reference external" href="https://doi.org/10.1021/ed052p58">here</a>.</p>
+</div>
+<p>One practical approach to this problem is the <a class="reference external" href="https://en.wikipedia.org/wiki/Ewald_summation">Ewald summation</a>.</p>
+<p>Coulomb energy of the crystal can be then written as</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathcal{E}_{\rm Coul}=\tfrac12\sum_i ez_i\mathcal V_i= \tfrac12\sum_i\frac{e^2z_i\alpha_i}{4\pi\varepsilon_0r}
+\]</div>
+<p>with the pre-factor <span class="math notranslate nohighlight">\(\frac12\)</span> to avoid double-counting. This summation will include several terms according to the number of different atomic positions in the crystal. In a simple AB crystal, symmetry requires that <span class="math notranslate nohighlight">\(\alpha_+=\alpha_-=\alpha\)</span>. Using <span class="math notranslate nohighlight">\(z_+=-z_-=z\)</span>, one finds</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathcal{E}_{\rm Coul}=-\frac{\alpha z^2e^2}{4\pi\varepsilon_0r}
+\]</div>
+<p>This energy does not have a minimum, and indeed an ionic crystal with only Coulomb forces should collapse. An energy minimum in the vein of Fig.~\ref{fig:energy-r} appears when Coulomb energy is augmented by a repulsive energy,</p>
+<p>$$
+\mathcal{E}<em>{\rm tot}(r)=-\frac{\alpha z^2e^2}{4\pi\varepsilon_0r}+\frac{C</em>{\rm rep}}{r^m}</p>
+<p>$$ <code class="docutils literal notranslate"><span class="pre">eq-enionic</span></code></p>
+<p>where <span class="math notranslate nohighlight">\(C_{\rm rep}={\rm const}\)</span> and <span class="math notranslate nohighlight">\(m\)</span> is also a constant that takes values between 6 and 10 depending on the ions. This repulsive potential is empirical in nature and mimics the intuitive understanding that different atoms cannot penetrate into each other. Beyond this common intuition, the repulsion goes back to the Pauli exclusion principle, as explained \href{<a class="reference external" href="https://doi.org/10.1063/1.5081060">https://doi.org/10.1063/1.5081060</a>}{here}.</p>
 </section>
 <section id="born-lande-equation">
 <h2>Born-Lande equation<a class="headerlink" href="#born-lande-equation" title="Link to this heading">#</a></h2>
-<p>Equilibrium distance <span class="math notranslate nohighlight">\(r_0\)</span> corresponds to the energy minimum of <span class="math notranslate nohighlight">\(\en_{\rm tot}(r)\)</span> from Eq.~\eqref{eq:enionic},
+<p>Equilibrium distance <span class="math notranslate nohighlight">\(r_0\)</span> corresponds to the energy minimum of <span class="math notranslate nohighlight">\(\mathcal{E}_{\rm tot}(r)\)</span> from Eq.~\eqref{eq:enionic},
 \be
-\frac{d\en_{\rm tot}}{dr}=0\Ra
-\frac{\alpha z^2e^2}{4\pi\eps_0r_0^2}-m\frac{C_{\rm rep}}{r_0^{m+1}}=0 \Ra
+\frac{d\mathcal{E}<em>{\rm tot}}{dr}=0\Ra
+\frac{\alpha z^2e^2}{4\pi\eps_0r_0^2}-m\frac{C</em>{\rm rep}}{r_0^{m+1}}=0 \Ra
 r_0^{m-1}=4\pi\eps_0\frac{mC_{\rm rep}}{\alpha z^2e^2}\Ra
 C_{\rm rep}=\frac{\alpha z^2e^2}{4\pi\eps_0m}r_0^{m-1}
 \label{eq:crep}
 \ee
 It can be used to calculate lattice energy,
 \be
-\en_{\rm lat}=-\en_{\rm tot}(r_0)=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}-\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\frac{1}{m}=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\left(1-\frac{1}{m}\right),
+\mathcal{E}<em>{\rm lat}=-\mathcal{E}</em>{\rm tot}(r_0)=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}-\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\frac{1}{m}=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\left(1-\frac{1}{m}\right),
 \label{eq:born-lande}
 \ee
 resulting in the \emph{Born-Land’e equation} for ionic crystals.</p>
@@ -542,7 +550,7 @@ resulting in the \emph{Born-Land’e equation} for ionic crystals.</p>
 \begin{itemize}
 \item lattice energy of an ionic crystal increases with the ionic charge; therefore, oxides (<span class="math notranslate nohighlight">\(z=2\)</span>) usually have much higher melting points than halides (<span class="math notranslate nohighlight">\(z=1\)</span>)
 \item lattice energy of an ionic crystal decreases with the interatomic distance (<span class="math notranslate nohighlight">\(r_0\)</span>); therefore, melting points decrease from NaF to NaI and from NaF to CsF and correlate with the lattice parameter
-\end{itemize}
+\mathcal{E}d{itemize}
 Typical lattice energies of ionic crystals are in the range of <span class="math notranslate nohighlight">\(5-10\)</span>,eV/f.u. Born-Land’e equation can also be used to calculate lattice energy for the known interatomic distance, which is usually determined by XRD. The unknown parameter <span class="math notranslate nohighlight">\(m\)</span> enters the energy as <span class="math notranslate nohighlight">\(1/m\)</span> and changes the result only marginally. This parameter can be determined when another experimental observable, such as bulk modulus, is available.</p>
 </section>
 <section id="bulk-modulus">
@@ -552,15 +560,15 @@ Typical lattice energies of ionic crystals are in the range of <span class="math
 B=-V\left(\frac{\p p}{\p V}\right)_T
 \label{eq:bulkmod}
 \ee
-It shows the change in the crystal volume under pressure (more on this in Ch.~\ref{sec:eos}). The bulk modulus can be obtained from <span class="math notranslate nohighlight">\(\en_{\rm tot}\)</span> if one considers thermodynamic definition of pressure, <span class="math notranslate nohighlight">\(p=-(\p\en/\p V)_T\)</span>. The bulk modulus is essentially the second derivative of <span class="math notranslate nohighlight">\(\en_{\rm tot}\)</span> with respect to~<span class="math notranslate nohighlight">\(V\)</span>. In contrast to lattice energy, Eq.~\eqref{eq:born-lande}, the exact expression for the bulk modulus depends on the structure type, which defines the relation between <span class="math notranslate nohighlight">\(V\)</span> and <span class="math notranslate nohighlight">\(r\)</span> in the crystal.</p>
+It shows the change in the crystal volume under pressure (more on this in Ch.~\ref{sec:eos}). The bulk modulus can be obtained from <span class="math notranslate nohighlight">\(\mathcal{E}_{\rm tot}\)</span> if one considers thermodynamic definition of pressure, <span class="math notranslate nohighlight">\(p=-(\p\mathcal{E}/\p V)_T\)</span>. The bulk modulus is essentially the second derivative of <span class="math notranslate nohighlight">\(\mathcal{E}_{\rm tot}\)</span> with respect to~<span class="math notranslate nohighlight">\(V\)</span>. In contrast to lattice energy, Eq.~\eqref{eq:born-lande}, the exact expression for the bulk modulus depends on the structure type, which defines the relation between <span class="math notranslate nohighlight">\(V\)</span> and <span class="math notranslate nohighlight">\(r\)</span> in the crystal.</p>
 <p>Let’s choose rocksalt-type structure (Ch.~\ref{sec:ionic-radius}) as an example. The distance <span class="math notranslate nohighlight">\(r\)</span> is the separation between the cation and anion, <span class="math notranslate nohighlight">\(r=a/2\)</span>. Then, <span class="math notranslate nohighlight">\(V=a^3/4=2r^3\)</span> (volume per formula unit) and
 \be
 \frac{d}{dV}=\frac{1}{6r^2}\frac{d}{dr}\Ra
-B=V\frac{d}{dV}\frac{d\en_{\rm tot}}{dV}=\frac{r}{18}\frac{d}{dr}\left(\frac{1}{r^2}\frac{d\en_{\rm tot}}{dr}\right).
+B=V\frac{d}{dV}\frac{d\mathcal{E}<em>{\rm tot}}{dV}=\frac{r}{18}\frac{d}{dr}\left(\frac{1}{r^2}\frac{d\mathcal{E}</em>{\rm tot}}{dr}\right).
 \ee
-This value should be taken at <span class="math notranslate nohighlight">\(r=r_0\)</span> where <span class="math notranslate nohighlight">\(d\en_{\rm tot}/dr=0\)</span>. Then, the equation simplifies to
+This value should be taken at <span class="math notranslate nohighlight">\(r=r_0\)</span> where <span class="math notranslate nohighlight">\(d\mathcal{E}_{\rm tot}/dr=0\)</span>. Then, the equation simplifies to
 \be
-B=\frac{1}{18,r_0}\left.\frac{d^2\en_{\rm tot}}{dr^2}\right|_{r=r_0}=\frac{m-1}{18}\frac{\alpha z^2e^2}{4\pi\eps_0r_0^4}
+B=\frac{1}{18,r_0}\left.\frac{d^2\mathcal{E}<em>{\rm tot}}{dr^2}\right|</em>{r=r_0}=\frac{m-1}{18}\frac{\alpha z^2e^2}{4\pi\eps_0r_0^4}
 \ee
 where we used Eq.~\eqref{eq:crep} to express <span class="math notranslate nohighlight">\(C_{\rm rep}\)</span> via <span class="math notranslate nohighlight">\(r_0\)</span>.</p>
 <p>Clearly, bulk modulus shows the same trends as lattice energy. Oxides are less compressible than halides, that is, they feature higher bulk moduli. Compressibility of an ionic crystal increases upon increasing its lattice parameter. By measuring both <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(r_0\)</span>, the value of <span class="math notranslate nohighlight">\(m\)</span> and, eventually, the exact lattice energy can be determined. Typical bulk moduli of ionic crystals are in the range of <span class="math notranslate nohighlight">\(10-200\)</span>,GPa.</p>
@@ -581,8 +589,8 @@ where we used Eq.~\eqref{eq:crep} to express <span class="math notranslate nohig
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>8 &amp; cube &amp; 0.732 
 </pre></div>
 </div>
-<p>\end{tabular}
-\end{center}
+<p>\mathcal{E}d{tabular}
+\mathcal{E}d{center}
 \medskip</p>
 <p>The most common coordination numbers are 4 and 6. Representative structure types are \emph{zinc blende} and \emph{rocksalt} shown in Fig.~\ref{fig:structure-types}. Very large cations like Cs<span class="math notranslate nohighlight">\(^+\)</span> may form \emph{CsCl-type} structures with the cubic coordination.</p>
 <p>\begin{figure}
@@ -590,7 +598,7 @@ where we used Eq.~\eqref{eq:crep} to express <span class="math notranslate nohig
 \caption{\label{fig:structure-types}
 Common structure types of ionic crystals: zinc blende (fcc lattice), rocksalt (fcc lattice), and CsCl-type (primitive cubic lattice).
 }
-\end{figure}</p>
+\mathcal{E}d{figure}</p>
 <p>Pauling’s consideration of the ionic radii inspires polyhedral description of ionic crystals. Anions form the polyhedron around a cation. By defining these polyhedra, the connectivity of the structure can be analyzed.</p>
 </section>
 <section id="ionic-crystals-as-close-packed-structures">
@@ -602,12 +610,12 @@ Common structure types of ionic crystals: zinc blende (fcc lattice), rocksalt (f
 \item filling <span class="math notranslate nohighlight">\(\frac12\)</span> of the tetrahedral voids yields the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Cubic_crystal_system#Zincblende_structure">https://en.wikipedia.org/wiki/Cubic_crystal_system#Zincblende_structure</a>}{zinc blende structure} (ZnS, CdTe)
 \item filling all tetrahedral voids yields the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Fluorite_structure">https://en.wikipedia.org/wiki/Fluorite_structure</a>}{fluorite structure} (CaF<span class="math notranslate nohighlight">\(_2\)</span>). Note that in fluorite cations form the close-packed structure, whereas anions occupy the tetrahedral voids. The situation is reversed in antifluorite (Na<span class="math notranslate nohighlight">\(_2\)</span>O) where anions form the close-packed structure and anions are in the voids.
 \item filling octahedral and <span class="math notranslate nohighlight">\(\frac12\)</span> of the tetrahedral voids yields the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Spinel_group">https://en.wikipedia.org/wiki/Spinel_group</a>}{spinel structure} (MgAl<span class="math notranslate nohighlight">\(_2\)</span>O<span class="math notranslate nohighlight">\(_4\)</span>)
-\end{itemize}
+\mathcal{E}d{itemize}
 A similar construction is possible for the hexagonal close packing of anions too:
 \begin{itemize}
 \item filling octahedral voids yields the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Nickel_arsenide_structure">https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Nickel_arsenide_structure</a>}{NiAs structure} (MnS)
 \item filling <span class="math notranslate nohighlight">\(\frac12\)</span> of the tetrahedral voids yields the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Wurtzite_structure">https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Wurtzite_structure</a>}{wurtzite structure} (ZnS, AgI)
-\end{itemize}
+\mathcal{E}d{itemize}
 This simple principle describes many of the common structure types of ionic compounds and also elucidates their hexagonal or fcc symmetries. However, it is not always easy to understand which structure type is preferred by a given compound. One compound may form different structures as in the case of ZnS. This is an example of \emph{polymorphism}.</p>
 </section>
 </section>
