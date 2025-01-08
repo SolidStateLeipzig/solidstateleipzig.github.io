@@ -1,0 +1,740 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Content of lecture &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'l7_ionic/l7_content';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Experimental method" href="l7_method.html" />
+    <link rel="prev" title="Main definitions" href="l7_definitions.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Solid-State Physics lecture
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 1 - Bravais lattice, or how to pack a crystal?</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l1_bravais/l1_objectives.html">Learning objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l1_bravais/l1_definitions.html">Main definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l1_bravais/l1_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l1_bravais/l1_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l1_bravais/l1_problem.html">Example of problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 2 - Symmetry as the guiding principle</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l2_symmetry/l2_objectives.html">Learning objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l2_symmetry/l2_definitions.html">Main definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l2_symmetry/l2_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l2_symmetry/l2_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l2_symmetry/l2_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 3 - Systematics of crystals - symmetry groups</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_objectives.html">Learning objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_definitions.html">Main definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l3_groups/l3_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 4 - Unpacking the crystal structure</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_objectives.html">Lecture objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_definitions.html">Main definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_content.html">Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l4_structure/l4_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 5 - Spaces of crystallography - Reciprocal lattice</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l5_reciprocal/l5_objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l5_reciprocal/l5_definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l5_reciprocal/l5_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l5_reciprocal/l5_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l5_reciprocal/l5_problem.html">Example of problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 6 - Structure factor - all shades of diffraction</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l6_factor/l6_objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l6_factor/l6_definitions.html">Main deifinitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l6_factor/l6_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l6_factor/l6_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l6_factor/l6_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 7 - Bonding in crystals - ionic</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="l7_objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="l7_definitions.html">Main definitions</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="l7_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="l7_problem.html">Problem</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fl7_ionic/l7_content.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/l7_ionic/l7_content.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Content of lecture</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-chemical-bonding">Types of chemical bonding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cohesive-and-lattice-energies">Cohesive and lattice energies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#madelung-constant">Madelung constant</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#born-lande-equation">Born-Lande equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-modulus">Bulk modulus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ionic-radius-and-pauling-s-rule">Ionic radius and Pauling’s rule</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ionic-crystals-as-close-packed-structures">Ionic crystals as close-packed structures</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="content-of-lecture">
+<h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
+<section id="types-of-chemical-bonding">
+<h2>Types of chemical bonding<a class="headerlink" href="#types-of-chemical-bonding" title="Link to this heading">#</a></h2>
+<p>Many of the crystal properties can be understood from the perspective of bonding between the atoms. Four main types of chemical bonding are usually distinguished:</p>
+<ul class="simple">
+<li><p><strong>ionic</strong>, due to electrostatic forces between charged units (ions)</p></li>
+<li><p><strong>covalent</strong>, due to an overlap of atomic orbitals</p></li>
+<li><p><strong>metallic</strong>, due to shared (itinerant) electrons</p></li>
+<li><p><strong>van der Waals</strong>, due to dipole-dipole and other weak interactions, such as London dispersion force (between induced dipoles)</p></li>
+</ul>
+<p>One often identifies a separate group of <strong>hydrogen bonds</strong>, which occur between atoms with small, fractional charges, such as H and O in water and organic molecules. These bonds are somewhat stronger than the typical van der Waals bonds, yet for our purpose they fall into the same group of weak bonding. We will also discuss <strong>molecular crystals</strong> where finite units (molecules) formed by covalent bonds are held together by van der Waals bonds.</p>
+</section>
+<section id="cohesive-and-lattice-energies">
+<h2>Cohesive and lattice energies<a class="headerlink" href="#cohesive-and-lattice-energies" title="Link to this heading">#</a></h2>
+<p>Stability of the crystal is characterized by its energy. In this context, two closely related energies can be defined. <strong>Cohesive energy</strong> is the energy required to break the crystal into individual atoms. <strong>Lattice energy</strong> is the energy required to split the crystal into its constituents.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Older textbooks, including the one by Ashcroft and Mermin define cohesion energy simply as lattice energy and describe the formation of crystal from its constituents as <em>cohesion</em>.</p>
+</div>
+<p>The cohesive and lattice energies are equal for metallic crystals and for simple covalent crystals like diamond. However, they are very different in molecular crystals where molecules formed by covalent bonds are held together by van der Waals bonds. In this case, only lattice energy is the relevant energy scale because it shows the energy cost of breaking the crystal into individual molecules (think of sublimation of iodine into a gas of <span class="math notranslate nohighlight">\(I_2\)</span> molecules). A somewhat similar situation occurs in ionic crystals. Compare</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+ {\rm AB}_{(s)}+\en_{\rm coh}\ &amp; \longrightarrow\ \ {\rm A}_{(g)} + {\rm B}_{(g)},  \smallskip\\
+ {\rm AB}_{(s)}+\en_{\rm lat}\ &amp; \longrightarrow\ \ {\rm A}^+_{(g)} + {\rm B}^-_{(g)} 
+\end{align*}\end{split}\]</div>
+<p>where the subscripts <span class="math notranslate nohighlight">\((s)\)</span> and <span class="math notranslate nohighlight">\((g)\)</span> denote the solid and gas states, respectively.</p>
+<p>Lattice energies are obtained from \emph{calorimetry experiments} where the amount of heat released or absorbed in a given process is measured. Sublimation enthalpy of a metallic, covalent, or molecular crystal is a direct measure of its lattice energy.\footnote{In thermochemistry, enthalpies are commonly used instead of energies because measurements are performed at a constant pressure rather than constant volume. Then, strictly speaking, lattice \textit{enthalpy} is obtained. This difference is usually unimportant, since solids show only a minor difference between energy and enthalpy owing to the small thermal expansion, see also Ch.~\ref{sec:expansion}.} More often, though, the quantity measured in the experiment is the formation enthalpy <span class="math notranslate nohighlight">\(\Delta_fH\)</span>, which is neither cohesive nor lattice energy of the crystal:
+$<span class="math notranslate nohighlight">\( {\rm Na}_{(s)}+\tfrac12{\rm Cl}_2\,_{(g)}\ \longrightarrow\ \ {\rm NaCl}_{(s)}+\Delta_fH\)</span>$</p>
+<p>This formation enthalpy can be related to the lattice energy by considering all intermediate processes (Fig.~\ref{fig:born-haber}) and adding up relevant energies: sublimation energy of the Na metal, ionization potential of the Na atom, bond dissociation energy of the Cl<span class="math notranslate nohighlight">\(_2\)</span> molecule, and electron affinity of the Cl atom. All these quantities can be measured in separate experiments, and eventually lattice energy of NaCl can be obtained from <span class="math notranslate nohighlight">\(\Delta_fH\)</span> of NaCl. This method is known as the \emph{Born-Haber cycle}. Thermochemistry data can be found in multiple sources, such as \href{<a class="reference external" href="https://webbook.nist.gov/chemistry/">https://webbook.nist.gov/chemistry/</a>}{NIST Chemistry WebBook} and \href{<a class="reference external" href="https://hbcp.chemnetbase.com">https://hbcp.chemnetbase.com</a>}{CRC Handbook of Chemistry and Physics}.</p>
+<p>\begin{figure}
+\hspace{0.2cm}
+\begin{minipage}{8cm}
+\includegraphics[scale=1.15]{ch7-energy}
+\end{minipage}
+\hfill
+\begin{minipage}{7cm}
+\caption{\label{fig:energy-r}
+Crystal energy <span class="math notranslate nohighlight">\(\en_{\rm tot}\)</span> as a function of the interatomic distance <span class="math notranslate nohighlight">\(r\)</span>. Lattice parameters define the equilibrium value <span class="math notranslate nohighlight">\(r_0\)</span>, while the depth of the energy minimum is the lattice energy <span class="math notranslate nohighlight">\(\en_{\rm lat}\)</span>.
+}
+\vspace{0.5cm}
+\end{minipage}
+\end{figure}</p>
+<p>It is also helpful to represent crystal energy as a function of an effective interatomic distance, <span class="math notranslate nohighlight">\(\en(r)\)</span>, as shown in Fig.~\ref{fig:energy-r}. Then the position of the energy minimum yields the equilibrium distance <span class="math notranslate nohighlight">\(r_0\)</span> and, consequently, the lattice parameter of the crystal. The depth of the minimum is the lattice energy <span class="math notranslate nohighlight">\(\en_{\rm lat}\)</span>.</p>
+</section>
+<section id="madelung-constant">
+<h2>Madelung constant<a class="headerlink" href="#madelung-constant" title="Link to this heading">#</a></h2>
+<p>We will now concentrate on the ionic crystals and try to calculate <span class="math notranslate nohighlight">\(\en(r)\)</span>. To this end, we assume that the interatomic forces are Coulomb in nature and determine the electrostatic potential at a given site <span class="math notranslate nohighlight">\(i\)</span>,
+\be
+\mathcal V_i=\frac{e}{4\pi\eps_0}\sum_j\frac{z_j}{r_{ij}}
+\label{eq:ionic-potential}
+\ee
+where <span class="math notranslate nohighlight">\(z_j\)</span> is the ionic charge and <span class="math notranslate nohighlight">\(r_{ij}\)</span> is the distance between ions. This summation can be replaced with
+\be
+\mathcal V_i=\frac{e}{4\pi\eps_0}\frac{\alpha_i}{r}
+\ee
+where <span class="math notranslate nohighlight">\(r\)</span> stands for the nearest-neighbor distance and <span class="math notranslate nohighlight">\(\alpha_i\)</span> is the \emph{Madelung constant} for the site~<span class="math notranslate nohighlight">\(i\)</span>. This Madelung constant is defined for a given structure type and ionic charge and does not depend on the exact lattice parameter. Getting the actual values of <span class="math notranslate nohighlight">\(\alpha_i\)</span> is far from trivial because Coulomb interactions are long-range, and the series defined by Eq.~\eqref{eq:ionic-potential} is \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Conditional_convergence">https://en.wikipedia.org/wiki/Conditional_convergence</a>}{conditionally convergent}.\footnote{Some instructive examples of the conditional convergence of electrostatic energy in ionic crystals can be found \href{<a class="reference external" href="https://doi.org/10.1021/ed078p1198">https://doi.org/10.1021/ed078p1198</a>}{here} and \href{<a class="reference external" href="https://doi.org/10.1021/ed052p58">https://doi.org/10.1021/ed052p58</a>}{here}.} One practical approach to this problem is the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Ewald_summation">https://en.wikipedia.org/wiki/Ewald_summation</a>}{Ewald summation}.</p>
+<p>Coulomb energy of the crystal can be then written as
+\be
+\en_{\rm Coul}=\tfrac12\sum_i ez_i\mathcal V_i= \tfrac12\sum_i\frac{e^2z_i\alpha_i}{4\pi\eps_0r}
+\ee
+with the pre-factor <span class="math notranslate nohighlight">\(\frac12\)</span> to avoid double-counting. This summation will include several terms according to the number of different atomic positions in the crystal. In a simple AB crystal, symmetry requires that <span class="math notranslate nohighlight">\(\alpha_+=\alpha_-=\alpha\)</span>. Using <span class="math notranslate nohighlight">\(z_+=-z_-=z\)</span>, one finds
+\be
+\en_{\rm Coul}=-\frac{\alpha z^2e^2}{4\pi\eps_0r}
+\ee</p>
+<p>This energy does not have a minimum, and indeed an ionic crystal with only Coulomb forces should collapse. An energy minimum in the vein of Fig.~\ref{fig:energy-r} appears when Coulomb energy is augmented by a repulsive energy,
+\be
+\en_{\rm tot}(r)=-\frac{\alpha z^2e^2}{4\pi\eps_0r}+\frac{C_{\rm rep}}{r^m}
+\label{eq:enionic}
+\ee
+where <span class="math notranslate nohighlight">\(C_{\rm rep}={\rm const}\)</span> and <span class="math notranslate nohighlight">\(m\)</span> is also a constant that takes values between 6 and 10 depending on the ions. This repulsive potential is empirical in nature and mimics the intuitive understanding that different atoms cannot penetrate into each other. Beyond this common intuition, the repulsion goes back to the Pauli exclusion principle, as explained \href{<a class="reference external" href="https://doi.org/10.1063/1.5081060">https://doi.org/10.1063/1.5081060</a>}{here}.</p>
+</section>
+<section id="born-lande-equation">
+<h2>Born-Lande equation<a class="headerlink" href="#born-lande-equation" title="Link to this heading">#</a></h2>
+<p>Equilibrium distance <span class="math notranslate nohighlight">\(r_0\)</span> corresponds to the energy minimum of <span class="math notranslate nohighlight">\(\en_{\rm tot}(r)\)</span> from Eq.~\eqref{eq:enionic},
+\be
+\frac{d\en_{\rm tot}}{dr}=0\Ra
+\frac{\alpha z^2e^2}{4\pi\eps_0r_0^2}-m\frac{C_{\rm rep}}{r_0^{m+1}}=0 \Ra
+r_0^{m-1}=4\pi\eps_0\frac{mC_{\rm rep}}{\alpha z^2e^2}\Ra
+C_{\rm rep}=\frac{\alpha z^2e^2}{4\pi\eps_0m}r_0^{m-1}
+\label{eq:crep}
+\ee
+It can be used to calculate lattice energy,
+\be
+\en_{\rm lat}=-\en_{\rm tot}(r_0)=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}-\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\frac{1}{m}=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\left(1-\frac{1}{m}\right),
+\label{eq:born-lande}
+\ee
+resulting in the \emph{Born-Land’e equation} for ionic crystals.</p>
+<p>This equation has some immediate implications:
+\begin{itemize}
+\item lattice energy of an ionic crystal increases with the ionic charge; therefore, oxides (<span class="math notranslate nohighlight">\(z=2\)</span>) usually have much higher melting points than halides (<span class="math notranslate nohighlight">\(z=1\)</span>)
+\item lattice energy of an ionic crystal decreases with the interatomic distance (<span class="math notranslate nohighlight">\(r_0\)</span>); therefore, melting points decrease from NaF to NaI and from NaF to CsF and correlate with the lattice parameter
+\end{itemize}
+Typical lattice energies of ionic crystals are in the range of <span class="math notranslate nohighlight">\(5-10\)</span>,eV/f.u. Born-Land’e equation can also be used to calculate lattice energy for the known interatomic distance, which is usually determined by XRD. The unknown parameter <span class="math notranslate nohighlight">\(m\)</span> enters the energy as <span class="math notranslate nohighlight">\(1/m\)</span> and changes the result only marginally. This parameter can be determined when another experimental observable, such as bulk modulus, is available.</p>
+</section>
+<section id="bulk-modulus">
+<h2>Bulk modulus<a class="headerlink" href="#bulk-modulus" title="Link to this heading">#</a></h2>
+<p>The isothermal \emph{bulk modulus} is defined as
+\be
+B=-V\left(\frac{\p p}{\p V}\right)_T
+\label{eq:bulkmod}
+\ee
+It shows the change in the crystal volume under pressure (more on this in Ch.~\ref{sec:eos}). The bulk modulus can be obtained from <span class="math notranslate nohighlight">\(\en_{\rm tot}\)</span> if one considers thermodynamic definition of pressure, <span class="math notranslate nohighlight">\(p=-(\p\en/\p V)_T\)</span>. The bulk modulus is essentially the second derivative of <span class="math notranslate nohighlight">\(\en_{\rm tot}\)</span> with respect to~<span class="math notranslate nohighlight">\(V\)</span>. In contrast to lattice energy, Eq.~\eqref{eq:born-lande}, the exact expression for the bulk modulus depends on the structure type, which defines the relation between <span class="math notranslate nohighlight">\(V\)</span> and <span class="math notranslate nohighlight">\(r\)</span> in the crystal.</p>
+<p>Let’s choose rocksalt-type structure (Ch.~\ref{sec:ionic-radius}) as an example. The distance <span class="math notranslate nohighlight">\(r\)</span> is the separation between the cation and anion, <span class="math notranslate nohighlight">\(r=a/2\)</span>. Then, <span class="math notranslate nohighlight">\(V=a^3/4=2r^3\)</span> (volume per formula unit) and
+\be
+\frac{d}{dV}=\frac{1}{6r^2}\frac{d}{dr}\Ra
+B=V\frac{d}{dV}\frac{d\en_{\rm tot}}{dV}=\frac{r}{18}\frac{d}{dr}\left(\frac{1}{r^2}\frac{d\en_{\rm tot}}{dr}\right).
+\ee
+This value should be taken at <span class="math notranslate nohighlight">\(r=r_0\)</span> where <span class="math notranslate nohighlight">\(d\en_{\rm tot}/dr=0\)</span>. Then, the equation simplifies to
+\be
+B=\frac{1}{18,r_0}\left.\frac{d^2\en_{\rm tot}}{dr^2}\right|_{r=r_0}=\frac{m-1}{18}\frac{\alpha z^2e^2}{4\pi\eps_0r_0^4}
+\ee
+where we used Eq.~\eqref{eq:crep} to express <span class="math notranslate nohighlight">\(C_{\rm rep}\)</span> via <span class="math notranslate nohighlight">\(r_0\)</span>.</p>
+<p>Clearly, bulk modulus shows the same trends as lattice energy. Oxides are less compressible than halides, that is, they feature higher bulk moduli. Compressibility of an ionic crystal increases upon increasing its lattice parameter. By measuring both <span class="math notranslate nohighlight">\(B\)</span> and <span class="math notranslate nohighlight">\(r_0\)</span>, the value of <span class="math notranslate nohighlight">\(m\)</span> and, eventually, the exact lattice energy can be determined. Typical bulk moduli of ionic crystals are in the range of <span class="math notranslate nohighlight">\(10-200\)</span>,GPa.</p>
+</section>
+<section id="ionic-radius-and-pauling-s-rule">
+<h2>Ionic radius and Pauling’s rule<a class="headerlink" href="#ionic-radius-and-pauling-s-rule" title="Link to this heading">#</a></h2>
+<p>Whereas the Born-Land’e equation, Eq.~\eqref{eq:born-lande}, offers a simple explanation for changes in lattice energy, melting points, and bulk moduli across different ionic crystals, it fails to answer one fundamental question: which structure type is chosen by a given ionic material? The Madelung constants for different structure types can be compared, but how to deal with the distance <span class="math notranslate nohighlight">\(r_0\)</span>?</p>
+<p>Typical values of <span class="math notranslate nohighlight">\(r_0\)</span> can be obtained from the so-called \emph{ionic radii} that have been estimated for every possible ion of every chemical element by analyzing the statistics of interatomic distances in thousands of crystal structures determined experimentally. One assumes <span class="math notranslate nohighlight">\(r_0\simeq r_+ + r_-\)</span> and finds the optimal values of <span class="math notranslate nohighlight">\(r_+\)</span> and <span class="math notranslate nohighlight">\(r_-\)</span> that fit the experimental <span class="math notranslate nohighlight">\(r_0\)</span> in different materials. Different sets of ionic radii exist, the most common one being the system by Shannon and Prewitt quoted in multiple handbooks, for example \href{<a class="reference external" href="http://abulafia.mt.ic.ac.uk/shannon/">http://abulafia.mt.ic.ac.uk/shannon/</a>}{here}. Because the ionic radii are determined from the experimental data, they take different values depending not only on the ionic charge but also on the coordination number. Increasing the charge and/or the coordination number reduces ionic radius of a cation. The opposite is true for anions, which are generally larger than cations because adding an electron requires extra space.</p>
+<p>Ionic radii are often sufficient to analyze structure types of different ionic crystals. \emph{Pauling’s first rule}\footnote{Four other Pauling’s rules are even more empirical and can be found \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Pauling's_rules">https://en.wikipedia.org/wiki/Pauling’s_rules</a>}{here}.} postulates that the coordination number of a cation in an ionic crystal is determined by the ratio <span class="math notranslate nohighlight">\(r_+/r_-\)</span>. This rule goes back to a simple geometrical argument that anions should not come too close to each other. Therefore, smaller cations require lower coordination numbers. The threshold values of <span class="math notranslate nohighlight">\(r_+/r_-\)</span> have been derived as follows:
+\medskip</p>
+<p>\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{c&#64;{\hspace{1.5cm}}c&#64;{\hspace{1.5cm}}c}
+\textit{CN} &amp; \textit{polyhedron} &amp; \textit{<span class="math notranslate nohighlight">\(r_+/r_-\)</span> larger than} \
+3 &amp; triangle &amp; 0.155 \
+4 &amp; tetrahedron &amp; 0.225 \
+6 &amp; octahedron &amp; 0.414 \</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>8 &amp; cube &amp; 0.732 
+</pre></div>
+</div>
+<p>\end{tabular}
+\end{center}
+\medskip</p>
+<p>The most common coordination numbers are 4 and 6. Representative structure types are \emph{zinc blende} and \emph{rocksalt} shown in Fig.~\ref{fig:structure-types}. Very large cations like Cs<span class="math notranslate nohighlight">\(^+\)</span> may form \emph{CsCl-type} structures with the cubic coordination.</p>
+<p>\begin{figure}
+\includegraphics{ch7-structure-types}
+\caption{\label{fig:structure-types}
+Common structure types of ionic crystals: zinc blende (fcc lattice), rocksalt (fcc lattice), and CsCl-type (primitive cubic lattice).
+}
+\end{figure}</p>
+<p>Pauling’s consideration of the ionic radii inspires polyhedral description of ionic crystals. Anions form the polyhedron around a cation. By defining these polyhedra, the connectivity of the structure can be analyzed.</p>
+</section>
+<section id="ionic-crystals-as-close-packed-structures">
+<h2>Ionic crystals as close-packed structures<a class="headerlink" href="#ionic-crystals-as-close-packed-structures" title="Link to this heading">#</a></h2>
+<p>Structures of ionic crystals can be also analyzed from the perspective of close packing. Anions form close-packed layers because they are usually bigger than cations. Then cations fill octahedral and tetrahedral voids between these close-packed layers. There is one octahedral and two tetrahedral voids per anion.</p>
+<p>Let anions form the cubic close packing:
+\begin{itemize}
+\item filling octahedral voids yields the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Cubic_crystal_system#Rock-salt_structure">https://en.wikipedia.org/wiki/Cubic_crystal_system#Rock-salt_structure</a>}{rocksalt structure} (NaCl)
+\item filling <span class="math notranslate nohighlight">\(\frac12\)</span> of the tetrahedral voids yields the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Cubic_crystal_system#Zincblende_structure">https://en.wikipedia.org/wiki/Cubic_crystal_system#Zincblende_structure</a>}{zinc blende structure} (ZnS, CdTe)
+\item filling all tetrahedral voids yields the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Fluorite_structure">https://en.wikipedia.org/wiki/Fluorite_structure</a>}{fluorite structure} (CaF<span class="math notranslate nohighlight">\(_2\)</span>). Note that in fluorite cations form the close-packed structure, whereas anions occupy the tetrahedral voids. The situation is reversed in antifluorite (Na<span class="math notranslate nohighlight">\(_2\)</span>O) where anions form the close-packed structure and anions are in the voids.
+\item filling octahedral and <span class="math notranslate nohighlight">\(\frac12\)</span> of the tetrahedral voids yields the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Spinel_group">https://en.wikipedia.org/wiki/Spinel_group</a>}{spinel structure} (MgAl<span class="math notranslate nohighlight">\(_2\)</span>O<span class="math notranslate nohighlight">\(_4\)</span>)
+\end{itemize}
+A similar construction is possible for the hexagonal close packing of anions too:
+\begin{itemize}
+\item filling octahedral voids yields the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Nickel_arsenide_structure">https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Nickel_arsenide_structure</a>}{NiAs structure} (MnS)
+\item filling <span class="math notranslate nohighlight">\(\frac12\)</span> of the tetrahedral voids yields the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Wurtzite_structure">https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Wurtzite_structure</a>}{wurtzite structure} (ZnS, AgI)
+\end{itemize}
+This simple principle describes many of the common structure types of ionic compounds and also elucidates their hexagonal or fcc symmetries. However, it is not always easy to understand which structure type is preferred by a given compound. One compound may form different structures as in the case of ZnS. This is an example of \emph{polymorphism}.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./l7_ionic"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="l7_definitions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Main definitions</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="l7_method.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Experimental method</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-chemical-bonding">Types of chemical bonding</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cohesive-and-lattice-energies">Cohesive and lattice energies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#madelung-constant">Madelung constant</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#born-lande-equation">Born-Lande equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-modulus">Bulk modulus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ionic-radius-and-pauling-s-rule">Ionic radius and Pauling’s rule</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ionic-crystals-as-close-packed-structures">Ionic crystals as close-packed structures</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
