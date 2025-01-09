@@ -42,7 +42,7 @@ answers = [
     "so the degeneracy increases from 4 to 8.",
 ]
 
-explanation = (Explanation)
+explanation = ("Explanation")
 
 MultipleChoice(
     question=question, answers=answers, correct_answer=1, explanation=explanation
