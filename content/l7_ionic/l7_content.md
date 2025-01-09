@@ -98,24 +98,27 @@ $$
 
 $$ `eq-enionic`
 
-where $C_{\rm rep}={\rm const}$ and $m$ is also a constant that takes values between 6 and 10 depending on the ions. This repulsive potential is empirical in nature and mimics the intuitive understanding that different atoms cannot penetrate into each other. Beyond this common intuition, the repulsion goes back to the Pauli exclusion principle, as explained \href{https://doi.org/10.1063/1.5081060}{here}.
+where $C_{\rm rep}={\rm const}$ and $m$ is also a constant that takes values between 6 and 10 depending on the ions. This repulsive potential is empirical in nature and mimics the intuitive understanding that different atoms cannot penetrate into each other. Beyond this common intuition, the repulsion goes back to the Pauli exclusion principle, as explained [here](https://doi.org/10.1063/1.5081060).
 
 
 ## Born-Lande equation
 
 Equilibrium distance $r_0$ corresponds to the energy minimum of $\mathcal{E}_{\rm tot}(r)$ from Eq.~\eqref{eq:enionic},
-\be
- \frac{d\mathcal{E}_{\rm tot}}{dr}=0\Ra
- \frac{\alpha z^2e^2}{4\pi\eps_0r_0^2}-m\frac{C_{\rm rep}}{r_0^{m+1}}=0 \Ra
- r_0^{m-1}=4\pi\eps_0\frac{mC_{\rm rep}}{\alpha z^2e^2}\Ra
- C_{\rm rep}=\frac{\alpha z^2e^2}{4\pi\eps_0m}r_0^{m-1}
-\label{eq:crep}
-\ee
+
+$$
+ \frac{d\mathcal{E}_{\rm tot}}{dr}=0\Rightarrow
+ \frac{\alpha z^2e^2}{4\pi\varepsilon_0r_0^2}-m\frac{C_{\rm rep}}{r_0^{m+1}}=0 \Rightarrow
+ r_0^{m-1}=4\pi\varepsilon_0\frac{mC_{\rm rep}}{\alpha z^2e^2}\Rightarrow
+ C_{\rm rep}=\frac{\alpha z^2e^2}{4\pi\varepsilon_0m}r_0^{m-1}
+$$ `eq-crep`
+
 It can be used to calculate lattice energy,
-\be
+
+$$
  \mathcal{E}_{\rm lat}=-\mathcal{E}_{\rm tot}(r_0)=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}-\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\frac{1}{m}=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\left(1-\frac{1}{m}\right),
-\label{eq:born-lande}
-\ee
+$$ `eq-born-lande`
+
+
 resulting in the \emph{Born-Land\'e equation} for ionic crystals.
 
 This equation has some immediate implications:

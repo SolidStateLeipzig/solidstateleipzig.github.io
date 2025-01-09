@@ -35,7 +35,7 @@ class MultipleChoice:
         answer = "The correct answer is: <br>"
         answer += self.answers[self.correct_answer]
         if self.explanation is not None:
-            answer += f"<br><i>" + self.explanation + "</i>"
+            answer += f"<br><i>" + str(self.explanation) + "</i>"
 
         s += dedent(
             """

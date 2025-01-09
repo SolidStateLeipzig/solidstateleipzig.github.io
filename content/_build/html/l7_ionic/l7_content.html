@@ -434,7 +434,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-chemical-bonding">Types of chemical bonding</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cohesive-and-lattice-energies">Cohesive and lattice energies</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#madelung-constant">Madelung constant</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#born-lande-equation">Born-Lande equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-modulus">Bulk modulus</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ionic-radius-and-pauling-s-rule">Ionic radius and Pauling’s rule</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ionic-crystals-as-close-packed-structures">Ionic crystals as close-packed structures</a></li>
@@ -525,27 +524,20 @@ $$</p>
  \mathcal{E}_{\rm Coul}=-\frac{\alpha z^2e^2}{4\pi\varepsilon_0r}
 \]</div>
 <p>This energy does not have a minimum, and indeed an ionic crystal with only Coulomb forces should collapse. An energy minimum in the vein of Fig.~\ref{fig:energy-r} appears when Coulomb energy is augmented by a repulsive energy,</p>
-<p>$$
-\mathcal{E}<em>{\rm tot}(r)=-\frac{\alpha z^2e^2}{4\pi\varepsilon_0r}+\frac{C</em>{\rm rep}}{r^m}</p>
-<p>$$ <code class="docutils literal notranslate"><span class="pre">eq-enionic</span></code></p>
-<p>where <span class="math notranslate nohighlight">\(C_{\rm rep}={\rm const}\)</span> and <span class="math notranslate nohighlight">\(m\)</span> is also a constant that takes values between 6 and 10 depending on the ions. This repulsive potential is empirical in nature and mimics the intuitive understanding that different atoms cannot penetrate into each other. Beyond this common intuition, the repulsion goes back to the Pauli exclusion principle, as explained \href{<a class="reference external" href="https://doi.org/10.1063/1.5081060">https://doi.org/10.1063/1.5081060</a>}{here}.</p>
-</section>
-<section id="born-lande-equation">
-<h2>Born-Lande equation<a class="headerlink" href="#born-lande-equation" title="Link to this heading">#</a></h2>
-<p>Equilibrium distance <span class="math notranslate nohighlight">\(r_0\)</span> corresponds to the energy minimum of <span class="math notranslate nohighlight">\(\mathcal{E}_{\rm tot}(r)\)</span> from Eq.~\eqref{eq:enionic},
-\be
-\frac{d\mathcal{E}<em>{\rm tot}}{dr}=0\Ra
-\frac{\alpha z^2e^2}{4\pi\eps_0r_0^2}-m\frac{C</em>{\rm rep}}{r_0^{m+1}}=0 \Ra
-r_0^{m-1}=4\pi\eps_0\frac{mC_{\rm rep}}{\alpha z^2e^2}\Ra
-C_{\rm rep}=\frac{\alpha z^2e^2}{4\pi\eps_0m}r_0^{m-1}
-\label{eq:crep}
-\ee
-It can be used to calculate lattice energy,
-\be
-\mathcal{E}<em>{\rm lat}=-\mathcal{E}</em>{\rm tot}(r_0)=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}-\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\frac{1}{m}=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\left(1-\frac{1}{m}\right),
-\label{eq:born-lande}
-\ee
-resulting in the \emph{Born-Land’e equation} for ionic crystals.</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}
+ \mathcal{E}_{\rm tot}(r)=-\frac{\alpha z^2e^2}{4\pi\varepsilon_0r}+\frac{C_{\rm rep}}{r^m}\\$$ `eq-enionic`\\where $C_{\rm rep}={\rm const}$ and $m$ is also a constant that takes values between 6 and 10 depending on the ions. This repulsive potential is empirical in nature and mimics the intuitive understanding that different atoms cannot penetrate into each other. Beyond this common intuition, the repulsion goes back to the Pauli exclusion principle, as explained [here](https://doi.org/10.1063/1.5081060).\\
+## Born-Lande equation\\Equilibrium distance $r_0$ corresponds to the energy minimum of $\mathcal{E}_{\rm tot}(r)$ from Eq.~\eqref{eq:enionic},\end{aligned}\end{align} \]</div>
+<p>\frac{d\mathcal{E}<em>{\rm tot}}{dr}=0\Rightarrow
+\frac{\alpha z^2e^2}{4\pi\varepsilon_0r_0^2}-m\frac{C</em>{\rm rep}}{r_0^{m+1}}=0 \Rightarrow
+r_0^{m-1}=4\pi\varepsilon_0\frac{mC_{\rm rep}}{\alpha z^2e^2}\Rightarrow
+C_{\rm rep}=\frac{\alpha z^2e^2}{4\pi\varepsilon_0m}r_0^{m-1}
+$$ <code class="docutils literal notranslate"><span class="pre">eq-crep</span></code></p>
+<p>It can be used to calculate lattice energy,</p>
+<p>$<span class="math notranslate nohighlight">\(
+ \mathcal{E}_{\rm lat}=-\mathcal{E}_{\rm tot}(r_0)=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}-\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\frac{1}{m}=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\left(1-\frac{1}{m}\right),
+\)</span>$ <code class="docutils literal notranslate"><span class="pre">eq-born-lande</span></code></p>
+<p>resulting in the \emph{Born-Land’e equation} for ionic crystals.</p>
 <p>This equation has some immediate implications:
 \begin{itemize}
 \item lattice energy of an ionic crystal increases with the ionic charge; therefore, oxides (<span class="math notranslate nohighlight">\(z=2\)</span>) usually have much higher melting points than halides (<span class="math notranslate nohighlight">\(z=1\)</span>)
@@ -687,7 +679,6 @@ This simple principle describes many of the common structure types of ionic comp
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-chemical-bonding">Types of chemical bonding</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cohesive-and-lattice-energies">Cohesive and lattice energies</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#madelung-constant">Madelung constant</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#born-lande-equation">Born-Lande equation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-modulus">Bulk modulus</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ionic-radius-and-pauling-s-rule">Ionic radius and Pauling’s rule</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ionic-crystals-as-close-packed-structures">Ionic crystals as close-packed structures</a></li>
