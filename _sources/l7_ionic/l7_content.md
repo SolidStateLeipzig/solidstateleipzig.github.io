@@ -101,7 +101,7 @@ $$ `eq-enionic`
 where $C_{\rm rep}={\rm const}$ and $m$ is also a constant that takes values between 6 and 10 depending on the ions. This repulsive potential is empirical in nature and mimics the intuitive understanding that different atoms cannot penetrate into each other. Beyond this common intuition, the repulsion goes back to the Pauli exclusion principle, as explained [here](https://doi.org/10.1063/1.5081060).
 
 
-## Born-Lande equation
+## Born-Landé equation
 
 Equilibrium distance $r_0$ corresponds to the energy minimum of $\mathcal{E}_{\rm tot}(r)$ from Eq.~\eqref{eq:enionic},
 
@@ -115,49 +115,58 @@ $$ `eq-crep`
 It can be used to calculate lattice energy,
 
 $$
- \mathcal{E}_{\rm lat}=-\mathcal{E}_{\rm tot}(r_0)=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}-\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\frac{1}{m}=\frac{\alpha z^2e^2}{4\pi\eps_0r_0}\left(1-\frac{1}{m}\right),
-$$ `eq-born-lande`
+ \mathcal{E}_{\rm lat}=-\mathcal{E}_{\rm tot}(r_0)=\frac{\alpha z^2e^2}{4\pi\varepsilon_0r_0}-\frac{\alpha z^2e^2}{4\pi\varepsilon_0r_0}\frac{1}{m}=\frac{\alpha z^2e^2}{4\pi\varepsilon_0r_0}\left(1-\frac{1}{m}\right),
+$$ `eq-born-Landé`
 
 
-resulting in the \emph{Born-Land\'e equation} for ionic crystals.
+resulting in the **Born-Landé equation** for ionic crystals.
 
 This equation has some immediate implications:
-\begin{itemize}
- \item lattice energy of an ionic crystal increases with the ionic charge; therefore, oxides ($z=2$) usually have much higher melting points than halides ($z=1$)
- \item lattice energy of an ionic crystal decreases with the interatomic distance ($r_0$); therefore, melting points decrease from NaF to NaI and from NaF to CsF and correlate with the lattice parameter
-\mathcal{E}d{itemize}
-Typical lattice energies of ionic crystals are in the range of $5-10$\,eV/f.u. Born-Land\'e equation can also be used to calculate lattice energy for the known interatomic distance, which is usually determined by XRD. The unknown parameter $m$ enters the energy as $1/m$ and changes the result only marginally. This parameter can be determined when another experimental observable, such as bulk modulus, is available. 
+
+* lattice energy of an ionic crystal increases with the ionic charge; therefore, oxides ($z=2$) usually have much higher melting points than halides ($z=1$)
+* lattice energy of an ionic crystal decreases with the interatomic distance ($r_0$); therefore, melting points decrease from NaF to NaI and from NaF to CsF and correlate with the lattice parameter
+
+Typical lattice energies of ionic crystals are in the range of $5-10$ eV/f.u. Born-Landé equation can also be used to calculate lattice energy for the known interatomic distance, which is usually determined by XRD. The unknown parameter $m$ enters the energy as $1/m$ and changes the result only marginally. This parameter can be determined when another experimental observable, such as bulk modulus, is available. 
 
 ## Bulk modulus
 
-The isothermal \emph{bulk modulus} is defined as
-\be
- B=-V\left(\frac{\p p}{\p V}\right)_T
-\label{eq:bulkmod}
-\ee
-It shows the change in the crystal volume under pressure (more on this in Ch.~\ref{sec:eos}). The bulk modulus can be obtained from $\mathcal{E}_{\rm tot}$ if one considers thermodynamic definition of pressure, $p=-(\p\mathcal{E}/\p V)_T$. The bulk modulus is essentially the second derivative of $\mathcal{E}_{\rm tot}$ with respect to~$V$. In contrast to lattice energy, Eq.~\eqref{eq:born-lande}, the exact expression for the bulk modulus depends on the structure type, which defines the relation between $V$ and $r$ in the crystal. 
+The isothermal **bulk modulus** is defined as
+
+$$
+ B=-V\left(\frac{\partial p}{\partial V}\right)_T
+$$ `eq-bulkmod`
+
+It shows the change in the crystal volume under pressure (more on this in Ch.~\ref{sec:eos}). The bulk modulus can be obtained from $\mathcal{E}_{\rm tot}$ if one considers thermodynamic definition of pressure, $p=-(\partial \mathcal{E}/\partial V)_T$. The bulk modulus is essentially the second derivative of $\mathcal{E}_{\rm tot}$ with respect to $V$. In contrast to lattice energy, Eq.~\eqref{eq:born-Landé}, the exact expression for the bulk modulus depends on the structure type, which defines the relation between $V$ and $r$ in the crystal. 
 
 Let's choose rocksalt-type structure (Ch.~\ref{sec:ionic-radius}) as an example. The distance $r$ is the separation between the cation and anion, $r=a/2$. Then, $V=a^3/4=2r^3$ (volume per formula unit) and 
-\be
- \frac{d}{dV}=\frac{1}{6r^2}\frac{d}{dr}\Ra 
+
+$$
+ \frac{d}{dV}=\frac{1}{6r^2}\frac{d}{dr}\Rightarrow 
  B=V\frac{d}{dV}\frac{d\mathcal{E}_{\rm tot}}{dV}=\frac{r}{18}\frac{d}{dr}\left(\frac{1}{r^2}\frac{d\mathcal{E}_{\rm tot}}{dr}\right).
-\ee
+$$
+
 This value should be taken at $r=r_0$ where $d\mathcal{E}_{\rm tot}/dr=0$. Then, the equation simplifies to
-\be
- B=\frac{1}{18\,r_0}\left.\frac{d^2\mathcal{E}_{\rm tot}}{dr^2}\right|_{r=r_0}=\frac{m-1}{18}\frac{\alpha z^2e^2}{4\pi\eps_0r_0^4}
-\ee
+
+$$
+ B=\frac{1}{18\,r_0}\left.\frac{d^2\mathcal{E}_{\rm tot}}{dr^2}\right|_{r=r_0}=\frac{m-1}{18}\frac{\alpha z^2e^2}{4\pi\varepsilon_0r_0^4}
+$$
+
 where we used Eq.~\eqref{eq:crep} to express $C_{\rm rep}$ via $r_0$.
 
-Clearly, bulk modulus shows the same trends as lattice energy. Oxides are less compressible than halides, that is, they feature higher bulk moduli. Compressibility of an ionic crystal increases upon increasing its lattice parameter. By measuring both $B$ and $r_0$, the value of $m$ and, eventually, the exact lattice energy can be determined. Typical bulk moduli of ionic crystals are in the range of $10-200$\,GPa.
+Clearly, bulk modulus shows the same trends as lattice energy. Oxides are less compressible than halides, that is, they feature higher bulk moduli. Compressibility of an ionic crystal increases upon increasing its lattice parameter. By measuring both $B$ and $r_0$, the value of $m$ and, eventually, the exact lattice energy can be determined. Typical bulk moduli of ionic crystals are in the range of $10-200$ GPa.
 
 ## Ionic radius and Pauling's rule
 
-Whereas the Born-Land\'e equation, Eq.~\eqref{eq:born-lande}, offers a simple explanation for changes in lattice energy, melting points, and bulk moduli across different ionic crystals, it fails to answer one fundamental question: which structure type is chosen by a given ionic material? The Madelung constants for different structure types can be compared, but how to deal with the distance $r_0$? 
+Whereas the Born-Landé equation, Eq.~\eqref{eq:born-Landé}, offers a simple explanation for changes in lattice energy, melting points, and bulk moduli across different ionic crystals, it fails to answer one fundamental question: which structure type is chosen by a given ionic material? The Madelung constants for different structure types can be compared, but how to deal with the distance $r_0$? 
 
-Typical values of $r_0$ can be obtained from the so-called \emph{ionic radii} that have been estimated for every possible ion of every chemical element by analyzing the statistics of interatomic distances in thousands of crystal structures determined experimentally. One assumes $r_0\simeq r_+ + r_-$ and finds the optimal values of $r_+$ and $r_-$ that fit the experimental $r_0$ in different materials. Different sets of ionic radii exist, the most common one being the system by Shannon and Prewitt quoted in multiple handbooks, for example \href{http://abulafia.mt.ic.ac.uk/shannon/}{here}. Because the ionic radii are determined from the experimental data, they take different values depending not only on the ionic charge but also on the coordination number. Increasing the charge and/or the coordination number reduces ionic radius of a cation. The opposite is true for anions, which are generally larger than cations because adding an electron requires extra space. 
+Typical values of $r_0$ can be obtained from the so-called **ionic radii** that have been estimated for every possible ion of every chemical element by analyzing the statistics of interatomic distances in thousands of crystal structures determined experimentally. One assumes $r_0\simeq r_+ + r_-$ and finds the optimal values of $r_+$ and $r_-$ that fit the experimental $r_0$ in different materials. Different sets of ionic radii exist, the most common one being the system by Shannon and Prewitt quoted in multiple handbooks, for example [here](http://abulafia.mt.ic.ac.uk/shannon/). Because the ionic radii are determined from the experimental data, they take different values depending not only on the ionic charge but also on the coordination number. Increasing the charge and/or the coordination number reduces ionic radius of a cation. The opposite is true for anions, which are generally larger than cations because adding an electron requires extra space. 
 
-Ionic radii are often sufficient to analyze structure types of different ionic crystals. \emph{Pauling's first rule}\footnote{Four other Pauling's rules are even more empirical and can be found \href{https://en.wikipedia.org/wiki/Pauling's_rules}{here}.} postulates that the coordination number of a cation in an ionic crystal is determined by the ratio $r_+/r_-$. This rule goes back to a simple geometrical argument that anions should not come too close to each other. Therefore, smaller cations require lower coordination numbers. The threshold values of $r_+/r_-$ have been derived as follows:
-\medskip
+Ionic radii are often sufficient to analyze structure types of different ionic crystals. **Pauling's first rule** postulates that the coordination number of a cation in an ionic crystal is determined by the ratio $r_+/r_-$.
+ ```{note}
+Four other Pauling's rules are even more empirical and can be found [here](https://en.wikipedia.org/wiki/Pauling's_rules).
+```
+This rule goes back to a simple geometrical argument that anions should not come too close to each other. Therefore, smaller cations require lower coordination numbers. The threshold values of $r_+/r_-$ have been derived as follows:
+
 
 \begin{center}
 \renewcommand{\arraystretch}{1.2}
@@ -172,7 +181,7 @@ Ionic radii are often sufficient to analyze structure types of different ionic c
 \mathcal{E}d{center}
 \medskip
 
-The most common coordination numbers are 4 and 6. Representative structure types are \emph{zinc blende} and \emph{rocksalt} shown in Fig.~\ref{fig:structure-types}. Very large cations like Cs$^+$ may form \emph{CsCl-type} structures with the cubic coordination.
+The most common coordination numbers are 4 and 6. Representative structure types are **zinc blende** and **rocksalt** shown in Fig.~\ref{fig:structure-types}. Very large cations like Cs $^+$ may form **CsCl-type** structures with the cubic coordination.
 
 \begin{figure}
 \includegraphics{ch7-structure-types}
@@ -188,15 +197,13 @@ Pauling's consideration of the ionic radii inspires polyhedral description of io
 Structures of ionic crystals can be also analyzed from the perspective of close packing. Anions form close-packed layers because they are usually bigger than cations. Then cations fill octahedral and tetrahedral voids between these close-packed layers. There is one octahedral and two tetrahedral voids per anion.
 
 Let anions form the cubic close packing:
-\begin{itemize}
- \item filling octahedral voids yields the \href{https://en.wikipedia.org/wiki/Cubic_crystal_system#Rock-salt_structure}{rocksalt structure} (NaCl)
- \item filling $\frac12$ of the tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Cubic_crystal_system#Zincblende_structure}{zinc blende structure} (ZnS, CdTe)
- \item filling all tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Fluorite_structure}{fluorite structure} (CaF$_2$). Note that in fluorite cations form the close-packed structure, whereas anions occupy the tetrahedral voids. The situation is reversed in antifluorite (Na$_2$O) where anions form the close-packed structure and anions are in the voids.
- \item filling octahedral and $\frac12$ of the tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Spinel_group}{spinel structure} (MgAl$_2$O$_4$)
-\mathcal{E}d{itemize}
+* filling octahedral voids yields the \href{https://en.wikipedia.org/wiki/Cubic_crystal_system#Rock-salt_structure}{rocksalt structure} (NaCl)
+* filling $\frac12$ of the tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Cubic_crystal_system#Zincblende_structure}{zinc blende structure} (ZnS, CdTe)
+* filling all tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Fluorite_structure}{fluorite structure} (CaF$_2$). Note that in fluorite cations form the close-packed structure, whereas anions occupy the tetrahedral voids. The situation is reversed in antifluorite (Na$_2$O) where anions form the close-packed structure and anions are in the voids.
+* filling octahedral and $\frac12$ of the tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Spinel_group}{spinel structure} (MgAl$_2$O$_4$)
+
 A similar construction is possible for the hexagonal close packing of anions too:
-\begin{itemize}
- \item filling octahedral voids yields the \href{https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Nickel_arsenide_structure}{NiAs structure} (MnS)
- \item filling $\frac12$ of the tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Wurtzite_structure}{wurtzite structure} (ZnS, AgI)
-\mathcal{E}d{itemize}
-This simple principle describes many of the common structure types of ionic compounds and also elucidates their hexagonal or fcc symmetries. However, it is not always easy to understand which structure type is preferred by a given compound. One compound may form different structures as in the case of ZnS. This is an example of \emph{polymorphism}.
+ * filling octahedral voids yields the \href{https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Nickel_arsenide_structure}{NiAs structure} (MnS)
+* filling $\frac12$ of the tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Wurtzite_structure}{wurtzite structure} (ZnS, AgI)
+
+This simple principle describes many of the common structure types of ionic compounds and also elucidates their hexagonal or fcc symmetries. However, it is not always easy to understand which structure type is preferred by a given compound. One compound may form different structures as in the case of ZnS. This is an example of **polymorphism**.
