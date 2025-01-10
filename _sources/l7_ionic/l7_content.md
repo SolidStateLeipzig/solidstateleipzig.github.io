@@ -22,11 +22,14 @@ Older textbooks, including the one by Ashcroft and Mermin define cohesion energy
 The cohesive and lattice energies are equal for metallic crystals and for simple covalent crystals like diamond. However, they are very different in molecular crystals where molecules formed by covalent bonds are held together by van der Waals bonds. In this case, only lattice energy is the relevant energy scale because it shows the energy cost of breaking the crystal into individual molecules (think of sublimation of iodine into a gas of $I_2$ molecules). A somewhat similar situation occurs in ionic crystals. Compare
 
 $$
-\begin{align*}
- {\rm AB}_{(s)}+\mathcal{E}_{\rm coh}\ & \longrightarrow\ \ {\rm A}_{(g)} + {\rm B}_{(g)},  \\
- {\rm AB}_{(s)}+\mathcal{E}_{\rm lat}\ & \longrightarrow\ \ {\rm A}^+_{(g)} + {\rm B}^-_{(g)} 
 
-\end{align*}
+ {\rm AB}_{(s)}+\mathcal{E}_{\rm coh}\ \longrightarrow\ \ {\rm A}_{(g)} + {\rm B}_{(g)}, 
+ $$
+
+$$
+
+ {\rm AB}_{(s)}+\mathcal{E}_{\rm lat}\ \longrightarrow\ \ {\rm A}^+_{(g)} + {\rm B}^-_{(g)} 
+
 
 $$
 where the subscripts $(s)$ and $(g)$ denote the solid and gas states, respectively. 
@@ -56,7 +59,7 @@ We will now concentrate on the ionic crystals and try to calculate $\mathcal{E}(
 
 $$
  \mathcal V_i=\frac{e}{4\pi\varepsilon_0}\sum_j\frac{z_j}{r_{ij}}
-$$ `eq-ionic-potential`
+$$ (eq-ionic-potential)
 
 where $z_j$ is the ionic charge and $r_{ij}$ is the distance between ions. This summation can be replaced with
 
@@ -89,7 +92,7 @@ This energy does not have a minimum, and indeed an ionic crystal with only Coulo
 $$
  \mathcal{E}_{\rm tot}(r)=-\frac{\alpha z^2e^2}{4\pi\varepsilon_0r}+\frac{C_{\rm rep}}{r^m}
 
-$$ `eq-enionic`
+$$ (eq-enionic)
 
 where $C_{\rm rep}={\rm const}$ and $m$ is also a constant that takes values between 6 and 10 depending on the ions. This repulsive potential is empirical in nature and mimics the intuitive understanding that different atoms cannot penetrate into each other. Beyond this common intuition, the repulsion goes back to the Pauli exclusion principle, as explained [here](https://doi.org/10.1063/1.5081060).
 
@@ -103,13 +106,13 @@ $$
  \frac{\alpha z^2e^2}{4\pi\varepsilon_0r_0^2}-m\frac{C_{\rm rep}}{r_0^{m+1}}=0 \Rightarrow
  r_0^{m-1}=4\pi\varepsilon_0\frac{mC_{\rm rep}}{\alpha z^2e^2}\Rightarrow
  C_{\rm rep}=\frac{\alpha z^2e^2}{4\pi\varepsilon_0m}r_0^{m-1}
-$$ `eq-crep`
+$$ (eq-crep)
 
 It can be used to calculate lattice energy,
 
 $$
  \mathcal{E}_{\rm lat}=-\mathcal{E}_{\rm tot}(r_0)=\frac{\alpha z^2e^2}{4\pi\varepsilon_0r_0}-\frac{\alpha z^2e^2}{4\pi\varepsilon_0r_0}\frac{1}{m}=\frac{\alpha z^2e^2}{4\pi\varepsilon_0r_0}\left(1-\frac{1}{m}\right),
-$$ `eq-born-Landé`
+$$ (eq-born-Landé)
 
 
 resulting in the **Born-Landé equation** for ionic crystals.
@@ -127,7 +130,7 @@ The isothermal **bulk modulus** is defined as
 
 $$
  B=-V\left(\frac{\partial p}{\partial V}\right)_T
-$$ `eq-bulkmod`
+$$ (eq-bulkmod)
 
 It shows the change in the crystal volume under pressure (more on this in Ch.~\ref{sec:eos}). The bulk modulus can be obtained from $\mathcal{E}_{\rm tot}$ if one considers thermodynamic definition of pressure, $p=-(\partial \mathcal{E}/\partial V)_T$. The bulk modulus is essentially the second derivative of $\mathcal{E}_{\rm tot}$ with respect to $V$. In contrast to lattice energy, Eq.~\eqref{eq:born-Landé}, the exact expression for the bulk modulus depends on the structure type, which defines the relation between $V$ and $r$ in the crystal. 
 
@@ -188,10 +191,10 @@ Pauling's consideration of the ionic radii inspires polyhedral description of io
 Structures of ionic crystals can be also analyzed from the perspective of close packing. Anions form close-packed layers because they are usually bigger than cations. Then cations fill octahedral and tetrahedral voids between these close-packed layers. There is one octahedral and two tetrahedral voids per anion.
 
 Let anions form the cubic close packing:
-* filling octahedral voids yields the \href{https://en.wikipedia.org/wiki/Cubic_crystal_system#Rock-salt_structure}{rocksalt structure} (NaCl)
-* filling $\frac12$ of the tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Cubic_crystal_system#Zincblende_structure}{zinc blende structure} (ZnS, CdTe)
-* filling all tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Fluorite_structure}{fluorite structure} (CaF$_2$). Note that in fluorite cations form the close-packed structure, whereas anions occupy the tetrahedral voids. The situation is reversed in antifluorite (Na$_2$O) where anions form the close-packed structure and anions are in the voids.
-* filling octahedral and $\frac12$ of the tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Spinel_group}{spinel structure} (MgAl$_2$O$_4$)
+* filling octahedral voids yields the [rocksalt structure](https://en.wikipedia.org/wiki/Cubic_crystal_system#Rock-salt_structure) (NaCl)
+* filling $\frac12$ of the tetrahedral voids yields the [zinc blende structure](https://en.wikipedia.org/wiki/Cubic_crystal_system#Zincblende_structure) (ZnS, CdTe)
+* filling all tetrahedral voids yields the [fluorite structure](https://en.wikipedia.org/wiki/Fluorite_structure) (CaF$_2$). Note that in fluorite cations form the close-packed structure, whereas anions occupy the tetrahedral voids. The situation is reversed in antifluorite (Na$_2$O) where anions form the close-packed structure and anions are in the voids.
+* filling octahedral and $\frac12$ of the tetrahedral voids yields the [spinel structure](https://en.wikipedia.org/wiki/Spinel_group) (MgAl $_2$ O $_4$)
 
 A similar construction is possible for the hexagonal close packing of anions too:
  * filling octahedral voids yields the [NiAs structure](https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Nickel_arsenide_structure) (MnS)
