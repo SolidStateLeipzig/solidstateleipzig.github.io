@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="278.66666"
+   height="198.66667"
+   viewBox="0 0 278.66666 198.66667"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <g
+     id="g8"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,198.66667)">
+    <g
+       id="g10"
+       transform="scale(0.1)">
+      <path
+         d="M 608.809,700.52 V 115.047"
+         style="fill:none;stroke:#231f20;stroke-width:5.0003;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:5.0003, 5.0003;stroke-dashoffset:0;stroke-opacity:1"
+         id="path12" />
+      <path
+         d="M 610.715,108.75 H 1911.97"
+         style="fill:none;stroke:#231f20;stroke-width:5.0003;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:5.0003, 5.0003;stroke-dashoffset:0;stroke-opacity:1"
+         id="path14" />
+      <g
+         id="g16"
+         transform="scale(10)">
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,204.834,68.2938)"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-size:8.99986px;font-family:Calibri;-inkscape-font-specification:Calibri-NormalItalic;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text22"><tspan
+             x="0"
+             y="0"
+             id="tspan18">r</tspan><tspan
+             x="-147.13901"
+             y="-5.9043002"
+             id="tspan20">r</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,60.78055,74.1981)"
+           style="font-variant:normal;font-weight:normal;font-size:8.99986px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text26"><tspan
+             x="0"
+             y="0"
+             id="tspan24">₀</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,-0.06675,142.1954)"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-size:8.99986px;font-family:'Monotype Corsiva';-inkscape-font-specification:MonotypeCorsiva-NormalItalic;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text30"><tspan
+             x="0"
+             y="0"
+             id="tspan28">E</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,6.4145,140.3954)"
+           style="font-variant:normal;font-weight:normal;font-size:4.49993px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text34"><tspan
+             x="0 1.4632818 3.8347449"
+             y="0"
+             id="tspan32">tot</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,192.1775,37.7534)"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-size:8.99986px;font-family:'Monotype Corsiva';-inkscape-font-specification:MonotypeCorsiva-NormalItalic;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text38"><tspan
+             x="0"
+             y="0"
+             id="tspan36">E</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,198.65914,35.9534)"
+           style="font-variant:normal;font-weight:normal;font-size:4.49993px;font-family:Calibri;-inkscape-font-specification:Calibri;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text42"><tspan
+             x="0 1.0349839 3.14609"
+             y="0"
+             id="tspan40">lat</tspan></text>
+      </g>
+      <path
+         d="M 150.457,6.77734 V 1458.45"
+         style="fill:none;stroke:#231f20;stroke-width:8.4983;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path44" />
+      <path
+         d="m 150.457,1484.24 -13.066,-26.13 h 26.129 z"
+         style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path46" />
+      <path
+         d="M 150.457,702.922 H 1987.39"
+         style="fill:none;stroke:#231f20;stroke-width:8.4983;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path48" />
+      <path
+         d="m 2013.18,702.922 -26.13,13.066 v -26.133 z"
+         style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path50" />
+      <path
+         d="M 1847.16,671.422 C 724.414,632.961 809.32,-60.0273 501.344,148.984 206.742,348.91 204.555,1053.66 191.539,1441.11"
+         style="fill:none;stroke:#f47216;stroke-width:14.1676;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path52" />
+      <path
+         d="M 1882.05,667.09 V 137.484"
+         style="fill:none;stroke:#231f20;stroke-width:8.4983;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path54" />
+      <path
+         d="m 1882.05,692.871 13.07,-26.125 h -26.13 z"
+         style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path56" />
+      <path
+         d="m 1882.05,111.703 13.07,26.125 h -26.13 z"
+         style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path58" />
+    </g>
+  </g>
+</svg>

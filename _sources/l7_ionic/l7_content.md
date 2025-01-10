@@ -40,19 +40,12 @@ $$ {\rm Na}_{(s)}+\tfrac12{\rm Cl}_{2(g)}\ \longrightarrow \ \ {\rm NaCl}_{(s)}+
 
 This formation enthalpy can be related to the lattice energy by considering all intermediate processes (Fig.~\ref{fig:born-haber}) and adding up relevant energies: sublimation energy of the Na metal, ionization potential of the Na atom, bond dissociation energy of the Cl$_2$ molecule, and electron affinity of the Cl atom. All these quantities can be measured in separate experiments, and eventually lattice energy of NaCl can be obtained from $\Delta_fH$ of NaCl. This method is known as the **Born-Haber cycle**. Thermochemistry data can be found in multiple sources, such as [NIST Chemistry WebBook](https://webbook.nist.gov/chemistry/) and [CRC Handbook of Chemistry and Physics](https://hbcp.chemnetbase.com).
 
-\begin{figure}
-\hspace{0.2cm}
-\begin{minipage}{8cm}
- \includegraphics[scale=1.15]{ch7-energy}
-\mathcal{E}d{minipage}
-\hfill
-\begin{minipage}{7cm}
-\caption{\label{fig:energy-r}
+```{figure} /figures/ch7-energy.svg
+:name: fig-energy-r
+
 Crystal energy $\mathcal{E}_{\rm tot}$ as a function of the interatomic distance $r$. Lattice parameters define the equilibrium value $r_0$, while the depth of the energy minimum is the lattice energy $\mathcal{E}_{\rm lat}$.
-}
-\vspace{0.5cm}
-\mathcal{E}d{minipage}
-\mathcal{E}d{figure}
+```
+
 
 It is also helpful to represent crystal energy as a function of an effective interatomic distance, $\mathcal{E}(r)$, as shown in Fig.~\ref{fig:energy-r}. Then the position of the energy minimum yields the equilibrium distance $r_0$ and, consequently, the lattice parameter of the crystal. The depth of the minimum is the lattice energy $\mathcal{E}_{\rm lat}$.
 
@@ -168,27 +161,25 @@ Four other Pauling's rules are even more empirical and can be found [here](https
 This rule goes back to a simple geometrical argument that anions should not come too close to each other. Therefore, smaller cations require lower coordination numbers. The threshold values of $r_+/r_-$ have been derived as follows:
 
 
-\begin{center}
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{c@{\hspace{1.5cm}}c@{\hspace{1.5cm}}c}
- \textit{CN} & \textit{polyhedron} & \textit{$r_+/r_-$ larger than} \\
-  3 & triangle & 0.155 \\
-	4 & tetrahedron & 0.225 \\
-	6 & octahedron & 0.414 \\
-%	8 & anticube & 0.645 \\
-	8 & cube & 0.732 
-\mathcal{E}d{tabular}
-\mathcal{E}d{center}
-\medskip
+|  CN |  polyhedron | $r_+/r_-$ larger than |
+| :--: | :--: | :--: |
+| 3| triangle | 0.155|
+| 4 | tetrahedron | 0.225 | 
+| 6| octahedron | 0.414|
+|8 | cube | 0.732|
+
+
 
 The most common coordination numbers are 4 and 6. Representative structure types are **zinc blende** and **rocksalt** shown in Fig.~\ref{fig:structure-types}. Very large cations like Cs $^+$ may form **CsCl-type** structures with the cubic coordination.
 
-\begin{figure}
-\includegraphics{ch7-structure-types}
-\caption{\label{fig:structure-types}
+
+
+```{figure} /figures/ch7-structure-types.svg
+:name: fig-structure-types
+
 Common structure types of ionic crystals: zinc blende (fcc lattice), rocksalt (fcc lattice), and CsCl-type (primitive cubic lattice).
-}
-\mathcal{E}d{figure}
+
+```
 
 Pauling's consideration of the ionic radii inspires polyhedral description of ionic crystals. Anions form the polyhedron around a cation. By defining these polyhedra, the connectivity of the structure can be analyzed. 
 
@@ -203,7 +194,7 @@ Let anions form the cubic close packing:
 * filling octahedral and $\frac12$ of the tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Spinel_group}{spinel structure} (MgAl$_2$O$_4$)
 
 A similar construction is possible for the hexagonal close packing of anions too:
- * filling octahedral voids yields the \href{https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Nickel_arsenide_structure}{NiAs structure} (MnS)
-* filling $\frac12$ of the tetrahedral voids yields the \href{https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Wurtzite_structure}{wurtzite structure} (ZnS, AgI)
+ * filling octahedral voids yields the [NiAs structure](https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Nickel_arsenide_structure) (MnS)
+* filling $\frac12$ of the tetrahedral voids yields the [wurtzite structure](https://en.wikipedia.org/wiki/Hexagonal_crystal_family#Wurtzite_structure) (ZnS, AgI)
 
 This simple principle describes many of the common structure types of ionic compounds and also elucidates their hexagonal or fcc symmetries. However, it is not always easy to understand which structure type is preferred by a given compound. One compound may form different structures as in the case of ZnS. This is an example of **polymorphism**.
