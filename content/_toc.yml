@@ -60,6 +60,14 @@ parts:
   - file: l7_ionic/l7_method.md
   - file: l7_ionic/l7_problem.md
 
+- caption: Lecture 8 - Bonding in crystals - covalent, metallic, and Van der Waals
+  chapters:
+  - file: l8_covalent/l8_objectives.md
+  - file: l8_covalent/l8_definitions.md
+  - file: l8_covalent/l8_content.md
+  - file: l8_covalent/l8_method.md
+  - file: l8_covalent/l8_problem.md        
+
 
 
   
