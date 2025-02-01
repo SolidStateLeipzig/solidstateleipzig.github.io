@@ -57,6 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'l8_covalent/l8_content';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -235,7 +237,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../l7_ionic/l7_method.html">Experimental method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l7_ionic/l7_problem.html">Problem</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 8 - Bonding in crystals - covalent, metallic, and Van der Waals</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 8 - Bonding in crystals - covalent, metallic, and van der Waals</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="l8_objectives.html">Learning objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="l8_definitions.html">Main definitions</a></li>
@@ -414,7 +416,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -430,6 +434,19 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#covalent-crystals">Covalent crystals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metallic-crystals">Metallic crystals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polymorphism">Polymorphism</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#van-der-waals-radius-and-lennard-jones-potential">van der Waals radius and Lennard-Jones potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lattice-energy">Lattice energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-modulus">Bulk modulus</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -441,6 +458,102 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="content-of-lecture">
 <h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
+<section id="covalent-crystals">
+<h2>Covalent crystals<a class="headerlink" href="#covalent-crystals" title="Link to this heading">#</a></h2>
+<p>The formation of covalent bonds can be probed using the <strong>covalent radius</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The term <em>atomic radius</em> is somewhat more loosely defined, but most often it implies the covalent radius.</p>
+</div>
+<p>When <span class="math notranslate nohighlight">\(r_{AB}\leq r_A+r_B\)</span>, a covalent bond occurs between the atoms A and B. Shorter distances indicate stronger covalent bonds. This is well known from carbon in organic molecules where single (1.54 <span class="math notranslate nohighlight">\(\mathring{A}\)</span>), double (1.34 <span class="math notranslate nohighlight">\(\mathring{A}\)</span>), and triple (1.20 <span class="math notranslate nohighlight">\(\mathring{A}\)</span>) C–C bonds can be distinguished by their typical length and chemical environment. Covalent bonds in solids are not always identifiable as single, double, or triple, but the same trend holds.</p>
+<p>Complex nature of the covalent bonds does not allow a generic description in the same vein as Eq.~\eqref{eq:enionic}. We can only say that shorter covalent bonds should lead to the increased lattice energy and higher bulk modulus. The typical lattice energies of covalent crystals are on the order of 10 eV/atom and the bulk moduli are in the range of <span class="math notranslate nohighlight">\(50-200\)</span> GPa.</p>
+</section>
+<section id="metallic-crystals">
+<h2>Metallic crystals<a class="headerlink" href="#metallic-crystals" title="Link to this heading">#</a></h2>
+<p>There is not much to say about metallic crystals at this stage. We will address them in more detail in Ch.~\ref{sec:drude-sommerfeld}. For now let’s mention without any explicit derivation that lattice energy of a metallic crystal is given by a rather non-intuitive expression</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathcal{E}_{\rm lat}=\frac{3\,\hbar^2}{10\,m_e}(3\pi^2n_e)^{\frac23},
+\]</div>
+<p>so it depends on the electron concentration <span class="math notranslate nohighlight">\(n_e\)</span> and decreases with increasing the lattice parameter.</p>
+<p>Metals can have lattice energies as low as 1 eV/atom and feature bulk moduli of several GPa only. Some of the elemental metals have melting points close to room temperature (cesium, gallium), whereas mercury is even a liquid. Nevertheless, other metals like tungsten are characterized by very high melting points and low compressibilities, exceeding those of the typical ionic crystals. It all depends on the electron concentration.</p>
+</section>
+<section id="polymorphism">
+<h2>Polymorphism<a class="headerlink" href="#polymorphism" title="Link to this heading">#</a></h2>
+<p>In elemental solids, the type of the crystal structure will be usually determined by chemical bonding. Metals tend to adopt simple and dense structures (see Ch.~\ref{sec:close-packing}), non-metals will often develop similar structures but with the packing of weakly bonded atoms (noble gases) or diatomic molecules (hydrogen, oxygen). Elements spanning the boundary between metals and non-metals show the most diverse behavior, as they can form different types of covalently-bonded structures and simultaneously appear in the metallic form. Tin is a celebrated example. It forms metallic crystals of white tin (body-centered tetragonal structure) that abruptly transform into non-metallic gray tin (diamond structure) on cooling. These two forms of tin are called <strong>allotropes</strong>. Allotropes are also known for carbon, sulphur, phosphorous.</p>
+<p>Binary and more complex compounds will usually stick to one type of bonding and differ only in their structural details, although these details are by no means unimportant. They can have major implications for observed properties. One usually distinguishes:</p>
+<ul class="simple">
+<li><p><strong>polymorphs</strong> as different structural forms of the same chemical compounds. They are labeled with Greek letters: <span class="math notranslate nohighlight">\(\alpha\)</span>-Sn, <span class="math notranslate nohighlight">\(\beta\)</span>-Sn, etc. Strictly speaking, allotropes can be also considered as polymorphs, as we just did for tin, and so all researchers do, especially when they deal with high-pressure structures of elemental solids. The somewhat old-fashioned word ``allotrope’’ is basically reserved for different forms of elemental solids observed at ambient pressure.</p></li>
+<li><p><strong>enantiomorphs</strong> as left and right forms of a chiral structure (see Ch.~\ref{sec:chirality})</p></li>
+<li><p><strong>polytypes</strong> as different structures arising from different stacking sequences. Polytypes are common in layered structures like graphite, but they could also occur in structures derived from close-packed layers, as in Ch.~\ref{sec:ionic-cp}. Labels of polytypes include the number of layers per unit cell and the indication of symmetry (cubic, hexagonal, rhombohedral). For example, zinc blende and wurtzite are the 3C- and 2H- polytypes of ZnS. Such polytypes are often observed in binary semiconductors.</p></li>
+</ul>
+</section>
+<section id="van-der-waals-radius-and-lennard-jones-potential">
+<h2>van der Waals radius and Lennard-Jones potential<a class="headerlink" href="#van-der-waals-radius-and-lennard-jones-potential" title="Link to this heading">#</a></h2>
+<p>Coming to van der Waals crystals, one usually defines the <strong>van der Waals radius</strong> as an effective radius of an atom or molecule. Such radii appeared due to van der Waals who proposed an equation of state for non-ideal gas,</p>
+<div class="math notranslate nohighlight">
+\[
+ \left(p+\frac{a}{V^2}\right)(V-b)=RT
+\]</div>
+<p>with the volume correction <span class="math notranslate nohighlight">\(b\)</span> that subtracts volumes of individual molecules from the total volume of the system.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The constant <span class="math notranslate nohighlight">\(a\)</span> defines additional pressure caused by interactions between the molecules.</p>
+</div>
+<p>Ironically, van der Waals never worked on the problem of chemical bonding (let alone on solids), but his concept of an effective radius proved very useful to identify main interactions between weakly bonded atoms or molecules. An appreciable van der Waals bonding occurs when the distance between atoms is less than the sum of the corresponding van der Waals radii. Any further contacts will of course lead to some minute bonding too, but it is even weaker than the aforementioned one and, to a first approximation, negligible.</p>
+<p>The interactions in van der Waals crystals are usually described by an effective potential,</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathcal V(r_{ij})=-\frac{\mathcal A}{r_{ij}^6}+\frac{\mathcal B}{r_{ij}^{12}}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathcal A\)</span> and <span class="math notranslate nohighlight">\(\mathcal B\)</span> are constants, and <span class="math notranslate nohighlight">\(r_{ij}\)</span> is the distance between atoms. The first (attractive) term is due to <a class="reference external" href="https://en.wikipedia.org/wiki/London_dispersion_force">London dispersion force</a> between dipoles. The second (repulsive) term is an empirical potential akin to the one we used in Eq.~\eqref{eq:enionic}. The power of 12 is chosen for reasons of mathematical convenience because this effective potential can be recast into the form</p>
+<div class="math notranslate nohighlight" id="equation-eq-lennard">
+<span class="eqno">(22)<a class="headerlink" href="#equation-eq-lennard" title="Link to this equation">#</a></span>\[
+ \mathcal V(r_{ij})=4\epsilon\left[-\left(\frac{\sigma}{r_{ij}}\right)^6 +\left(\frac{\sigma}{r_{ij}}\right)^{12} \right]
+\]</div>
+<p>known as <strong>Lennard-Jones potential</strong> with <span class="math notranslate nohighlight">\(\sigma=(\mathcal B/\mathcal A)^{\frac16}\)</span> and <span class="math notranslate nohighlight">\(\epsilon=\mathcal A^2/4\mathcal B\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We use <span class="math notranslate nohighlight">\(\sigma\)</span> and <span class="math notranslate nohighlight">\(\epsilon\)</span> following the standard notation of the Lennard-Jones potential. They should not be confused with the stress and strain appearing in Ch.~\ref{sec:mechanical}.</p>
+</div>
+</section>
+<section id="lattice-energy">
+<h2>Lattice energy<a class="headerlink" href="#lattice-energy" title="Link to this heading">#</a></h2>
+<p>We will now repeat the same steps as in Ch.~\ref{sec:ionic} to determine the equilibrium distance <span class="math notranslate nohighlight">\(r_0\)</span> and the corresponding lattice energy. Total energy of a van der Waals crystal is determined by the summation of Eq.~\eqref{eq:lennard},</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathcal{E}_{\rm tot}(r)=\tfrac12\sum_{i,j}\mathcal V(r_{ij})=2\epsilon\left[-A_6\left(\frac{\sigma}{r}\right)^6 + A_{12}\left(\frac{\sigma}{r}\right)^{12} \right]
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(r\)</span> is the nearest-neighbor interatomic distance and we introduced lattice sums <span class="math notranslate nohighlight">\(A_6\)</span> and <span class="math notranslate nohighlight">\(A_{12}\)</span>. They are similar in their meaning to the Madelung constant (Ch.~\ref{sec:madelung}), yet much easier to calculate because the series converge very fast. For an fcc crystal, <span class="math notranslate nohighlight">\(A_6=14.45\)</span> and <span class="math notranslate nohighlight">\(A_{12}=12.13\)</span>.</p>
+<p>Setting the derivative of <span class="math notranslate nohighlight">\(\mathcal{E}_{\rm tot}\)</span> to zero yields the equilibrium distance,</p>
+<div class="math notranslate nohighlight">
+\[
+ \frac{d\mathcal{E}_{\rm tot}}{dr}=0 \Rightarrow
+ 2\epsilon\left[\frac{6A_6}{r_0}\left(\frac{\sigma}{r_0}\right)^6-\frac{12A_{12}}{r_0}\left(\frac{\sigma}{r_0}\right)^{12}\right]=0 \Rightarrow
+ r_0=\sigma\left(\frac{2A_{12}}{A_6}\right)^{\frac16}
+\]</div>
+<p>that solely depends on the <span class="math notranslate nohighlight">\(\sigma\)</span> parameter of the potential. Then,</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathcal{E}_{\rm lat}=-\mathcal{E}_{\rm tot}(r_0)=-2\epsilon\left[-A_6\left(\frac{\sigma}{r_0}\right)^6 + A_{12}\left(\frac{\sigma}{r_0}\right)^{12} \right]=\epsilon\,\frac{A_6^2}{2A_{12}},
+\]</div>
+<p>so lattice energy solely depends on <span class="math notranslate nohighlight">\(\epsilon\)</span>. This is certainly more elegant than the ionic case.</p>
+<p>An interesting feature of van der Waals crystals is that they become more stable on increasing the lattice parameter. This is because <span class="math notranslate nohighlight">\(\mathcal A\)</span> increases with the atomic radius, as the atoms become more polarizable. The <span class="math notranslate nohighlight">\(\mathcal B\)</span> value should increase too to ensure the increase in <span class="math notranslate nohighlight">\(\sigma=(\mathcal B/\mathcal A)^{\frac16}\)</span> and the lattice parameter, but <span class="math notranslate nohighlight">\(\epsilon=\mathcal A^2/4\mathcal B\)</span> increases concurrently, because it contains <span class="math notranslate nohighlight">\(\mathcal A^2\)</span>. Larger atoms and molecules develop stronger van der Waals bonds. For example, melting points increase across the family of noble gases from neon to xenon, and likewise increase across halogens from <span class="math notranslate nohighlight">\(F_2\)</span> to <span class="math notranslate nohighlight">\(I_2\)</span>. On the absolute scale, lattice energies of van der Waals crystal remain quite low, though, typically in the range of <span class="math notranslate nohighlight">\(10-200\)</span> meV/atom.</p>
+</section>
+<section id="bulk-modulus">
+<h2>Bulk modulus<a class="headerlink" href="#bulk-modulus" title="Link to this heading">#</a></h2>
+<p>To calculate the bulk modulus, we repeat the procedure from Ch.~\ref{sec:bm-ionic}. We will assume the fcc structure again, but now the atoms are at the lattice sites, so <span class="math notranslate nohighlight">\(r=a/\sqrt 2\)</span>. Then volume per atom is <span class="math notranslate nohighlight">\(V=r^3/\sqrt 2\)</span> and</p>
+<div class="math notranslate nohighlight">
+\[
+ \frac{d}{dV}=\frac{\sqrt 2}{3r^2}\frac{d}{dr},
+\]</div>
+<p>hence</p>
+<div class="math notranslate nohighlight">
+\[
+ B=V\,\frac{d^2\mathcal{E}_{\rm tot}}{dV^2}=\frac{\sqrt 2}{9\,r_0}\left.\frac{d^2\mathcal{E}_{\rm tot}}{dr^2}\right|_{r=r_0}=\frac{4\epsilon}{\sigma^3}\,A_{12}\left(\frac{A_6}{A_{12}}\right)^{\frac52}.
+\]</div>
+<p>There is now the ratio of <span class="math notranslate nohighlight">\(\epsilon\)</span> and <span class="math notranslate nohighlight">\(\sigma^3\)</span>, so the trend may be less intuitive than in the case of energy, but nevertheless bulk modulus of van der Waals crystals will typically increase with increasing the lattice parameter. Iodine is less compressible than solid bromine. The absolute values of the bulk modulus are typically below 10 GPa and even below 1 GPa for some of the lighter atoms and molecules.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -497,6 +610,26 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#covalent-crystals">Covalent crystals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metallic-crystals">Metallic crystals</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#polymorphism">Polymorphism</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#van-der-waals-radius-and-lennard-jones-potential">van der Waals radius and Lennard-Jones potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lattice-energy">Lattice energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bulk-modulus">Bulk modulus</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
