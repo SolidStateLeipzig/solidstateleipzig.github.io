@@ -68,7 +68,13 @@ parts:
   - file: l8_covalent/l8_method.md
   - file: l8_covalent/l8_problem.md        
 
-
+- caption: Lecture 9 - Mechanical properties
+  chapters:
+  - file: l9_mechanical/l9_objectives.md
+  - file: l9_mechanical/l9_definitions.md
+  - file: l9_mechanical/l9_content.md
+  - file: l9_mechanical/l9_method.md
+  - file: l9_mechanical/l9_problem.md
 
   
 
