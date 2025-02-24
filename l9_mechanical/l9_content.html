@@ -544,14 +544,29 @@ document.write(`
 \[
  \sigma_{ij}=C_{ijkl}\,\epsilon_{kl}.
 \]</div>
-<p>They have the same units of pressure (Pa) as all the elastic moduli. Elastic constants describe mechanical response of anisotropic media, including crystals. Technically, <span class="math notranslate nohighlight">\(C_{ijkl}\)</span> is a fourth-rank tensor (<strong>elasticity tensor</strong>) with 81 components, but symmetries of the stress and strain tensors allow several simplifications. Indeed, with only six independent components in <span class="math notranslate nohighlight">\(\sigma\)</span> and <span class="math notranslate nohighlight">\(\epsilon\)</span>, respectively, it becomes convenient to introduce the aliases,
-\begin{center}
-\begin{tabular}{c&#64;{\hspace{0.8cm}}c&#64;{\hspace{0.8cm}}c&#64;{\hspace{0.8cm}}c&#64;{\hspace{0.8cm}}c&#64;{\hspace{0.8cm}}c}
-<span class="math notranslate nohighlight">\(xx\)</span> &amp; <span class="math notranslate nohighlight">\(yy\)</span> &amp; <span class="math notranslate nohighlight">\(zz\)</span> &amp; <span class="math notranslate nohighlight">\(xy\)</span> &amp; <span class="math notranslate nohighlight">\(xz\)</span> &amp; <span class="math notranslate nohighlight">\(yz\)</span> \
-1  &amp;   2  &amp;   3  &amp;   4  &amp;   5  &amp;   6  \
-\end{tabular}
-\end{center}\smallskip
-and consider 36 elastic constants from <span class="math notranslate nohighlight">\(C_{11}\)</span> to <span class="math notranslate nohighlight">\(C_{66}\)</span>.</p>
+<p>They have the same units of pressure (Pa) as all the elastic moduli. Elastic constants describe mechanical response of anisotropic media, including crystals. Technically, <span class="math notranslate nohighlight">\(C_{ijkl}\)</span> is a fourth-rank tensor (<strong>elasticity tensor</strong>) with 81 components, but symmetries of the stress and strain tensors allow several simplifications. Indeed, with only six independent components in <span class="math notranslate nohighlight">\(\sigma\)</span> and <span class="math notranslate nohighlight">\(\epsilon\)</span>, respectively, it becomes convenient to introduce the aliases,</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>xx</p></th>
+<th class="head text-center"><p>yy</p></th>
+<th class="head text-center"><p>zz</p></th>
+<th class="head text-center"><p>xy</p></th>
+<th class="head text-center"><p>xz</p></th>
+<th class="head text-center"><p>yz</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>2</p></td>
+<td class="text-center"><p>3</p></td>
+<td class="text-center"><p>4</p></td>
+<td class="text-center"><p>5</p></td>
+<td class="text-center"><p>6</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>and consider 36 elastic constants from <span class="math notranslate nohighlight">\(C_{11}\)</span> to <span class="math notranslate nohighlight">\(C_{66}\)</span>.</p>
 <p>Elastic constants can be also defined in a thermodynamic fashion as second derivatives of the elastic energy (energy acquired by the crystal due to its deformation),</p>
 <div class="math notranslate nohighlight">
 \[

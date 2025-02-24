@@ -105,12 +105,12 @@ $$
 $$
 
 They have the same units of pressure (Pa) as all the elastic moduli. Elastic constants describe mechanical response of anisotropic media, including crystals. Technically, $C_{ijkl}$ is a fourth-rank tensor (**elasticity tensor**) with 81 components, but symmetries of the stress and strain tensors allow several simplifications. Indeed, with only six independent components in $\sigma$ and $\epsilon$, respectively, it becomes convenient to introduce the aliases, 
-\begin{center}
-\begin{tabular}{c@{\hspace{0.8cm}}c@{\hspace{0.8cm}}c@{\hspace{0.8cm}}c@{\hspace{0.8cm}}c@{\hspace{0.8cm}}c}
- $xx$ & $yy$ & $zz$ & $xy$ & $xz$ & $yz$ \\
-   1  &   2  &   3  &   4  &   5  &   6  \\
-\end{tabular}
-\end{center}\smallskip
+
+
+| xx | yy | zz | xy | xz | yz |
+| :--: | :--: | :--: | :--: | :--: | :--: |
+| 1| 2 | 3 | 4 | 5 | 6 |
+
 and consider 36 elastic constants from $C_{11}$ to $C_{66}$. 
 
 Elastic constants can be also defined in a thermodynamic fashion as second derivatives of the elastic energy (energy acquired by the crystal due to its deformation),
