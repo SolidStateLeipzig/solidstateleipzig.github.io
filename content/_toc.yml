@@ -76,6 +76,16 @@ parts:
   - file: l9_mechanical/l9_method.md
   - file: l9_mechanical/l9_problem.md
 
+- caption: Lecture 10 - Dielectric properties   
+  chapters:
+  - file: l10_dielectric/l10_objectives.md
+  - file: l10_dielectric/l10_definitions.md
+  - file: l10_dielectric/l10_content.md
+  - file: l10_dielectric/l10_method.md
+  - file: l10_dielectric/l10_problem.md
+
+  
+
   
 
   
