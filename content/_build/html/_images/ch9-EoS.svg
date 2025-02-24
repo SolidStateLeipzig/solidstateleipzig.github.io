@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="260"
+   height="156"
+   viewBox="0 0 260 156"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <g
+     id="g8"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,156)">
+    <g
+       id="g10"
+       transform="scale(0.1)">
+      <path
+         d="M 21.6016,976.223 548.551,193.246"
+         style="fill:none;stroke:#0994dc;stroke-width:14.1676;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path12" />
+      <path
+         d="M 19.4414,978.922 C 309.168,552.879 800.418,348.32 1675.77,145.711"
+         style="fill:none;stroke:#00a650;stroke-width:14.1676;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path14" />
+      <g
+         id="g16"
+         transform="scale(10)">
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,86.1496,95.2695)"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-size:8.99986px;font-family:Calibri;-inkscape-font-specification:Calibri-NormalItalic;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text22"><tspan
+             x="0 7.6948805 12.320808 15.407761 20.033688 24.659616 29.285545 33.911472 38.537399"
+             y="0"
+             id="tspan18">Murnaghan</tspan><tspan
+             x="-0.076562501 9.8636751 12.617632 17.23456 20.321512 24.947441 29.249372 32.336327 34.370293 39.266216 41.336185 44.423138 48.16708 52.793007 55.546963 63.241844 67.867775 70.954727 75.58065 80.206581 84.832512 89.458435 94.084366 4.4847674 6.6640658"
+             y="12.375"
+             id="tspan20">3-order Birch-Murnaghan!&quot;</tspan></text>
+      </g>
+      <g
+         id="g24"
+         transform="scale(10)">
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,11.4949,21.1285)"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-size:8.99986px;font-family:Calibri;-inkscape-font-specification:Calibri-BoldItalic;writing-mode:lr-tb;fill:#0994dc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text28"><tspan
+             x="0"
+             y="0"
+             id="tspan26">B</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,18.57342,21.1285)"
+           style="font-variant:normal;font-weight:bold;font-size:8.99986px;font-family:Calibri;-inkscape-font-specification:Calibri-Bold;writing-mode:lr-tb;fill:#0994dc;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text32"><tspan
+             x="0 4.4819303 6.5158987 10.237505 15.07943 19.912355 23.395325"
+             y="0"
+             id="tspan30">= const</tspan></text>
+      </g>
+      <path
+         d="M 18.4805,977.492 C 308.207,551.449 862.27,344.082 1678.56,184.598"
+         style="fill:none;stroke:#f47216;stroke-width:14.1676;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path34" />
+      <path
+         d="m 529.559,973.227 h 273.75"
+         style="fill:none;stroke:#f47216;stroke-width:14.1676;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path36" />
+      <path
+         d="m 532.391,852.309 h 273.75"
+         style="fill:none;stroke:#00a650;stroke-width:14.1676;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path38" />
+      <g
+         id="g40"
+         transform="scale(10)">
+        <text
+           xml:space="preserve"
+           transform="matrix(1,0,0,-1,7.72188,109.718)"
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-size:9.9999px;font-family:Calibri;-inkscape-font-specification:Calibri-NormalItalic;writing-mode:lr-tb;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="text46"><tspan
+             x="0"
+             y="0"
+             id="tspan42">V</tspan><tspan
+             x="182.15199"
+             y="107.623"
+             id="tspan44">p</tspan></text>
+      </g>
+      <path
+         d="M 15.543,1122.88 V 38.7031 H 1836.72"
+         style="fill:none;stroke:#231f20;stroke-width:8.4983;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2.61313;stroke-dasharray:none;stroke-opacity:1"
+         id="path48" />
+      <path
+         d="m 15.543,1148.66 13.0625,-26.12 H 2.47656 Z"
+         style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path50" />
+      <path
+         d="m 1862.5,38.7031 -26.12,13.0664 V 25.6406 Z"
+         style="fill:#231f20;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path52" />
+    </g>
+  </g>
+</svg>
