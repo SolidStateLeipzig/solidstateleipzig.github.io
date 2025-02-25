@@ -84,7 +84,13 @@ parts:
   - file: l10_dielectric/l10_method.md
   - file: l10_dielectric/l10_problem.md
 
-  
+- caption: Lecture 11 - Phonons and Sound
+  chapters:
+  - file: l11_sound/l11_objectives.md  
+  - file: l11_sound/l11_definitions.md 
+  - file: l11_sound/l11_content.md 
+  - file: l11_sound/l11_method.md 
+  - file: l11_sound/l11_problem.md 
 
   
 

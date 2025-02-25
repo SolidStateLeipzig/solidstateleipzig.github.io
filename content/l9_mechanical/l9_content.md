@@ -23,7 +23,7 @@ $$ (eq-murnaghan-1)
 where $B_0$ is the bulk modulus at ambient pressure and $B_0'={\rm const}$ is pressure derivative of the bulk modulus. Using this pressure dependence in Eq.~\eqref{eq:bulkmod} gives rise to a differential equation,
 
 $$
- -V\frac{dp}{dV}=B_0+B_0'\,p \Ra
+ -V\frac{dp}{dV}=B_0+B_0'\,p \Rightarrow
  \frac{dp}{B_0+B_0'p}=-\frac{dV}{V}
 $$
 
