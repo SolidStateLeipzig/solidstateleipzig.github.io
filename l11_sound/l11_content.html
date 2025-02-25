@@ -57,6 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'l11_sound/l11_content';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -438,7 +440,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -454,6 +458,19 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#underlying-approximations">Underlying approximations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monoatomic-chain">Monoatomic chain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-waves-and-sound">Elastic waves and sound</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#longitudinal-and-transverse-phonons">Longitudinal and transverse phonons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diatomic-chain">Diatomic chain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acoustic-and-optical-phonons">Acoustic and optical phonons</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -465,6 +482,192 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="content">
 <h1>Content<a class="headerlink" href="#content" title="Link to this heading">#</a></h1>
+<section id="underlying-approximations">
+<h2>Underlying approximations<a class="headerlink" href="#underlying-approximations" title="Link to this heading">#</a></h2>
+<p>Atomic motion determines many, if not all, properties of a crystal. Molecules show characteristic vibrations (normal modes) that occur at special frequencies. Crystals feature collective atomic vibrations too, but their nature is somewhat more involved than in the case of molecules. To understand these vibrations in the simplest possible way, we will take advantage of several approximations:</p>
+<ul class="simple">
+<li><p><strong>classical</strong>, namely, we will treat atomic motion using classical mechanics and obtain <strong>displacement waves</strong> that describe collective atomic motion in the crystal. Quantum mechanics requires this motion to be quantized. The corresponding quantum is called <strong>phonon</strong>, but we usually do not need to solve the respective problem on the quantum level. It is sufficient to quantize the waves obtained classically, as we will consciously do in Ch.~\ref{sec:heat}.</p></li>
+<li><p><strong>harmonic</strong>, namely, elastic energy is quadratic in the displacement, or in other words any displacement creates a restoring force, which is proportional to the displacement. Harmonic approximation works well most of the time, although in Ch.~\ref{sec:expansion} we will see the need to go beyond it.</p></li>
+<li><p><strong>adiabatic</strong>, namely, atomic (nuclear) and electronic degrees of freedom are separated from each other. This is possible because nuclei are much heavier than electrons, so electrons move a lot faster. One can then think of electrons as creating a potential energy landscape for the nuclear motion. The typical time scale of electronic and nuclear motion is <span class="math notranslate nohighlight">\(10^{-15}\)</span>,s and <span class="math notranslate nohighlight">\(10^{-12}\)</span>,s, respectively. This approximation is also known as the <strong>Born-Oppenheimer approximation</strong>, especially in the context of molecules. It goes back to the very general <a class="reference external" href="https://en.wikipedia.org/wiki/Adiabatic_theorem">adiabatic theorem</a> of quantum mechanics. The adiabatic approximation fails when two different electronic states have similar energies, and nuclei no longer know in which potential energy landscape to move. Such cases are fairly rare in the ground state, (But by all means not impossible, see the <a class="reference external" href="http://doi.org/10.1119/1.17197">Jahn-Teller effect</a>.) yet they become more common when excited electronic states are considered, for example, when crystal is hit by a laser that drives an electronic excitation of some sort.</p></li>
+</ul>
+</section>
+<section id="monoatomic-chain">
+<h2>Monoatomic chain<a class="headerlink" href="#monoatomic-chain" title="Link to this heading">#</a></h2>
+<p>Let’s consider the simplest possible case, a chain of atoms with equal spacings <span class="math notranslate nohighlight">\(a\)</span>. We will use the index <span class="math notranslate nohighlight">\(p\)</span> to label atoms along this chain, and introduce the atomic displacements <span class="math notranslate nohighlight">\(u_p\)</span> (Fig.~\ref{fig:chain}). Any displacement changes the interatomic distance, and we will assume that chemical bonds behave as springs with the stiffness <span class="math notranslate nohighlight">\(\mathcal {K}\)</span>. The overall elastic energy is then</p>
+<div class="math notranslate nohighlight">
+\[
+ \mathcal{E}_{\rm elastic}=\frac12\sum_p \mathcal{K}(u_{p+1}-u_p)^2.
+\]</div>
+<p>\begin{figure}
+\centerline{\includegraphics{ch11-chain}}
+\caption{\label{fig:chain}
+Atomic displacements <span class="math notranslate nohighlight">\(u_p\)</span> in the monoatomic chain. The right panel shows the dispersion relations for the displacement wave (orange) and elastic wave (blue). The light-blue arrows indicate the atomic displacements at <span class="math notranslate nohighlight">\(q=\pi/a\)</span>.
+}
+\end{figure}</p>
+<p>Atomic displacements can be determined from the equations of motion,</p>
+<div class="math notranslate nohighlight" id="equation-eq-ph-motion">
+<span class="eqno">(38)<a class="headerlink" href="#equation-eq-ph-motion" title="Link to this equation">#</a></span>\[
+ m\,\frac{d^2u_p}{dt^2}=-\frac{\partial\mathcal{E}_{\rm elastic}}{\partial u_p}=-\mathcal{K}\,(2u_p-u_{p+1}-u_{p-1}).
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(m\)</span> is the atomic mass. Instead of trying a brute force solution of these coupled differential equations, we will choose an ansatz,</p>
+<div class="math notranslate nohighlight" id="equation-eq-ph-wave">
+<span class="eqno">(39)<a class="headerlink" href="#equation-eq-ph-wave" title="Link to this equation">#</a></span>\[
+ u_p(t)=e^{i(qpa-\omega t)}
+\]</div>
+<p>that essentially describes oscillations with the frequency <span class="math notranslate nohighlight">\(\omega\)</span> that propagate along the chain with the propagation vector <span class="math notranslate nohighlight">\(q\)</span> (we consider the 1D situation, so the scalar suffices). The first part, <span class="math notranslate nohighlight">\(e^{iqpa}\)</span>, is basically a phase shift between the oscillations of different atoms.</p>
+<p>Using Eq.~\eqref{eq:ph-wave} in Eq.~\eqref{eq:ph-motion}, one finds <span class="math notranslate nohighlight">\(-m\omega^2=-\mathcal{K}(2-e^{iqa}-e^{-iqa})\)</span> and</p>
+<div class="math notranslate nohighlight">
+\[
+ \omega^2(q)=2\,\frac{\mathcal{K}}{m}\,[1-\cos(qa)]\Rightarrow
+ \omega(q)=2\,\sqrt{\frac{\mathcal{K}}{m}}\times\left|\sin\frac{qa}{2}\right|
+\]</div>
+<p>where we used the absolute value because frequency must be positive. This is a <strong>dispersion relation</strong> for the displacement wave (phonon) in a monoatomic chain. One immediately notices that <span class="math notranslate nohighlight">\(\omega(q)\)</span> is symmetric with respect to <span class="math notranslate nohighlight">\(q=0\)</span> and shows periodicity of <span class="math notranslate nohighlight">\(2\pi/a\)</span> (Fig.~\ref{fig:chain}) that intriguingly matches periodicity of the reciprocal lattice (Ch.~\ref{sec:reciprocal-detail}). Full implications of this fact will become clear in Ch.~\ref{sec:ph-reciprocal}. For now we will stay away from it and analyze the dispersion relation. By definition, the value of <span class="math notranslate nohighlight">\(q\)</span> shows the phase shift between the displacements of neighboring atoms. When this phase shift is small, springs stretch very little, and the wave energy (hence frequency) is low. It increases with increasing <span class="math notranslate nohighlight">\(q\)</span>. At <span class="math notranslate nohighlight">\(q=\pi/a\)</span>, the phase shift becomes <span class="math notranslate nohighlight">\(\pi\)</span>, so adjacent atoms move opposite to each other, thus forming a standing wave (Fig.~\ref{fig:chain}).</p>
+<p>At low <span class="math notranslate nohighlight">\(q\)</span>, one can use <span class="math notranslate nohighlight">\(\sin(qa/2)\simeq qa/2\)</span> and write the linear dispersion relation</p>
+<div class="math notranslate nohighlight">
+\[
+ \omega(q)=a\,\sqrt{\frac{\mathcal{K}}{m}}\times q
+\]</div>
+<p>that corresponds to the group velocity of</p>
+<div class="math notranslate nohighlight" id="equation-eq-v-acoustic">
+<span class="eqno">(40)<a class="headerlink" href="#equation-eq-v-acoustic" title="Link to this equation">#</a></span>\[
+ v_{\rm ph}=\frac{d\omega}{dq}=a\,\sqrt{\frac{\mathcal{K}}{m}}
+\]</div>
+<p>This is the speed of sound, as we will see shortly.</p>
+</section>
+<section id="elastic-waves-and-sound">
+<h2>Elastic waves and sound<a class="headerlink" href="#elastic-waves-and-sound" title="Link to this heading">#</a></h2>
+<p>Sound is an elastic wave that propagates in any compressible medium. Consider a bar with the cross-section <span class="math notranslate nohighlight">\(A\)</span> subject to a deformation that leads to the displacement <span class="math notranslate nohighlight">\(u_x(x)\)</span> of the volume element <span class="math notranslate nohighlight">\(A\,dx\)</span> parallel to the bar (Fig.~\ref{fig:elastic}). Time dependence of the displacement is described by the usual equation of motion,</p>
+<div class="math notranslate nohighlight">
+\[
+ m\,\frac{\partial^2u_x}{\partial t^2}=\sum F=F(x+dx)-F(x)
+\]</div>
+<p>where forces act on both sides of the volume element. By introducing volume density <span class="math notranslate nohighlight">\(\rho=m/V\)</span>, one can write</p>
+<div class="math notranslate nohighlight">
+\[
+ (\rho A\,dx)\,\frac{\partial^2u_x}{\partial t^2}=F(x+dx)-F(x)\Rightarrow
+ \rho\,\frac{\partial^2u_x}{\partial t^2}=\frac{1}{A}\frac{\partial F}{\partial x}=\frac{\partial\varsigma_{xx}}{\partial x}
+\]</div>
+<p>Hooke’s law relates stress and strain, <span class="math notranslate nohighlight">\(\varsigma_{xx}=Y\epsilon_{xx}\)</span> via the Young’s modulus <span class="math notranslate nohighlight">\(Y\)</span>, whereas strain can be represented as <span class="math notranslate nohighlight">\(\epsilon_{xx}=\partial u_x/\partial x\)</span>, so overall</p>
+<div class="math notranslate nohighlight">
+\[
+ \frac{\partial^2 u_x}{\partial t^2}=\frac{Y}{\rho}\times\frac{\partial^2 u_x}{\partial x^2}.
+\]</div>
+<p>This is the standard wave equation solved by our earlier ansatz, Eq.~\eqref{eq:ph-wave}, but with the dispersion relation</p>
+<div class="math notranslate nohighlight">
+\[
+ \omega^2=v_s^2\,q^2\quad{\rm where}\quad v_s=\sqrt{\frac{Y}{\rho}}.
+\]</div>
+<p>The speed <span class="math notranslate nohighlight">\(v_s\)</span> resembles our earlier result, Eq.~\eqref{eq:v-acoustic} obtained in the <span class="math notranslate nohighlight">\(q\rightarrow 0\)</span> limit, and serves as the <strong>speed of sound</strong>.</p>
+<p>\begin{figure}
+\begin{minipage}{9.2cm}
+\includegraphics{ch11-elastic}
+\end{minipage}
+\begin{minipage}{7.3cm}
+\caption{\label{fig:elastic}
+Compressional and shear elastic waves. The forces <span class="math notranslate nohighlight">\(F(x)\)</span> and <span class="math notranslate nohighlight">\(F(x+dx)\)</span> cause the displacements <span class="math notranslate nohighlight">\(u_x\)</span> and <span class="math notranslate nohighlight">\(u_y\)</span> along the bar and perpendicular to the bar, respectively.
+}
+\vspace{0.5cm}
+\end{minipage}
+\end{figure}</p>
+<p>An important difference between the compressional elastic wave in a continuous medium, as we considered here, and the displacement wave in a crystal (Ch.~\ref{sec:ph-chain}) is that linear dispersion relation, <span class="math notranslate nohighlight">\(\omega=v_s\,q\)</span>, breaks down in the latter at higher <span class="math notranslate nohighlight">\(q\)</span>’s (Fig.~\ref{fig:chain}). This happens because crystal is discrete, so it can’t be treated as a continuous medium when period of the displacement wave becomes comparable to the interatomic distance or, in other words, <span class="math notranslate nohighlight">\(q\)</span> approaches <span class="math notranslate nohighlight">\(\pi/a\)</span>. However, the continuum approximation is perfectly justified at low <span class="math notranslate nohighlight">\(q\)</span>’s where period of the displacement wave is large compared to the interatomic distance. Continuum approximations are widely used in solid-state physics for describing mesoscopic phenomena, for example long-period spin textures and <a class="reference external" href="https://en.wikipedia.org/wiki/Magnetic_skyrmion">magnetic skyrmions</a>.</p>
+<p>We can also envisage a wave of displacements <span class="math notranslate nohighlight">\(u_y\)</span>, which are perpendicular to the bar (Fig.~\ref{fig:elastic}). The solution is similar to the previous case and involves the shear stress, <span class="math notranslate nohighlight">\(\tau_{xy}=F/A\)</span>, as well as the shear strain, <span class="math notranslate nohighlight">\(\epsilon_{xy}=\partial u_y/\partial x\)</span>, related by <span class="math notranslate nohighlight">\(\tau_{xy}=G\,\epsilon_{xy}\)</span> with the shear modulus <span class="math notranslate nohighlight">\(G\)</span>. The resulting wave equation,</p>
+<div class="math notranslate nohighlight">
+\[
+  \frac{\partial^2 u_y}{\partial t^2}=\frac{G}{\rho}\times\frac{\partial^2 u_y}{\partial x^2},
+\]</div>
+<p>describes a <strong>shear wave</strong> propagating with the velocity of <span class="math notranslate nohighlight">\(\sqrt{G/\rho}\)</span>.</p>
+<p>Compressional wave propagates in any elastic medium, whereas shear waves only propagate in solids because gases and liquids feature <span class="math notranslate nohighlight">\(G=0\)</span> (their shape can be changed at no energy cost). This is the main reason why sound is a compressional wave. Shear wave can be thought as sound too, but it’s not audible because our hearing mechanism involves sound transmission through air.</p>
+</section>
+<section id="longitudinal-and-transverse-phonons">
+<h2>Longitudinal and transverse phonons<a class="headerlink" href="#longitudinal-and-transverse-phonons" title="Link to this heading">#</a></h2>
+<p>The phonon described in Ch.~\ref{sec:ph-chain} is called *<em>acoustic</em> because <span class="math notranslate nohighlight">\(q\rightarrow 0\)</span> part of its dispersion relation describes sound propagation in crystals. A similar acoustic phonon with displacements perpendicular to the propagation direction exists too. Different names can be used to describe these two types of motion depending on the context,</p>
+<p>\centerline{%
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{c&#64;{\hspace{2cm}}c&#64;{\hspace{2cm}}c}
+\textit{acoustic phonon} &amp; longitudinal &amp; transverse \
+\textit{elastic wave} &amp; compressional &amp; shear \
+\textit{seismic wave} &amp; <span class="math notranslate nohighlight">\(p\)</span>-wave &amp; <span class="math notranslate nohighlight">\(s\)</span>-wave
+\end{tabular}
+}
+\medskip</p>
+<p>Speeds of the corresponding waves are given by</p>
+<div class="math notranslate nohighlight" id="equation-eq-acoustic-v">
+<span class="eqno">(41)<a class="headerlink" href="#equation-eq-acoustic-v" title="Link to this equation">#</a></span>\[
+ v_{\rm LA}=\sqrt{\frac{B+\frac43G}{\rho}},\qquad\qquad v_{\rm TA}=\sqrt{\frac{G}{\rho}}\]</div>
+<p>which are, for example, velocities of the primary (<span class="math notranslate nohighlight">\(p\)</span>) and secondary (<span class="math notranslate nohighlight">\(s\)</span>) seismic waves. Since <span class="math notranslate nohighlight">\(v_{\rm LA}&gt;v_{\rm TA}\)</span>, <span class="math notranslate nohighlight">\(p\)</span>-wave always arrives earlier than <span class="math notranslate nohighlight">\(s\)</span>-wave. This time delay measured by a \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Seismometer">https://en.wikipedia.org/wiki/Seismometer</a>}{seismometer} gauges the distance to the epicentre of an earthquake. Likewise, the data on the propagation of <span class="math notranslate nohighlight">\(p\)</span>-waves and <span class="math notranslate nohighlight">\(s\)</span>-waves provides information on the \href{<a class="reference external" href="https://en.wikipedia.org/wiki/Internal_structure_of_Earth">https://en.wikipedia.org/wiki/Internal_structure_of_Earth</a>}{internal structure of Earth}. The existence of the liquid outer core and inner solid core is inferred from the refraction of <span class="math notranslate nohighlight">\(p\)</span>-waves and from the fact that <span class="math notranslate nohighlight">\(s\)</span>-waves do not reach points on the opposite side of Earth, because shear waves do not propagate through liquid.</p>
+<p>In Eq.~\eqref{eq:acoustic-v}, <span class="math notranslate nohighlight">\(v_{\rm TA}\)</span> is equal to the velocity of the shear wave as determined in Ch.~\ref{sec:elastic-wave}. However, <span class="math notranslate nohighlight">\(v_{\rm LA}\)</span> is different from the velocity of the compressional wave in a thin bar, because Poisson’s ratio should be taken into account in a 3D solid.</p>
+<p>In liquid and gas, <span class="math notranslate nohighlight">\(G=0\)</span> and speed of sound is described by the \emph{Newton-Laplace equation},
+\be
+v=\sqrt{\frac{B}{\rho}}
+\ee</p>
+</section>
+<section id="diatomic-chain">
+<h2>Diatomic chain<a class="headerlink" href="#diatomic-chain" title="Link to this heading">#</a></h2>
+<p>Let us now extend this analysis to a diatomic chain with alternating atoms and equal separations, such that all bonds have the same stiffness <span class="math notranslate nohighlight">\(\stif\)</span>. We will proceed similar to the previous case and consider atomic displacements propagating along the chain, but now the two atoms have different mass and should thus show different displacement amplitudes,
+\be
+u_p(t)=A_1,e^{i(qpa-\omega t)},\qquad v_p(t)=A_2,e^{i(qpa-\omega t)}.
+\label{eq:ph-diatans}
+\ee</p>
+<p>\begin{figure}
+\centerline{\includegraphics{ch11-diatomic}}
+\caption{\label{fig:diatomic}
+Left: atomic displacements in the diatomic chain comprising atoms with the masses <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span> connected by the springs with the same stiffness <span class="math notranslate nohighlight">\(\stif\)</span>. Right: dispersion relation for the two phonon modes, acoustic and optical.
+}
+\end{figure}</p>
+<p>The equations of motion become
+\begin{align*}
+m_1,\frac{d^2u_p}{dt^2}&amp; =-\stif(u_p-v_p)-\stif(u_p-v_{p-1}), \[0.3em]
+m_2,\frac{d^2v_p}{dt^2}&amp; =-\stif(v_p-u_p)-\stif(v_p-u_{p+1}).
+\end{align*}
+Our ansatz for <span class="math notranslate nohighlight">\(u_p\)</span> and <span class="math notranslate nohighlight">\(v_p\)</span> returns a system of two linear equations for the amplitudes <span class="math notranslate nohighlight">\(A_1\)</span> and <span class="math notranslate nohighlight">\(A_2\)</span>,
+$<span class="math notranslate nohighlight">\(
+\renewcommand{\arraystretch}{1.3}
+\left\{ \begin{array}{l}
+ -m_1\omega^2A_1=-\stif A_1+\stif A_2-\stif A_1+\stif A_2\,e^{-iqa} \\
+ -m_2\omega^2A_2=-\stif A_2+\stif A_1-\stif A_2+\stif A_1\,e^{iqa}
+\end{array}\right.
+\)</span>$
+or
+\be
+\renewcommand{\arraystretch}{1.3}
+\left{ \begin{array}{l}
+(m_1\omega^2-2\stif)A_1+\stif(1+e^{-iqa})A_2=0 \
+\stif(1+e^{iqa})A_1+(m_2\omega^2-2\stif)A_2=0
+\end{array}\right.
+\label{ph-eqamplitude}
+\ee</p>
+<p>The solution for <span class="math notranslate nohighlight">\(A_1\)</span> and A<span class="math notranslate nohighlight">\(_2\)</span> exists when the determinant is zero, namely,
+\be
+\renewcommand{\arraystretch}{1.3}
+\left| \begin{array}{cc}
+m_1\omega^2-2\stif &amp; \stif(1+e^{-iqa}) \
+\stif(1+e^{iqa}) &amp; m_2\omega^2-2\stif \
+\end{array}\right|=0
+\ee
+This condition returns a quadratic equation for <span class="math notranslate nohighlight">\(\omega^2\)</span>,
+\be
+m_1m_2,\omega^4-2\stif (m_1+m_2),\omega^2+2\stif^2[1-\cos(qa)]=0,
+\ee
+and
+\be
+\omega^2(q)=\frac{\stif}{\mass}\pm \stif\sqrt{\frac{1}{\mass^2}-\frac{4}{m_1m_2}\sin^2\frac{qa}{2}}
+\ee
+where we introduced the \emph{reduced mass},
+\be
+\frac{1}{\mass}=\frac{1}{m_1}+\frac{1}{m_2}
+\ee</p>
+</section>
+<section id="acoustic-and-optical-phonons">
+<h2>Acoustic and optical phonons<a class="headerlink" href="#acoustic-and-optical-phonons" title="Link to this heading">#</a></h2>
+<p>There are now two dispersion relations that define two \emph{phonon branches}. The <span class="math notranslate nohighlight">\(\omega_-(q)\)</span> branch has zero frequency at <span class="math notranslate nohighlight">\(q=0\)</span>. It is called \emph{acoustic} because it reduces to an elastic wave in the low-<span class="math notranslate nohighlight">\(q\)</span> limit and describes sound propagation. The <span class="math notranslate nohighlight">\(\omega_+(q)\)</span> branch is \emph{optical}, because it can interact with light, as we will see in Ch.~\ref{sec:optical}. Optical phonon has the finite frequency of <span class="math notranslate nohighlight">\(\sqrt{2\stif/\mass}\)</span> at <span class="math notranslate nohighlight">\(q=0\)</span>.</p>
+<p>The main intrinsic difference between the acoustic and optical phonons lies in the amplitudes <span class="math notranslate nohighlight">\(A_1\)</span> and <span class="math notranslate nohighlight">\(A_2\)</span>.  For an optical branch at <span class="math notranslate nohighlight">\(q=0\)</span>, Eqs.~\eqref{ph-eqamplitude} yield <span class="math notranslate nohighlight">\(A_1/A_2=-m_2/m_1\)</span>. The atoms of different type oscillate out-of-phase. On the other hand, <span class="math notranslate nohighlight">\(\omega_-=0\)</span> of the acoustic mode yields <span class="math notranslate nohighlight">\(A_1/A_2=1\)</span>, such that atoms of different type oscillate in-phase near <span class="math notranslate nohighlight">\(q=0\)</span>.</p>
+<p>At <span class="math notranslate nohighlight">\(q=\pi/a\)</span>, one finds <span class="math notranslate nohighlight">\(\omega_+=\sqrt{2\stif/m_2}\)</span> and <span class="math notranslate nohighlight">\(\omega_-=\sqrt{2\stif/m_1}\)</span> when <span class="math notranslate nohighlight">\(m_1&gt;m_2\)</span>. Then,
+\be
+\left(\frac{A_1}{A_2}\right)<em>+=-\frac{\stif(1+e^{-iqa})}{m_1\omega</em>+^2-2\stif}\rightarrow 0,\qquad
+\left(\frac{A_1}{A_2}\right)<em>-=-\frac{m_2\omega</em>-^2-\stif}{\stif(1+e^{iqa})}\rightarrow\infty.
+\ee
+It means that only the light atoms (<span class="math notranslate nohighlight">\(m_2\)</span>) oscillate in the optical mode, whereas only the heavy atoms (<span class="math notranslate nohighlight">\(m_1\)</span>) oscillate in the acoustic mode. A nice visualization of the modes at arbitrary <span class="math notranslate nohighlight">\(q\)</span>-values and for different <span class="math notranslate nohighlight">\(m_2/m_1\)</span> ratios can be found \href{<a class="reference external" href="http://lampx.tugraz.at/~hadley/ss1/phonons/1d/1d2m.php">http://lampx.tugraz.at/~hadley/ss1/phonons/1d/1d2m.php</a>}{here}.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -521,6 +724,26 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#underlying-approximations">Underlying approximations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monoatomic-chain">Monoatomic chain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elastic-waves-and-sound">Elastic waves and sound</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#longitudinal-and-transverse-phonons">Longitudinal and transverse phonons</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diatomic-chain">Diatomic chain</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acoustic-and-optical-phonons">Acoustic and optical phonons</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
