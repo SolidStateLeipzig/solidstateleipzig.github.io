@@ -137,85 +137,97 @@ $$
 
 $$ (eq-acoustic-v)
 
-which are, for example, velocities of the primary ($p$) and secondary ($s$) seismic waves. Since $v_{\rm LA}>v_{\rm TA}$, $p$-wave always arrives earlier than $s$-wave. This time delay measured by a \href{https://en.wikipedia.org/wiki/Seismometer}{seismometer} gauges the distance to the epicentre of an earthquake. Likewise, the data on the propagation of $p$-waves and $s$-waves provides information on the \href{https://en.wikipedia.org/wiki/Internal_structure_of_Earth}{internal structure of Earth}. The existence of the liquid outer core and inner solid core is inferred from the refraction of $p$-waves and from the fact that $s$-waves do not reach points on the opposite side of Earth, because shear waves do not propagate through liquid.
+which are, for example, velocities of the primary ($p$) and secondary ($s$) seismic waves. Since $v_{\rm LA}>v_{\rm TA}$, $p$-wave always arrives earlier than $s$-wave. This time delay measured by a [seismometer](https://en.wikipedia.org/wiki/Seismometer) gauges the distance to the epicentre of an earthquake. Likewise, the data on the propagation of $p$-waves and $s$-waves provides information on the [internal structure of Earth](https://en.wikipedia.org/wiki/Internal_structure_of_Earth). The existence of the liquid outer core and inner solid core is inferred from the refraction of $p$-waves and from the fact that $s$-waves do not reach points on the opposite side of Earth, because shear waves do not propagate through liquid.
 
 In Eq.~\eqref{eq:acoustic-v}, $v_{\rm TA}$ is equal to the velocity of the shear wave as determined in Ch.~\ref{sec:elastic-wave}. However, $v_{\rm LA}$ is different from the velocity of the compressional wave in a thin bar, because Poisson's ratio should be taken into account in a 3D solid. 
 
-In liquid and gas, $G=0$ and speed of sound is described by the \emph{Newton-Laplace equation},
-\be
+In liquid and gas, $G=0$ and speed of sound is described by the **Newton-Laplace equation**,
+
+$$
  v=\sqrt{\frac{B}{\rho}}
-\ee
+$$
 
 
 ## Diatomic chain
 
-Let us now extend this analysis to a diatomic chain with alternating atoms and equal separations, such that all bonds have the same stiffness $\stif$. We will proceed similar to the previous case and consider atomic displacements propagating along the chain, but now the two atoms have different mass and should thus show different displacement amplitudes,
-\be
+Let us now extend this analysis to a diatomic chain with alternating atoms and equal separations, such that all bonds have the same stiffness $\mathcal{K}$. We will proceed similar to the previous case and consider atomic displacements propagating along the chain, but now the two atoms have different mass and should thus show different displacement amplitudes,
+
+$$
  u_p(t)=A_1\,e^{i(qpa-\omega t)},\qquad v_p(t)=A_2\,e^{i(qpa-\omega t)}.
-\label{eq:ph-diatans}
-\ee
+$$ (eq-ph-diatans)
 
 \begin{figure}
 \centerline{\includegraphics{ch11-diatomic}}
 \caption{\label{fig:diatomic}
-Left: atomic displacements in the diatomic chain comprising atoms with the masses $m_1$ and $m_2$ connected by the springs with the same stiffness $\stif$. Right: dispersion relation for the two phonon modes, acoustic and optical.
+Left: atomic displacements in the diatomic chain comprising atoms with the masses $m_1$ and $m_2$ connected by the springs with the same stiffness $\mathcal{K}$. Right: dispersion relation for the two phonon modes, acoustic and optical.
 }
 \end{figure}
 
 The equations of motion become
+$$
 \begin{align*}
- m_1\,\frac{d^2u_p}{dt^2}& =-\stif(u_p-v_p)-\stif(u_p-v_{p-1}), \\[0.3em]
- m_2\,\frac{d^2v_p}{dt^2}& =-\stif(v_p-u_p)-\stif(v_p-u_{p+1}).
+ m_1\,\frac{d^2u_p}{dt^2}& =-\mathcal{K}(u_p-v_p)-\mathcal{K}(u_p-v_{p-1}), \\[0.3em]
+ m_2\,\frac{d^2v_p}{dt^2}& =-\mathcal{K}(v_p-u_p)-\mathcal{K}(v_p-u_{p+1}).
 \end{align*}
+$$
 Our ansatz for $u_p$ and $v_p$ returns a system of two linear equations for the amplitudes $A_1$ and $A_2$,
+
 $$
-\renewcommand{\arraystretch}{1.3}
+
 \left\{ \begin{array}{l}
- -m_1\omega^2A_1=-\stif A_1+\stif A_2-\stif A_1+\stif A_2\,e^{-iqa} \\
- -m_2\omega^2A_2=-\stif A_2+\stif A_1-\stif A_2+\stif A_1\,e^{iqa}
+ -m_1\omega^2A_1=-\mathcal{K} A_1+\mathcal{K} A_2-\mathcal{K} A_1+\mathcal{K} A_2\,e^{-iqa} \\
+ -m_2\omega^2A_2=-\mathcal{K} A_2+\mathcal{K} A_1-\mathcal{K} A_2+\mathcal{K} A_1\,e^{iqa}
 \end{array}\right.
 $$
+
 or
-\be
-\renewcommand{\arraystretch}{1.3}
+
+$$
 \left\{ \begin{array}{l}
- (m_1\omega^2-2\stif)A_1+\stif(1+e^{-iqa})A_2=0 \\
- \stif(1+e^{iqa})A_1+(m_2\omega^2-2\stif)A_2=0
+ (m_1\omega^2-2\mathcal{K})A_1+\mathcal{K}(1+e^{-iqa})A_2=0 \\
+ \mathcal{K}(1+e^{iqa})A_1+(m_2\omega^2-2\mathcal{K})A_2=0
 \end{array}\right.
-\label{ph-eqamplitude}
-\ee
+$$ (eq-phamplitude)
 
 The solution for $A_1$ and A$_2$ exists when the determinant is zero, namely,
-\be
-\renewcommand{\arraystretch}{1.3}
+
+$$
+
 \left| \begin{array}{cc}
- m_1\omega^2-2\stif & \stif(1+e^{-iqa}) \\
- \stif(1+e^{iqa}) & m_2\omega^2-2\stif \\
+ m_1\omega^2-2\mathcal{K} & \mathcal{K}(1+e^{-iqa}) \\
+ \mathcal{K}(1+e^{iqa}) & m_2\omega^2-2\mathcal{K} \\
 \end{array}\right|=0
-\ee
+$$
+
 This condition returns a quadratic equation for $\omega^2$,
-\be
- m_1m_2\,\omega^4-2\stif (m_1+m_2)\,\omega^2+2\stif^2[1-\cos(qa)]=0,
-\ee
+
+$$
+ m_1m_2\,\omega^4-2\mathcal{K} (m_1+m_2)\,\omega^2+2\mathcal{K}^2[1-\cos(qa)]=0,
+$$
+
 and 
-\be
- \omega^2(q)=\frac{\stif}{\mass}\pm \stif\sqrt{\frac{1}{\mass^2}-\frac{4}{m_1m_2}\sin^2\frac{qa}{2}}
-\ee
-where we introduced the \emph{reduced mass},
-\be
- \frac{1}{\mass}=\frac{1}{m_1}+\frac{1}{m_2}
-\ee
+
+$$
+ \omega^2(q)=\frac{\mathcal{K}}{\mathcal{m}}\pm \mathcal{K}\sqrt{\frac{1}{\mathcal{m}^2}-\frac{4}{m_1m_2}\sin^2\frac{qa}{2}}
+$$
+
+where we introduced the **reduced mass**,
+
+$$
+ \frac{1}{\mathcal{m}}=\frac{1}{m_1}+\frac{1}{m_2}
+$$
 
 
 ## Acoustic and optical phonons
 
-There are now two dispersion relations that define two \emph{phonon branches}. The $\omega_-(q)$ branch has zero frequency at $q=0$. It is called \emph{acoustic} because it reduces to an elastic wave in the low-$q$ limit and describes sound propagation. The $\omega_+(q)$ branch is \emph{optical}, because it can interact with light, as we will see in Ch.~\ref{sec:optical}. Optical phonon has the finite frequency of $\sqrt{2\stif/\mass}$ at $q=0$. 
+There are now two dispersion relations that define two **phonon branches**. The $\omega_-(q)$ branch has zero frequency at $q=0$. It is called \emph{acoustic} because it reduces to an elastic wave in the low-$q$ limit and describes sound propagation. The $\omega_+(q)$ branch is \emph{optical}, because it can interact with light, as we will see in Ch.~\ref{sec:optical}. Optical phonon has the finite frequency of $\sqrt{2\mathcal{K}/\mathcal{m}}$ at $q=0$. 
 
 The main intrinsic difference between the acoustic and optical phonons lies in the amplitudes $A_1$ and $A_2$.  For an optical branch at $q=0$, Eqs.~\eqref{ph-eqamplitude} yield $A_1/A_2=-m_2/m_1$. The atoms of different type oscillate out-of-phase. On the other hand, $\omega_-=0$ of the acoustic mode yields $A_1/A_2=1$, such that atoms of different type oscillate in-phase near $q=0$. 
 
-At $q=\pi/a$, one finds $\omega_+=\sqrt{2\stif/m_2}$ and $\omega_-=\sqrt{2\stif/m_1}$ when $m_1>m_2$. Then,
-\be
- \left(\frac{A_1}{A_2}\right)_+=-\frac{\stif(1+e^{-iqa})}{m_1\omega_+^2-2\stif}\rightarrow 0,\qquad
- \left(\frac{A_1}{A_2}\right)_-=-\frac{m_2\omega_-^2-\stif}{\stif(1+e^{iqa})}\rightarrow\infty.
-\ee
-It means that only the light atoms ($m_2$) oscillate in the optical mode, whereas only the heavy atoms ($m_1$) oscillate in the acoustic mode. A nice visualization of the modes at arbitrary $q$-values and for different $m_2/m_1$ ratios can be found \href{http://lampx.tugraz.at/~hadley/ss1/phonons/1d/1d2m.php}{here}.
+At $q=\pi/a$, one finds $\omega_+=\sqrt{2\mathcal{K}/m_2}$ and $\omega_-=\sqrt{2\mathcal{K}/m_1}$ when $m_1>m_2$. Then,
+
+$$
+ \left(\frac{A_1}{A_2}\right)_+=-\frac{\mathcal{K}(1+e^{-iqa})}{m_1\omega_+^2-2\mathcal{K}}\rightarrow 0,\qquad
+ \left(\frac{A_1}{A_2}\right)_-=-\frac{m_2\omega_-^2-\mathcal{K}}{\mathcal{K}(1+e^{iqa})}\rightarrow\infty.
+$$
+It means that only the light atoms ($m_2$) oscillate in the optical mode, whereas only the heavy atoms ($m_1$) oscillate in the acoustic mode. A nice visualization of the modes at arbitrary $q$-values and for different $m_2/m_1$ ratios can be found [here](http://lampx.tugraz.at/~hadley/ss1/phonons/1d/1d2m.php).
