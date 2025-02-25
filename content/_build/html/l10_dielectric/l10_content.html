@@ -544,12 +544,12 @@ Both \)</span>\varepsilon<span class="math notranslate nohighlight">\( and \)</s
  \mathbf{E}_{\rm depol}=-f\,\frac{\mathbf{P}}{\varepsilon_0},
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(f\)</span> is the <strong>depolarization factor</strong>, basically a form factor. Its calculation is a rather tedious exercise in electrostatics that, reportedly, Landau gave to his students as one problem of the ``theory minimum’’. Less ambitious students should be alright with the simple knowledge that flat sample features <span class="math notranslate nohighlight">\(f=1\)</span> because a lot of charge is accumulated on its surfaces, and it acts as a capacitor of some sort. By contrast,  needle-like sample features <span class="math notranslate nohighlight">\(f=0\)</span>. Spherical sample is somewhat in between with its <span class="math notranslate nohighlight">\(f=\frac13\)</span>, as we will see shortly.</p>
-<p>\begin{figure}
-\centerline{\includegraphics{ch10-local-field}}
-\caption{\label{fig:local-field}
-Left: local electric field is obtained as a superposition of the external field <span class="math notranslate nohighlight">\(\Ev_{\rm ext}\)</span>, depolarizing field <span class="math notranslate nohighlight">\(\Ev_{\rm depol}\)</span> produced by charges on the surface, and Lorentz field <span class="math notranslate nohighlight">\(\Ev_L\)</span> produced by charges in the interior of the dielectric. Right: calculation of the Lorentz field by slicing the sphere and evaluating the electric field <span class="math notranslate nohighlight">\(\delta E_L\)</span> created by each slice in its center.
-}
-\end{figure}</p>
+<figure class="align-default" id="fig-local-field">
+<img alt="../_images/ch10-local-field.svg" src="../_images/ch10-local-field.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">Left: local electric field is obtained as a superposition of the external field <span class="math notranslate nohighlight">\(\mathbf{E}{\rm ext}\)</span>, depolarizing field <span class="math notranslate nohighlight">\(\mathbf{E}_{\rm depol}\)</span> produced by charges on the surface, and Lorentz field <span class="math notranslate nohighlight">\(\mathbf{E}_L\)</span> produced by charges in the interior of the dielectric. Right: calculation of the Lorentz field by slicing the sphere and evaluating the electric field <span class="math notranslate nohighlight">\(\delta E_L\)</span> created by each slice in its center.</span><a class="headerlink" href="#fig-local-field" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p><strong>Lorentz field</strong> arises from charges in the interior of the dielectric. Envisage a small spherical hole that has been cut out inside the sample. The charge accumulated on this new surface produces electric field in the center of the sphere and acts opposite to the depolarizing field. We introduce spherical coordinates with the polar angle <span class="math notranslate nohighlight">\(\theta\)</span> that gauges the angle with respect to <span class="math notranslate nohighlight">\(\mathbf{E}\)</span>. We then slice the sphere perpendicular to the direction of <span class="math notranslate nohighlight">\(\mathbf{E}\)</span>, such that each slice is a ring with the radius <span class="math notranslate nohighlight">\(R\sin\theta\)</span> and thickness <span class="math notranslate nohighlight">\(R\,d\theta\)</span> (Fig.~\ref{fig:local-field}, right). The polarization is maximum in the zenith and minimum at <span class="math notranslate nohighlight">\(\theta=\pi/2\)</span>, hence for a given slice <span class="math notranslate nohighlight">\(P(\theta)=-P\cos\theta\)</span>, and the overall charge on the slice is polarization times area, namely,</p>
 <div class="math notranslate nohighlight">
 \[
@@ -604,6 +604,12 @@ Left: local electric field is obtained as a superposition of the external field 
 Debye model of relaxation. Left: an abrupt change in the electric field <span class="math notranslate nohighlight">\(E\)</span> gives rise to an exponential change of the polarization with the single relaxation time <span class="math notranslate nohighlight">\(\tau\)</span>. Right: real and imaginary parts of the permittivity as a function of frequency.
 }
 \end{figure}</p>
+<figure class="align-default" id="fig-debye-relaxation">
+<img alt="../_images/ch10-Debye.svg" src="../_images/ch10-Debye.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">Debye model of relaxation. Left: an abrupt change in the electric field <span class="math notranslate nohighlight">\(E\)</span> gives rise to an exponential change of the polarization with the single relaxation time <span class="math notranslate nohighlight">\(\tau\)</span>. Right: real and imaginary parts of the permittivity as a function of frequency.</span><a class="headerlink" href="#fig-debye-relaxation" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Using the standard ansatz <span class="math notranslate nohighlight">\(P(t)=P_0\,e^{-i\omega t}\)</span>, we find</p>
 <div class="math notranslate nohighlight" id="equation-eq-debye-3">
 <span class="eqno">(33)<a class="headerlink" href="#equation-eq-debye-3" title="Link to this equation">#</a></span>\[
@@ -648,6 +654,12 @@ Dielectric relaxation represented by the Cole-Cole plot. Debye relaxation (singl
 \end{minipage}
 \hfill
 \end{figure}</p>
+<figure class="align-default" id="fig-cole">
+<img alt="../_images/ch10-Cole-Cole.svg" src="../_images/ch10-Cole-Cole.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Dielectric relaxation represented by the Cole-Cole plot. Debye relaxation (single value of <span class="math notranslate nohighlight">\(\tau\)</span>) manifests itself by a semi-circle. The Cole-Cole and Davidson-Cole models describe dielectrics with multiple relaxation times.</span><a class="headerlink" href="#fig-cole" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The model of Debye relaxation works well for liquids like water or ethanol. In more complex cases, and especially in mixtures of liquids, multiple relaxation times may be present, and the semi-circle becomes deformed. Some common approximations in this case are the <strong>Cole-Cole equation</strong>,</p>
 <div class="math notranslate nohighlight" id="equation-eq-cole-cole">
 <span class="eqno">(36)<a class="headerlink" href="#equation-eq-cole-cole" title="Link to this equation">#</a></span>\[

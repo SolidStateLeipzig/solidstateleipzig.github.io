@@ -84,12 +84,13 @@ $$
 
 where $f$ is the **depolarization factor**, basically a form factor. Its calculation is a rather tedious exercise in electrostatics that, reportedly, Landau gave to his students as one problem of the ``theory minimum''. Less ambitious students should be alright with the simple knowledge that flat sample features $f=1$ because a lot of charge is accumulated on its surfaces, and it acts as a capacitor of some sort. By contrast,  needle-like sample features $f=0$. Spherical sample is somewhat in between with its $f=\frac13$, as we will see shortly. 
 
-\begin{figure}
-\centerline{\includegraphics{ch10-local-field}}
-\caption{\label{fig:local-field}
-Left: local electric field is obtained as a superposition of the external field $\Ev_{\rm ext}$, depolarizing field $\Ev_{\rm depol}$ produced by charges on the surface, and Lorentz field $\Ev_L$ produced by charges in the interior of the dielectric. Right: calculation of the Lorentz field by slicing the sphere and evaluating the electric field $\delta E_L$ created by each slice in its center.
-}
-\end{figure}
+
+
+```{figure} /figures/ch10-local-field.svg
+:name: fig-local-field
+
+Left: local electric field is obtained as a superposition of the external field $\mathbf{E}{\rm ext}$, depolarizing field $\mathbf{E}_{\rm depol}$ produced by charges on the surface, and Lorentz field $\mathbf{E}_L$ produced by charges in the interior of the dielectric. Right: calculation of the Lorentz field by slicing the sphere and evaluating the electric field $\delta E_L$ created by each slice in its center.
+```
 
 **Lorentz field** arises from charges in the interior of the dielectric. Envisage a small spherical hole that has been cut out inside the sample. The charge accumulated on this new surface produces electric field in the center of the sphere and acts opposite to the depolarizing field. We introduce spherical coordinates with the polar angle $\theta$ that gauges the angle with respect to $\mathbf{E}$. We then slice the sphere perpendicular to the direction of $\mathbf{E}$, such that each slice is a ring with the radius $R\sin\theta$ and thickness $R\,d\theta$ (Fig.~\ref{fig:local-field}, right). The polarization is maximum in the zenith and minimum at $\theta=\pi/2$, hence for a given slice $P(\theta)=-P\cos\theta$, and the overall charge on the slice is polarization times area, namely,
 
@@ -155,6 +156,13 @@ Debye model of relaxation. Left: an abrupt change in the electric field $E$ give
 }
 \end{figure}
 
+
+```{figure} /figures/ch10-Debye.svg
+:name: fig-debye-relaxation
+
+Debye model of relaxation. Left: an abrupt change in the electric field $E$ gives rise to an exponential change of the polarization with the single relaxation time $\tau$. Right: real and imaginary parts of the permittivity as a function of frequency.
+```
+
 Using the standard ansatz $P(t)=P_0\,e^{-i\omega t}$, we find
 
 $$
@@ -209,6 +217,12 @@ Dielectric relaxation represented by the Cole-Cole plot. Debye relaxation (singl
 \end{minipage}
 \hfill
 \end{figure}
+
+```{figure} /figures/ch10-Cole-Cole.svg
+:name: fig-cole
+
+Dielectric relaxation represented by the Cole-Cole plot. Debye relaxation (single value of $\tau$) manifests itself by a semi-circle. The Cole-Cole and Davidson-Cole models describe dielectrics with multiple relaxation times.
+```
 
 The model of Debye relaxation works well for liquids like water or ethanol. In more complex cases, and especially in mixtures of liquids, multiple relaxation times may be present, and the semi-circle becomes deformed. Some common approximations in this case are the **Cole-Cole equation**,
 
