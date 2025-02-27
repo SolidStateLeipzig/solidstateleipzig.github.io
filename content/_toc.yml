@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 parts:
-- caption: Lecture 1 - Bravais lattice, or how to pack a crystal?
+- caption: Lecture 1 - Bravais lattice, how to pack a crystal?
   chapters:
   - file: l1_bravais/l1_objectives.md
   - file: l1_bravais/l1_definitions.md
