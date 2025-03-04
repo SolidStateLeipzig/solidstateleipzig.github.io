@@ -231,3 +231,15 @@ $$
  \left(\frac{A_1}{A_2}\right)_-=-\frac{m_2\omega_-^2-\mathcal{K}}{\mathcal{K}(1+e^{iqa})}\rightarrow\infty.
 $$
 It means that only the light atoms ($m_2$) oscillate in the optical mode, whereas only the heavy atoms ($m_1$) oscillate in the acoustic mode. A nice visualization of the modes at arbitrary $q$-values and for different $m_2/m_1$ ratios can be found [here](http://lampx.tugraz.at/~hadley/ss1/phonons/1d/1d2m.php).
+
+
+
+This is an example of a footnote and tooltip[<sup id="fn1-back">1</sup>](#fn1 "footnote and tooltip 1").
+Just a footnote[<sup id="fn2-back">2</sup>](#fn2).
+Just a tooltip[<sup>3</sup>](#_blank "tooltip 3").
+
+
+
+[<sup id="fn1">1</sup>](#fn1-back) footnote and tooltip 1
+[<sup id="fn2">2</sup>](#fn2-back) footnote 2
+
