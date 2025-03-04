@@ -137,6 +137,10 @@ $$
 
 $$ (eq-acoustic-v)
 
+This is an example of a footnote and tooltip[<sup id="fn1-back">1</sup>](#fn1 "footnote and tooltip 1").
+Just a footnote[<sup id="fn2-back">2</sup>](#fn2).
+Just a tooltip[<sup>3</sup>](#_blank "tooltip 3").
+
 which are, for example, velocities of the primary ($p$) and secondary ($s$) seismic waves. Since $v_{\rm LA}>v_{\rm TA}$, $p$-wave always arrives earlier than $s$-wave. This time delay measured by a [seismometer](https://en.wikipedia.org/wiki/Seismometer) gauges the distance to the epicentre of an earthquake. Likewise, the data on the propagation of $p$-waves and $s$-waves provides information on the [internal structure of Earth](https://en.wikipedia.org/wiki/Internal_structure_of_Earth). The existence of the liquid outer core and inner solid core is inferred from the refraction of $p$-waves and from the fact that $s$-waves do not reach points on the opposite side of Earth, because shear waves do not propagate through liquid.
 
 In Eq.~\eqref{eq:acoustic-v}, $v_{\rm TA}$ is equal to the velocity of the shear wave as determined in Ch.~\ref{sec:elastic-wave}. However, $v_{\rm LA}$ is different from the velocity of the compressional wave in a thin bar, because Poisson's ratio should be taken into account in a 3D solid. 
@@ -181,6 +185,7 @@ $$
 $$
 
 or
+
 
 $$
 \left\{ \begin{array}{l}
@@ -234,9 +239,7 @@ It means that only the light atoms ($m_2$) oscillate in the optical mode, wherea
 
 
 
-This is an example of a footnote and tooltip[<sup id="fn1-back">1</sup>](#fn1 "footnote and tooltip 1").
-Just a footnote[<sup id="fn2-back">2</sup>](#fn2).
-Just a tooltip[<sup>3</sup>](#_blank "tooltip 3").
+
 
 
 
