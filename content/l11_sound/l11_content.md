@@ -1,9 +1,9 @@
-# <img src="logo.png" width="20" height="20"> Content
+# <img src="static_/logo.png" width="20" height="20"> Content
 
 
 ## Underlying approximations
 
-This is an inline image: <img src="logo.png" width="20" height="20"> in a sentence.
+This is an inline image: <img src="/content/_static/logo.png" width="40" height="20"> in a sentence.
 
 Atomic motion determines many, if not all, properties of a crystal. Molecules show characteristic vibrations (normal modes) that occur at special frequencies. Crystals feature collective atomic vibrations too, but their nature is somewhat more involved than in the case of molecules. To understand these vibrations in the simplest possible way, we will take advantage of several approximations:
 * **classical**, namely, we will treat atomic motion using classical mechanics and obtain **displacement waves** that describe collective atomic motion in the crystal. Quantum mechanics requires this motion to be quantized. The corresponding quantum is called **phonon**, but we usually do not need to solve the respective problem on the quantum level. It is sufficient to quantize the waves obtained classically, as we will consciously do in Ch.~\ref{sec:heat}.
