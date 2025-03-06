@@ -134,38 +134,47 @@ The oversimplified nature of this model is not to be overlooked, though. We assu
 ## Interaction with light, polaritons
 
 Expressions~\eqref{eq:omegaTO} and~\eqref{eq:omegaLO} for the phonon frequencies lead to a convenient simplification of the permittivity, which is obtained via the Clausius-Mosotti relation, Eq.~\eqref{eq:clausius},
-\be
- \varepsilon(\omega)=\frac{1+2n_d\alpha/(3\varepsilon_0)}{1-n_d\alpha/(3\varepsilon_0)}=\frac{\omega_{\LO}^2-\omega^2}{\omega_{\rm TO}^2-\omega^2}
-\label{eq:permittivity-ionic}
-\ee
+
+$$
+ \varepsilon(\omega)=\frac{1+2n_d\alpha/(3\varepsilon_0)}{1-n_d\alpha/(3\varepsilon_0)}=\frac{\omega_{\rm LO \,}^2-\omega^2}{\omega_{\rm TO}^2-\omega^2}
+$$ (eq-permittivity-ionic)
+
 The conjectured frequency $\omega_0$ disappears, and only the tangible frequencies, $\omega_{\rm TO}$ and $\omega_{\rm LO}$, remain. Permittivity diverges at $\omega=\omega_{\rm TO}$ and shows a zero crossing at $\omega=\omega_{\rm LO}$ (Fig.~\ref{fig:phonon-epsilon}, left). 
 
-This form of the permittivity modifies an electromagnetic wave at frequencies near $\omega_{\TO}$ and $\omega_{\LO}$. Indeed, by using Eq.~\eqref{eq:permittivity-ionic} in the dispersion relation, Eq.~\eqref{eq:dispersion-relation}, one finds that the standard linear dispersion $\omega\sim k$ does not hold in the vicinity of the phonon frequency, and no real solution exists for $\omega(k)$ at $\omega_{\TO}\leq \omega<\omega_{\LO}$. It means that photons can not propagate in the crystal within this frequency range. The characteristic dispersion shown in Fig.~\ref{fig:phonon-epsilon} (middle) is often ascribed to a \emph{polariton}, an electromagnetic wave strongly coupled to an intrinsic and dipole-carrying excitation of the crystal.
+This form of the permittivity modifies an electromagnetic wave at frequencies near $\omega_{\rm TO \,}$ and $\omega_{\rm LO \,}$. Indeed, by using Eq.~\eqref{eq:permittivity-ionic} in the dispersion relation, Eq.~\eqref{eq:dispersion-relation}, one finds that the standard linear dispersion $\omega\sim k$ does not hold in the vicinity of the phonon frequency, and no real solution exists for $\omega(k)$ at $\omega_{\rm TO \,}\leq \omega<\omega_{\rm LO \,}$. It means that photons can not propagate in the crystal within this frequency range. The characteristic dispersion shown in Fig.~\ref{fig:phonon-epsilon} (middle) is often ascribed to a \emph{polariton}, an electromagnetic wave strongly coupled to an intrinsic and dipole-carrying excitation of the crystal.
 
 \begin{figure}
 \centerline{\includegraphics{ch12-epsilon}}
 \caption{\label{fig:phonon-epsilon}
-Interaction of optical phonon with light. Left: frequency dependence of the permittivity. Middle: polariton dispersion caused by the interaction of light with the phonon. Right: frequency dependence of the reflectivity with the \textit{Reststrahlen} band at $\omega_{\TO}<\omega<\omega_{\LO}$. 
+Interaction of optical phonon with light. Left: frequency dependence of the permittivity. Middle: polariton dispersion caused by the interaction of light with the phonon. Right: frequency dependence of the reflectivity with the \textit{Reststrahlen} band at $\omega_{\rm TO \,}<\omega<\omega_{\rm LO \,}$. 
 }
 \end{figure}
 
-The polariton formation causes the crystal to reflect electromagnetic waves. Indeed, at $\omega<\omega_{\TO}$ and at $\omega>\omega_{\LO}$, one finds $\varepsilon>0$, such that $n=n'+in''$ is a real number with $n'\neq 0$ and $n''=0$. Crystal refracts light, as we know from NaCl, quartz, and many other ionic crystals. On the other hand, at $\omega_{\TO}<\omega<\omega_{\LO}$, negative $\varepsilon$ renders $n$ a purely imaginary number with $n'=0$ and $n''\neq 0$.\footnote{This distinction between the purely real and purely imaginary $n$ is, of course, a drawback of our naive approximation. The purely real $\varepsilon(\omega)$ arises from the purely real $\alpha(\omega)$ obtained in Ch.~\ref{sec:dipoles} from the equations of motion that did not include any damping term. Realistically, damping creates a phase shift between $\mu_d(t)$ and $E_{\rm local}(t)$, thus rendering all optical parameters complex numbers.} The resulting reflectivity is 
-\be
+The polariton formation causes the crystal to reflect electromagnetic waves. Indeed, at $\omega<\omega_{\rm TO \,}$ and at $\omega>\omega_{\rm LO \,}$, one finds $\varepsilon>0$, such that $n=n'+in''$ is a real number with $n'\neq 0$ and $n''=0$. Crystal refracts light, as we know from NaCl, quartz, and many other ionic crystals. On the other hand, at $\omega_{\rm TO \,}<\omega<\omega_{\rm LO \,}$, negative $\varepsilon$ renders $n$ a purely imaginary number with $n'=0$ and $n''\neq 0$.
+\footnote{This distinction between the purely real and purely imaginary $n$ is, of course, a drawback of our naive approximation. The purely real $\varepsilon(\omega)$ arises from the purely real $\alpha(\omega)$ obtained in Ch.~\ref{sec:dipoles} from the equations of motion that did not include any damping term. Realistically, damping creates a phase shift between $\mu_d(t)$ and $E_{\rm local}(t)$, thus rendering all optical parameters complex numbers.}
+ The resulting reflectivity is 
+$$
  R=\frac{|1-in''|^2}{|1+in''|^2}=1,
-\ee
-so ionic crystals reflect light in the frequency range between $\omega_{\TO}$ and $\omega_{\LO}$ (Fig.~\ref{fig:phonon-epsilon}, right). These so-called \emph{Reststrahlen bands} are observed, for example, in ionic crystals in the infrared range ($\omega=0.3-400$\,THz) typical for optical phonons. A similar mechanism underlies the response of polar molecules that absorb infrared radiation at frequencies of their vibrational modes.
+$$
+
+so ionic crystals reflect light in the frequency range between $\omega_{\rm TO \,}$ and $\omega_{\rm LO \,}$ (Fig.~\ref{fig:phonon-epsilon}, right). These so-called \emph{Reststrahlen bands} are observed, for example, in ionic crystals in the infrared range ($\omega=0.3-400$\,THz) typical for optical phonons. A similar mechanism underlies the response of polar molecules that absorb infrared radiation at frequencies of their vibrational modes.
+
 
 ## Lydanne-Sachs-Teller relation
 
-Eq.~\eqref{eq:permittivity-ionic} returns the low-frequency (static) limit of $\varepsilon_{\rm st}=\omega_{\LO}^2/\omega_{\TO}^2$ and the high-frequency limit of 1. Practically, however, more than one optical phonon is usually present in the crystal, so this high-frequency limit of one phonon mode will be the low-frequency limit of another one with a higher energy. Moreover, beyond all phonon frequencies one still expects electronic excitations at energies of $E=10^0-10^4$\,eV. Therefore, it is customary to introduce $\varepsilon_{\infty}\neq 1$ and write permittivity as\footnote{This equation can be obtained rigorously by augmenting the ionic polarizability in Eq.~\eqref{eq:polarizability-ionic} with the atomic polarizability $\alpha_0$ as the origin of $\varepsilon_{\infty}\neq 1$. Unfortunately, this small amendment leads to a far more tedious algebra than what we did here, so this exercise is recommended for nerds only.} 
-\be
+Eq.~\eqref{eq:permittivity-ionic} returns the low-frequency (static) limit of $\varepsilon_{\rm st}=\omega_{\rm LO \,}^2/\omega_{\rm TO \,}^2$ and the high-frequency limit of 1. Practically, however, more than one optical phonon is usually present in the crystal, so this high-frequency limit of one phonon mode will be the low-frequency limit of another one with a higher energy. Moreover, beyond all phonon frequencies one still expects electronic excitations at energies of $E=10^0-10^4$\,eV. Therefore, it is customary to introduce $\varepsilon_{\infty}\neq 1$ and write permittivity as\footnote{This equation can be obtained rigorously by augmenting the ionic polarizability in Eq.~\eqref{eq:polarizability-ionic} with the atomic polarizability $\alpha_0$ as the origin of $\varepsilon_{\infty}\neq 1$. Unfortunately, this small amendment leads to a far more tedious algebra than what we did here, so this exercise is recommended for nerds only.} 
+
+$$
  \varepsilon(\omega)=\varepsilon_{\infty}\,\frac{\omega_{\LO}^2-\omega^2}{\omega_{\rm TO}^2-\omega^2},
-\ee
+$$
+
 resulting in
-\be
- \frac{\varepsilon_{\rm st}}{\varepsilon_{\infty}}=\frac{\omega_{\LO}^2}{\omega_{\TO}^2},
-\ee
-the \emph{Lyddane-Sachs-Teller relation}.
+
+$$
+ \frac{\varepsilon_{\rm st}}{\varepsilon_{\infty}}=\frac{\omega_{\rm LO \,}^2}{\omega_{\rm TO \,}^2},
+$$
+
+the **Lyddane-Sachs-Teller relation**.
 
 \begin{figure}[!h]
 \hspace{0cm}
@@ -186,14 +195,21 @@ An interesting outcome of this analysis is that static permittivity of a crystal
 ## Infra-red active phonon modes
 
 While the appealing form of the permittivity, Eq.~\eqref{eq:permittivity-ionic}, is the result of several simplifications introduced in our model (linear chain, same spring constant for the longitudinal and transverse displacements), the qualitative behavior displayed in Fig.~\ref{fig:phonon-epsilon} is quite general. We can see this by re-iterating the arguments from Ch.~\ref{sec:LO-TO} but now considering a displacement wave in the crystal triggered by the oscillating electric field of light. Assume that the electric field $\mathbf{E}=\mathbf{E}_0\,e^{i(\mathbf{k}\mathbf{r}-\omega t)}$ generates the polarization $\mathbf{P}=\mathbf{P}_0\,e^{i(\mathbf{k}\mathbf{r}-\omega t)}$ and the displacement field $\mathbf{D}=\mathbf{D}_0\,e^{i(\mathbf{k}\mathbf{r}-\omega t)}$. According to Maxwell's equations, 
-\be
- \div\mathbf{D}=0\quad{\rm and}\quad\rot\mathbf{E}=0 \quad\Ra\quad
- \mathbf{k}\cdot\mathbf{D}=0\quad{\rm and}\quad\mathbf{k}\times\mathbf{E}=0.
-\ee
-The former condition requires $\mathbf{D}=0$ or $\mathbf{k}\perp\mathbf{D}$ (hence $\mathbf{k}\perp\mathbf{E}$), while the latter requires $\mathbf{E}=0$ or $\mathbf{k}\prl\mathbf{E}$ (hence $\mathbf{k}\prl\mathbf{D}$). 
 
-Consider the TO phonon. In this case, $\mathbf{D}\perp\mathbf{k}$, so $\mathbf{E}$ must be zero for the second condition to be fulfilled. Then, $\varepsilon\rightarrow\infty$ because $\mathbf{D}=\varepsilon\varepsilon_0\mathbf{E}$, so $\varepsilon(\omega)$ diverges at $\omega_{\TO}$. On the other hand, the LO phonon implies $\mathbf{E}\|\mathbf{k}$, so $\mathbf{D}$ must be zero, which is only possible at $\varepsilon=0$. Therefore, a zero crossing of $\varepsilon(\omega)$ should occur at $\omega_{\LO}$. The pre-condition for these arguments is our assumption that $\mathbf{D}\prl\mathbf{E}$ or, basically, the diagonal form of the permittivity tensor expected in crystals with the sufficiently high symmetry (Ch.~\ref{sec:neumann}). 
+$$
+ \div\mathbf{D}=0\quad{\rm and}\quad\rm rot \, \mathbf{E}=0 \quad\Rightarrow\quad
+ \mathbf{k}\cdot\mathbf{D}=0\quad{\rm and}\quad\mathbf{k}\times\mathbf{E}=0.
+$$
+
+The former condition requires $\mathbf{D}=0$ or $\mathbf{k}\perp\mathbf{D}$ (hence $\mathbf{k}\perp\mathbf{E}$), while the latter requires $\mathbf{E}=0$ or $\mathbf{k}\parallel\mathbf{E}$ (hence $\mathbf{k}\parallel\mathbf{D}$). 
+
+Consider the TO phonon. In this case, $\mathbf{D}\perp\mathbf{k}$, so $\mathbf{E}$ must be zero for the second condition to be fulfilled. Then, $\varepsilon\rightarrow\infty$ because $\mathbf{D}=\varepsilon\varepsilon_0\mathbf{E}$, so $\varepsilon(\omega)$ diverges at $\omega_{\rm TO \,}$. On the other hand, the LO phonon implies $\mathbf{E}\|\mathbf{k}$, so $\mathbf{D}$ must be zero, which is only possible at $\varepsilon=0$. Therefore, a zero crossing of $\varepsilon(\omega)$ should occur at $\omega_{\rm LO \,}$. The pre-condition for these arguments is our assumption that $\mathbf{D}\parallel\mathbf{E}$ or, basically, the diagonal form of the permittivity tensor expected in crystals with the sufficiently high symmetry (Ch.~\ref{sec:neumann}). 
 
 The situation becomes more complex in crystals with lower symmetry. Indeed, even distinguishing between longitudinal and transverse phonons is not possible in this case, because atomic displacements are not constrained to be parallel or perpendicular to the propagation vector of the phonon (see also Ch.~\ref{sec:ph-reciprocal}). However, what matters for our analysis is not $\mathbf{q}$ but $\mathbf{k}$, the propagation direction of light. One can think of splitting atomic displacements of an arbitrary phonon mode into two components. The component perpendicular to $\mathbf{k}$ leads to a divergence of $\varepsilon(\omega)$ at $\omega=\omega_{\rm TO}$, whereas the component parallel to $\mathbf{k}$ results in the zero crossing at some effective frequency $\omega=\omega_{\rm LO}$. 
 
-It may seem that almost every phonon mode of a non-cubic crystal should show up in $\varepsilon(\omega)$ and in the optical (infrared) spectrum. Not quite. No coupling to light occurs when phonon mode does not generate any dipole moment. This may happen in a covalent crystal or when the phonon preserves inversion symmetry.\footnote{Such modes are called \textit{even} (\textit{gerade}), in contrast to \textit{odd} (\textit{ungerade}) modes that break the inversion symmetry. For a given crystal, the distribution of modes into odd and even can be analyzed on the basis of crystal symmetry and occupied Wyckoff positions, for example using the SAM utility at the Bilbao server.} What ultimately matters is the formation of a dipole moment (i.e., atomic displacements) parallel to $\mathbf{E}$ of light. The coupling between this dipole moment and oscillating electric field renders phonon-mode \emph{IR-active}. Polarized light is often used to single out modes with a given direction of the atomic displacements.
+It may seem that almost every phonon mode of a non-cubic crystal should show up in $\varepsilon(\omega)$ and in the optical (infrared) spectrum. Not quite. No coupling to light occurs when phonon mode does not generate any dipole moment. This may happen in a covalent crystal or when the phonon preserves inversion symmetry. [^2]
+
+What ultimately matters is the formation of a dipole moment (i.e., atomic displacements) parallel to $\mathbf{E}$ of light. The coupling between this dipole moment and oscillating electric field renders phonon-mode **IR-active**. Polarized light is often used to single out modes with a given direction of the atomic displacements.
+
+
+ [^2] : Such modes are called *even* (*gerade*), in contrast to *odd* (*ungerade*) modes that break the inversion symmetry. For a given crystal, the distribution of modes into odd and even can be analyzed on the basis of crystal symmetry and occupied Wyckoff positions, for example using the SAM utility at the Bilbao server.
