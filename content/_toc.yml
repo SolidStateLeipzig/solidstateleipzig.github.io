@@ -92,6 +92,15 @@ parts:
   - file: l11_sound/l11_method.md 
   - file: l11_sound/l11_problem.md 
 
+- caption: Lecture 12 - Phonons and Light
+  chapters:
+  - file: l12_light/l12_objectives.md
+  - file: l12_light/l12_definitions.md
+  - file: l12_light/l12_content.md
+  - file: l12_light/l12_method.md
+  - file: l12_light/l12_problem.md
+
+
   
 
   
