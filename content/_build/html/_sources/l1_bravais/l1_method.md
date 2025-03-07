@@ -1,5 +1,6 @@
 # Experimental method
 
+(sec-microscopy)=
 ## Electron microscopy
 
 Back in time researchers could only guess about lattice periodicity and packing. Nowadays it is possible to visualize the crystal lattice and even see individual atoms with the direct imaging done by electron microscopy. Electron microscopes are somewhat similar to common optical microscopes, but they use electrons as radiation with the much shorter wavelength, and of course they require a much more sophisticated system of electromagnetic lenses to direct and focus the electron beams. 
