@@ -1,7 +1,9 @@
+(sec-mechanical)=
 # Content of lecture
 
 Starting from this chapter, we will go through different crystal properties and discuss the main parameters that describe them. We will also see how these properties are related to microscopic aspects of the crystals, especially the atoms and their chemical bonding that constitute lattice degrees of freedom.
 
+(sec-eos)=
 ## Hydrostatic pressure, Equation of state
 
 **Hydrostatic pressure** implies that the same force acts on the sample from all directions. It is the type of pressure experienced by a sample immersed into water or another liquid. However, even liquids develop some pressure gradients. The most uniform pressure can be achieved by placing the crystal into helium gas. Helium solidifies at 11.5\,GPa at room temperature, but it is a van der Waals solid with a very low bulk modulus, so it ensures almost hydrostatic (so-called **quasi-hydrostatic**) pressure conditions up to at least $20-25$ GPa.
@@ -45,6 +47,7 @@ This equation contains the same three parameters as Eq.~\eqref{eq:murnaghan-2}, 
 
 All equations of state show that volume decreases with pressure and develops a positive curvature, as shown in Fig.~\ref{fig:EoS}, because crystals harden on compression. Direct measurement of this $V(p)$ curve using **high-pressure XRD** (i.e., x-ray diffraction on a crystal placed into a pressure cell) is the main experimental tool for studying compressibility of solids and determining their bulk moduli. 
 
+(ch-uniaxial)=
 ## Uniaxial pressure
 In the absence of **pressure medium** like liquid or gas that could transmit the applied pressure into all directions and make it hydrostatic, one deals with **uniaxial pressure**. Such pressure is often called **stress**, $\sigma_x=F_x/A_x$ where $F_x$ is the applied force and $A_x$ is the area of the sample surface perpendicular to which this force is applied (Fig.~\ref{fig:strain}, middle). Uniaxial stress creates **strain**, $\epsilon_x=\Delta L_x/L_x$, defined as the relative length change of the sample. Stress has units of pressure, whereas strain is a dimensionless quantity.
 
@@ -72,6 +75,7 @@ Hydrostatic compression (left), uniaxial pressure (middle), and shear deformatio
 
 Uniaxial pressure changes not only the sample length, but also its aspect ratio. Squeezing the crystal along one direction will typically force it to expand along the perpendicular direction, and the other way around. This effect is gauged by the **Poisson's ratio**, $\nu=-\epsilon_y/\epsilon_x$. Most of the solid-state materials are characterized by $\nu>0$. However, it is also possible to design materials with $\nu<0$ known as \emph{auxetic}. They play an important role in engineering, as explained [here](https://doi.org/10.1038/natrevmats.2017.78).
 
+(ch-shear)=
 ## Shear deformation
 
 Force can be applied not only perpendicular to the sample surface, but also parallel to it, leading to a so-called shear deformation that changes sample shape without changing its volume. Such shear stress $\tau_{xy}=F_y/A_x$ is defined in the same way as the uniaxial stress, whereas shear strain $\epsilon_{xy}=\Delta L_y/L_x={\rm tan}\varphi$ is the relative displacement of the sample surface caused by $F_y$. For low displacements, ${\rm tan}\varphi\simeq\varphi$, and shear strain is measured simply as angle (Fig.~\ref{fig:strain}, right).

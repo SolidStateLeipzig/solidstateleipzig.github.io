@@ -1,3 +1,4 @@
+(sec-ionic)=
 # Content of lecture
 
 ## Types of chemical bonding
@@ -52,7 +53,7 @@ Crystal energy $\mathcal{E}_{\rm tot}$ as a function of the interatomic distance
 
 It is also helpful to represent crystal energy as a function of an effective interatomic distance, $\mathcal{E}(r)$, as shown in Fig.~\ref{fig:energy-r}. Then the position of the energy minimum yields the equilibrium distance $r_0$ and, consequently, the lattice parameter of the crystal. The depth of the minimum is the lattice energy $\mathcal{E}_{\rm lat}$.
 
-
+(sec-madelung)=
 ## Madelung constant
 
 We will now concentrate on the ionic crystals and try to calculate $\mathcal{E}(r)$. To this end, we assume that the interatomic forces are Coulomb in nature and determine the electrostatic potential at a given site $i$,
@@ -124,6 +125,7 @@ This equation has some immediate implications:
 
 Typical lattice energies of ionic crystals are in the range of $5-10$ eV/f.u. Born-Landé equation can also be used to calculate lattice energy for the known interatomic distance, which is usually determined by XRD. The unknown parameter $m$ enters the energy as $1/m$ and changes the result only marginally. This parameter can be determined when another experimental observable, such as bulk modulus, is available. 
 
+(sec-bm-ionic)=
 ## Bulk modulus
 
 The isothermal **bulk modulus** is defined as
@@ -151,6 +153,7 @@ where we used Eq.~\eqref{eq:crep} to express $C_{\rm rep}$ via $r_0$.
 
 Clearly, bulk modulus shows the same trends as lattice energy. Oxides are less compressible than halides, that is, they feature higher bulk moduli. Compressibility of an ionic crystal increases upon increasing its lattice parameter. By measuring both $B$ and $r_0$, the value of $m$ and, eventually, the exact lattice energy can be determined. Typical bulk moduli of ionic crystals are in the range of $10-200$ GPa.
 
+(sec-ionic-radius)=
 ## Ionic radius and Pauling's rule
 
 Whereas the Born-Landé equation, Eq.~\eqref{eq:born-Landé}, offers a simple explanation for changes in lattice energy, melting points, and bulk moduli across different ionic crystals, it fails to answer one fundamental question: which structure type is chosen by a given ionic material? The Madelung constants for different structure types can be compared, but how to deal with the distance $r_0$? 
@@ -186,6 +189,7 @@ Common structure types of ionic crystals: zinc blende (fcc lattice), rocksalt (f
 
 Pauling's consideration of the ionic radii inspires polyhedral description of ionic crystals. Anions form the polyhedron around a cation. By defining these polyhedra, the connectivity of the structure can be analyzed. 
 
+(sec-ionic-cp)=
 ## Ionic crystals as close-packed structures
 
 Structures of ionic crystals can be also analyzed from the perspective of close packing. Anions form close-packed layers because they are usually bigger than cations. Then cations fill octahedral and tetrahedral voids between these close-packed layers. There is one octahedral and two tetrahedral voids per anion.

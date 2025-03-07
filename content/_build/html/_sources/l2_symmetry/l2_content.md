@@ -41,14 +41,14 @@ Conventional and primitive unit cells of the body-centered cubic lattice. The la
 
 In a primitive lattice, both unit cells coincide. In a centered lattice, the volume of the primitive cell is twice ($A,B,C,I$), three times ($R$), or four times ($F$) smaller than the volume of the conventional unit cell. 
 
-From this point on, we will distinguish **lattice vectors** $\mathbf{a},\mathbf{b},\mathbf{c}$ that define the conventional unit cell, from **lattice translations** $\mathbf{t}$ that include $\mathbf{a},\mathbf{b},\mathbf{c}$ along with other vectors allowed by the lattice centering. [](#sec-rotational).
+From this point on, we will distinguish **lattice vectors** $\mathbf{a},\mathbf{b},\mathbf{c}$ that define the conventional unit cell, from **lattice translations** $\mathbf{t}$ that include $\mathbf{a},\mathbf{b},\mathbf{c}$ along with other vectors allowed by the lattice centering. 
 
 Lattice centering is an important part of describing crystal symmetry, but it may not have any immediate implications. We do not expect crystals with face-centered lattices to be distinct from the body-centered ones. However, in special cases, such as simple metals from {numref}`fig-metals`, lattice centering determines the packing fraction and directly affects density of the crystal.
 
-(sec-rotational)=
+(sec-rotation)=
 ## Rotational symmetry and birefringence
 
-The $p$-fold \emph{rotation axis} is defined as the rotation by $\varphi = 360^{\circ}/p$. Here, $p$ must be integer because applying the same operation several times should end up in the full $360^{\circ}$ rotation. Rotation axes are labeled with numbers: two-fold rotation axis is 2, four-rold rotation axis is 4, etc. For a clockwise rotation, the corresponding transformation matrix is 
+The $p$-fold **rotation axis** is defined as the rotation by $\varphi = 360^{\circ}/p$. Here, $p$ must be integer because applying the same operation several times should end up in the full $360^{\circ}$ rotation. Rotation axes are labeled with numbers: two-fold rotation axis is 2, four-rold rotation axis is 4, etc. For a clockwise rotation, the corresponding transformation matrix is 
 
 $$
     \mathbb{R} = \begin{pmatrix} \cos \varphi & \sin \varphi & 0 \\ -\sin \varphi & \cos \varphi & 0 \\ 0 & 0 & 1 \end{pmatrix}
@@ -74,7 +74,7 @@ where the latter describes a mirror plane perpendicular to $z$ ($m \perp \mathbb
 
 The reflection and inversion symmetries also have important implications. They determine polarity and chirality of the crystal. We will get back to this in Ch.~\ref{sec:symgroups} after we learn how individual symmetry elements build up a symmetry group.
 
-
+(sec-neumann)=
 ## Neumann's principle
 
 A general and very intuitive principle commonly attributed to Neumann is that **properties of a crystal should be invariant under its symmetry operations**. Neumann's principle is usually invoked in its mathematical form, which states that any tensor property $\mathbf{\sigma}$ should follow
@@ -128,6 +128,7 @@ for a crystal with the 4-fold symmetry axis.
 
 Tensor form for a given crystal symmetry can be checked on the [Bilbao server](https://cryst.ehu.es/cgi-bin/cryst/programs/tensor.pl).
 
+(sec-quasi)=
 ## Rotation vs. periodicity
 Different symmetry operations have been friends until now, but they can be foes too. Specifically, not every kind of rotational symmetry is compatible with periodicity of the lattice. One can show that only 2-fold, 3-fold, 4-fold, and 6-fold rotations do not forbid periodicity in two and three dimensions and can be thus present in periodic crystals. This statement is known as [crystallographic restriction theorem](https://en.wikipedia.org/wiki/Crystallographic_restriction_theorem}). Its mathematical proof can be found [here](http://doi.org/10.2307/3647934).
 

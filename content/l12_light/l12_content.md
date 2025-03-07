@@ -1,8 +1,9 @@
+(ch-optical)=
 # Content of lecture
 
 Whereas acoustic phonons are responsible for propagation of sound, optical phonons interact with light. To understand this interaction, we will first review the meaning of optical constants and then derive optical reflectivity of an ionic crystal due to phonons.
 
-
+(sec-reflectivity)=
 ## Refractive index and reflectivity
 
 Optical response of a material (solid, liquid, or gas) is determined by its **refractive index**. The refractive index $n$ appears in the dispersion relation of an electromagnetic wave (Ch.~\ref{app:wave}),
@@ -55,6 +56,7 @@ $$
 
 In Ch.~\ref{sec:phonon-light}, we will see that $R$ values close to 1 are obtained when $n''$ is large, whereas $n'$ vanishes. Then any light transmitted through the interface is immediately absorbed, so the sample is non-transparent: no light can go through. In a more general situation, part of the transmitted amplitude, $E_{t0}$, is then lost due to absorption ($A$), whereas transmittance of the whole sample is $T=1-R-A$.
 
+(sec-dipoles)=
 ## Fluctuating dipoles
 
 We now return to the phonons and consider the diatomic chain (Ch.~\ref{sec:ph-diatomic}) where the two atoms not only have different masses but also carry the charges of $+q_e$ and $-q_e$, respectively. At $q=0$, the optical mode involves opposite displacements of these atoms, such that a fluctuating dipole moment $\mu_d(t)$ is induced by the phonon. Our strategy now will be calculating this dipole moment and the corresponding permittivity $\varepsilon$ to obtain the refractive index $n$ and analyze optical response of the crystal. We will do this using a very simple -- and, in all honesty, oversimplified -- model before drawing an argument why the predictions of this model remain valid in the more general case.
@@ -90,6 +92,7 @@ $$ (eq-polarizability-ionic)
 Electric field drives oscillations and creates resonance when its frequency matches the frequency of the system, which is the frequency of the optical phonon at $q\rightarrow 0$.
 
 
+(sec-LO-TO)=
 ## LO vs. TO
 
 We should now use this polarizability $\alpha$ to calculate optical parameters from Ch.~\ref{sec:reflectivity}. Before doing that, let's compare electric polarizations created by the TO and LO phonons. These two types of phonons differ by the direction of their displacements relative to the propagation direction $\mathbf{q}$. The displacements take the form $\mathbf{u}=\mathbf{u}_0\,e^{i(\mathbf{q}\mathbf{r}-\omega t)}$ where $\mathbf{q}$ is the chain direction, so we expect $\mathbf{P}=\mathbf{P}_0\,e^{i(\mathbf{q}\mathbf{r}-\omega t)}$ with $\mathbf{P}\parallel\mathbf{q}$ (LO) and $\mathbf{P}\perp\mathbf{q}$ (TO). 
@@ -126,6 +129,7 @@ We thus conclude that $\omega_{\rm LO \,}\geq\omega_{\rm TO}$. The difference be
 
 The oversimplified nature of this model is not to be overlooked, though. We assumed the same stiffness $\mathcal{K}$ for the longitudinal and transverse atomic motion, which is of course far from realistic in the light of the differences between the compressional and shear waves (Ch.~\ref{sec:ph-LT}). Nevertheless, we will see that even this primitive model does lead to a qualitatively correct physical picture, which justifies the exaggerated approximations involved.
 
+(sec-phonon-light)=
 ## Interaction with light, polaritons
 
 Expressions~\eqref{eq:omegaTO} and~\eqref{eq:omegaLO} for the phonon frequencies lead to a convenient simplification of the permittivity, which is obtained via the Clausius-Mosotti relation, Eq.~\eqref{eq:clausius},

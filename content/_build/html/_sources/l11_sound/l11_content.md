@@ -1,3 +1,4 @@
+(sec-optical)=
 # Content
 
 
@@ -10,7 +11,7 @@ Atomic motion determines many, if not all, properties of a crystal. Molecules sh
 * **harmonic**, namely, elastic energy is quadratic in the displacement, or in other words any displacement creates a restoring force, which is proportional to the displacement. Harmonic approximation works well most of the time, although in Ch.~\ref{sec:expansion} we will see the need to go beyond it.
 * **adiabatic**, namely, atomic (nuclear) and electronic degrees of freedom are separated from each other. This is possible because nuclei are much heavier than electrons, so electrons move a lot faster. One can then think of electrons as creating a potential energy landscape for the nuclear motion. The typical time scale of electronic and nuclear motion is $10^{-15}$\,s and $10^{-12}$\,s, respectively. This approximation is also known as the **Born-Oppenheimer approximation**, especially in the context of molecules. It goes back to the very general [adiabatic theorem](https://en.wikipedia.org/wiki/Adiabatic_theorem) of quantum mechanics. The adiabatic approximation fails when two different electronic states have similar energies, and nuclei no longer know in which potential energy landscape to move. Such cases are fairly rare in the ground state, (But by all means not impossible, see the [Jahn-Teller effect](http://doi.org/10.1119/1.17197).) yet they become more common when excited electronic states are considered, for example, when crystal is hit by a laser that drives an electronic excitation of some sort.
 
-
+(sec-ph-chain)=
 ## Monoatomic chain
 
 Let's consider the simplest possible case, a chain of atoms with equal spacings $a$. We will use the index $p$ to label atoms along this chain, and introduce the atomic displacements $u_p$ (Fig.~\ref{fig:chain}). Any displacement changes the interatomic distance, and we will assume that chemical bonds behave as springs with the stiffness $\mathcal {K}$. The overall elastic energy is then
@@ -65,6 +66,7 @@ $$ (eq-v-acoustic)
 
 This is the speed of sound, as we will see shortly.
 
+(sec-elastic-wave)=
 ## Elastic waves and sound
 
 Sound is an elastic wave that propagates in any compressible medium. Consider a bar with the cross-section $A$ subject to a deformation that leads to the displacement $u_x(x)$ of the volume element $A\,dx$ parallel to the bar (Fig.~\ref{fig:elastic}). Time dependence of the displacement is described by the usual equation of motion,
@@ -115,6 +117,7 @@ describes a **shear wave** propagating with the velocity of $\sqrt{G/\rho}$.
 
 Compressional wave propagates in any elastic medium, whereas shear waves only propagate in solids because gases and liquids feature $G=0$ (their shape can be changed at no energy cost). This is the main reason why sound is a compressional wave. Shear wave can be thought as sound too, but it's not audible because our hearing mechanism involves sound transmission through air. 
 
+(sec-ph-LT)=
 ## Longitudinal and transverse phonons
 
 The phonon described in Ch.~\ref{sec:ph-chain} is called **acoustic* because $q\rightarrow 0$ part of its dispersion relation describes sound propagation in crystals. A similar acoustic phonon with displacements perpendicular to the propagation direction exists too. Different names can be used to describe these two types of motion depending on the context,
@@ -150,6 +153,7 @@ $$
 $$
 
 
+(sec-ph-diatomic)=
 ## Diatomic chain
 
 Let us now extend this analysis to a diatomic chain with alternating atoms and equal separations, such that all bonds have the same stiffness $\mathcal{K}$. We will proceed similar to the previous case and consider atomic displacements propagating along the chain, but now the two atoms have different mass and should thus show different displacement amplitudes,

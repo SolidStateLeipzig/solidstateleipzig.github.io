@@ -1,4 +1,5 @@
 
+(sec-structure)=
 # Content
 
 ## Atomic coordinates and Wyckoff positions

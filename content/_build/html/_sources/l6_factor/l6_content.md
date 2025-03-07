@@ -1,5 +1,7 @@
+(sec-diffraction)=
 # Content of lecture
 
+(sec-strfactor)= 
 ## Structure factor
 
 Reciprocal lattice serves as a connection between positions of Bragg peaks and lattice parameters of the crystal. Similarly, structure factor connects intensities of Bragg peaks to the atomic coordinates.
@@ -41,6 +43,7 @@ $$
 
 where we restricted the summation to the reciprocal-lattice vectors $\mathbf{G}$ because $\rho(\mathbf{r})$ is periodic in direct space. In fact, structure factor is merely the Fourier component of the scattering density, up to a pre-factor.
 
+
 ## Atomic approximation
 
 Strictly speaking, it is not necessary to think of atoms when we calculate $F(\mathbf{G})$, but life becomes easier when we do, namely, when the scattering density $\rho(\mathbf{r})$ is represented as a superposition of scattering densities $\rho_j(\mathbf{r}')$ from individual atoms. Consider $j=1,\ldots N$ atoms located at the positions $\mathbf{r}_1,\ldots \mathbf{r}_N$ within the unit cell. By introducing the volume element $\mathbf{dr}'$ within an atom, we represent $\mathbf{r}=\mathbf{r}_j+\mathbf{r}'$ (Fig.~\ref{fig:atoms}) and re-write the structure factor as a sum over individual atoms,
@@ -65,7 +68,7 @@ To a first approximation, any given atom scatters waves in the same way regardle
 
  * *generic:* angular dependence of the scattering by a given atom, as defined by $f_j(\mathbf{G})$, regardless of the exact nature of the crystal 
 
-
+(sec-extinction)=
 ## Extinction condition
 
 The structure factor defined by Eq. {eq}`eq-strfactor` reflects the arrangement of atoms inside the crystal. Experimental structure factors can be used to determine atomic positions, as we will further discuss in Ch.~\ref{sec:structure-determination}. Interestingly, using only a simple maths one can draw some conclusions on the symmetry of the crystal when lattice centering (Ch.~\ref{sec:centering}) or open symmetry elements (Ch.~\ref{sec:open}) connect different atoms therein.
@@ -105,6 +108,7 @@ Reflection conditions for a given space group can be obtained from the [HKLCOND]
 
 More generally, one can see the reflection (extinction) conditions as a manifestation of the periodicity. The reciprocal lattice defined using three lattice vectors, Eq. {eq}`eq-recdef`, corresponds to the situation when no additional translations are allowed. Crystals with lattice centering have a shorter periodicity indicated by the primitive cell, so their reciprocal lattices should be more sparse. This effect is achieved by removing some of the reciprocal-lattice points via extinctions. For example, reciprocal lattice of a bcc lattice is an fcc lattice with the periodicity of $4\pi/a$. 
 
+(sec-structure-determination)=
 ## Crystal strucutre determination
 
 Crystal structures are determined from diffraction experiments that involve an accurate measurement of both position and intensity for every Bragg peak. The structure solution includes three consecutive steps:

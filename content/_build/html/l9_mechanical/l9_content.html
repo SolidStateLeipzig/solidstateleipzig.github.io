@@ -265,9 +265,17 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_objectives.html">Learning objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_definitions.html">Definitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html"><img height="20" src="static_/logo.png" width="20"/> Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html">Content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_method.html">Experimental method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 12 - Phonons and Light</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_problem.html">Example problem</a></li>
 </ul>
 
     </div>
@@ -481,10 +489,10 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="content-of-lecture">
-<h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
+<span id="sec-mechanical"></span><h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
 <p>Starting from this chapter, we will go through different crystal properties and discuss the main parameters that describe them. We will also see how these properties are related to microscopic aspects of the crystals, especially the atoms and their chemical bonding that constitute lattice degrees of freedom.</p>
 <section id="hydrostatic-pressure-equation-of-state">
-<h2>Hydrostatic pressure, Equation of state<a class="headerlink" href="#hydrostatic-pressure-equation-of-state" title="Link to this heading">#</a></h2>
+<span id="sec-eos"></span><h2>Hydrostatic pressure, Equation of state<a class="headerlink" href="#hydrostatic-pressure-equation-of-state" title="Link to this heading">#</a></h2>
 <p><strong>Hydrostatic pressure</strong> implies that the same force acts on the sample from all directions. It is the type of pressure experienced by a sample immersed into water or another liquid. However, even liquids develop some pressure gradients. The most uniform pressure can be achieved by placing the crystal into helium gas. Helium solidifies at 11.5,GPa at room temperature, but it is a van der Waals solid with a very low bulk modulus, so it ensures almost hydrostatic (so-called <strong>quasi-hydrostatic</strong>) pressure conditions up to at least <span class="math notranslate nohighlight">\(20-25\)</span> GPa.</p>
 <figure class="align-default" id="fig-eos">
 <img alt="../_images/ch9-EoS.svg" src="../_images/ch9-EoS.svg" />
@@ -517,7 +525,7 @@ document.write(`
 <p>All equations of state show that volume decreases with pressure and develops a positive curvature, as shown in Fig.~\ref{fig:EoS}, because crystals harden on compression. Direct measurement of this <span class="math notranslate nohighlight">\(V(p)\)</span> curve using <strong>high-pressure XRD</strong> (i.e., x-ray diffraction on a crystal placed into a pressure cell) is the main experimental tool for studying compressibility of solids and determining their bulk moduli.</p>
 </section>
 <section id="uniaxial-pressure">
-<h2>Uniaxial pressure<a class="headerlink" href="#uniaxial-pressure" title="Link to this heading">#</a></h2>
+<span id="ch-uniaxial"></span><h2>Uniaxial pressure<a class="headerlink" href="#uniaxial-pressure" title="Link to this heading">#</a></h2>
 <p>In the absence of <strong>pressure medium</strong> like liquid or gas that could transmit the applied pressure into all directions and make it hydrostatic, one deals with <strong>uniaxial pressure</strong>. Such pressure is often called <strong>stress</strong>, <span class="math notranslate nohighlight">\(\sigma_x=F_x/A_x\)</span> where <span class="math notranslate nohighlight">\(F_x\)</span> is the applied force and <span class="math notranslate nohighlight">\(A_x\)</span> is the area of the sample surface perpendicular to which this force is applied (Fig.~\ref{fig:strain}, middle). Uniaxial stress creates <strong>strain</strong>, <span class="math notranslate nohighlight">\(\epsilon_x=\Delta L_x/L_x\)</span>, defined as the relative length change of the sample. Stress has units of pressure, whereas strain is a dimensionless quantity.</p>
 <p>While it is difficult to expand the crystal hydrostatically, uniaxial pressure could either compress or stretch the crystal along a certain direction. One thus distinguishes between the <strong>compressive</strong> (<span class="math notranslate nohighlight">\(\epsilon&gt;0\)</span>) and <strong>tensile</strong> (<span class="math notranslate nohighlight">\(\epsilon&lt;0\)</span>) strains. Practically, uniaxial pressure can be created simply by squeezing the crystal between the two plates. However, more and more often <a class="reference external" href="http://doi.org/10.1063/1.5075485">piezo-devices</a> are used instead. A suitably shaped crystal is attached to a piezoelectric stage that can create strains up to <span class="math notranslate nohighlight">\(1.5-2\)</span>%, both compressive and tensile.</p>
 <p>Stress and strain are related by the familiar <strong>Hooke’s law</strong>,</p>
@@ -535,7 +543,7 @@ document.write(`
 <p>Uniaxial pressure changes not only the sample length, but also its aspect ratio. Squeezing the crystal along one direction will typically force it to expand along the perpendicular direction, and the other way around. This effect is gauged by the <strong>Poisson’s ratio</strong>, <span class="math notranslate nohighlight">\(\nu=-\epsilon_y/\epsilon_x\)</span>. Most of the solid-state materials are characterized by <span class="math notranslate nohighlight">\(\nu&gt;0\)</span>. However, it is also possible to design materials with <span class="math notranslate nohighlight">\(\nu&lt;0\)</span> known as \emph{auxetic}. They play an important role in engineering, as explained <a class="reference external" href="https://doi.org/10.1038/natrevmats.2017.78">here</a>.</p>
 </section>
 <section id="shear-deformation">
-<h2>Shear deformation<a class="headerlink" href="#shear-deformation" title="Link to this heading">#</a></h2>
+<span id="ch-shear"></span><h2>Shear deformation<a class="headerlink" href="#shear-deformation" title="Link to this heading">#</a></h2>
 <p>Force can be applied not only perpendicular to the sample surface, but also parallel to it, leading to a so-called shear deformation that changes sample shape without changing its volume. Such shear stress <span class="math notranslate nohighlight">\(\tau_{xy}=F_y/A_x\)</span> is defined in the same way as the uniaxial stress, whereas shear strain <span class="math notranslate nohighlight">\(\epsilon_{xy}=\Delta L_y/L_x={\rm tan}\varphi\)</span> is the relative displacement of the sample surface caused by <span class="math notranslate nohighlight">\(F_y\)</span>. For low displacements, <span class="math notranslate nohighlight">\({\rm tan}\varphi\simeq\varphi\)</span>, and shear strain is measured simply as angle (Fig.~\ref{fig:strain}, right).</p>
 <p>The same linear relation between stress and strain holds in this case,</p>
 <div class="math notranslate nohighlight">

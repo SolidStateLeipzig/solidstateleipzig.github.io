@@ -1,5 +1,7 @@
+(sec-symgroups)=
 # Content of lecture
 
+(sec-symelements)=
 ## Point symmetry operations
 
 Only a few local (point) symmetry operations $\mathbb{R}$ are compatible with periodicity. Every periodic crystal can be then assigned to one or another symmetry group that comprises a subset of the following symmetry elements:
@@ -27,6 +29,7 @@ $$
 
 assuming $S_n\parallel z$. Simple algebra shows that $\bar 3=S_6$, $\bar 6=S_3$, and $\bar 4=S_4$, whereas $S_2=\bar 1$ and $S_1=m$, so we end up with exactly the same symmetry operations and an unnecessarily confusing notation.
 
+(sec-pointgroup)
 ## Point groups and crystal classes. Polarity
 A combination of symmetry elements constitutes a **symmetry group**. Here, group is used in [mathematical sense](https://en.wikipedia.org/wiki/Group_(mathematics)), as a closed set of elements with an operation that transforms them into each other. For example, a two-fold rotation axis and a mirror plane perpendicular to it generate the symmetry group (Fig.{numref}`fig-point`):
 
@@ -76,6 +79,7 @@ Crystal system defines the form of tensor properties according to Neumann's prin
 
 Crystal system can be combined with the lattice centering from Ch.~\ref{sec:centering}. Back then, we mentioned that centering only makes sense when the conventional unit cell has a higher symmetry than the primitive cell. Otherwise, lattice vectors could be re-defined without loss of symmetry. Indeed, a centered triclinic lattice is redundant, because its unit cell can always be reduced. On the other hand, both face and body-centering occur for cubic and some other crystal systems where symmetry elements would be lost otherwise. Combining crystal systems and lattice centering gives rise to **14 Bravais lattices** that can be encountered in periodic crystals.
 
+(sec-open)=
 ## Open symmetry elements
 
 Only point symmetry operations have been considered so far. Crystals also feature translational symmetry, and they are allowed to have combined symmetry elements that contain both local transformations and translations within one operation in the sense of Eq.~\eqref{eq:symoperation}. Such symmetry elements are called **open** because they generate an infinite array out of a single atom. 
@@ -99,7 +103,7 @@ Otherwise, repeated application of the glide plane would generate a new translat
 * $3_1$ is the $120^{\circ}$ rotation followed by a shift of $\mathbf{c}/3$
 * $4_2$ is the $90^{\circ}$ rotation followed by a shift of $\mathbf{c}/2$
 
-
+(sec-chirality)=
 ## Chirality
 
 Screw axes impart their sense of rotation to the atomic arrangement and, therefore, to the crystal as a whole. For example $3_1$ and $3_2$ produce similar helical chains with the counter-clockwise and clockwise rotations, respectively ({numref}`fig-chirality`). It is an example of chirality.

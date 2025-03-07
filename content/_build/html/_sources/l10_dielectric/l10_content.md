@@ -1,3 +1,4 @@
+(sec-dielectric)=
 # Content of lecture
 
 ## Permittivity
@@ -66,6 +67,7 @@ $$ (eq-polarizability)
 
 where $\alpha$ is **polarizability** (again, tensor property that in lucky cases can be reduced to a scalar). This definition is quite tricky because it involves local electric field near the atom/molecule, which is generally different from the applied electric field. We will deal with this problem shortly. For now let's notice that polarizability has rather non-intuitive SI units of C m $^2$/V or Fm $^2$. It becomes much more palatable in [electrostatic CGS units](https://en.wikipedia.org/wiki/Centimetre-gram-second_system_of_units#Electrostatic_units_(ESU)) [$\varepsilon_0=1/(4\pi)$] where $\alpha$ is measured in cm $^3$ and corresponds to an effective volume of an atom/molecule.
 
+(sec-dielectric-local)=
 ## Local electric field
 
 Local electric field from Eq.~\eqref{eq:polarizability} includes three contributions (Fig.~\ref{fig:local-field}),
@@ -139,6 +141,7 @@ $$ (eq-clausius)
 
 the **Clausius-Mossotti relation**, also known as the **Lorentz-Lorenz equation**. Simple at first glance, it has been very significant historically, because it offered the very first experimental tool for probing molecular property (polarizability) using a macroscopic measurement (permittivity).
 
+(sec-debye-relaxation)=
 ## Permanent dipoles, Debye relaxation
 
 Let's now consider permanent dipoles. To a first approximation, they do not change their dipole moment, yet they turn in order to get aligned with the field. This rotation takes time and causes a delay between $\mathbf{P}$ and $\mathbf{E}$, hence the imaginary part of $\varepsilon$. To analyze this delay, consider first a simple situation when external electric field is changed abruptly. We assume exponential nature of the relaxation with the characteristic **relaxation time** $\tau$ (Fig.~\ref{fig:debye-relaxation}), such that

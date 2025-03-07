@@ -1,3 +1,4 @@
+(sec-vdw)=
 # Content of lecture
 
 ## Covalent crystals
