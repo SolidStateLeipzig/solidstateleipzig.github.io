@@ -1,4 +1,4 @@
-(sec-optical)=
+(ch-optical)=
 # Content of lecture
 
 Whereas acoustic phonons are responsible for propagation of sound, optical phonons interact with light. To understand this interaction, we will first review the meaning of optical constants and then derive optical reflectivity of an ionic crystal due to phonons.
