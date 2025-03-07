@@ -22,19 +22,14 @@ $$
 
 where $\mathbf{k}_0$ is the propagation vector in vacuum ($\varepsilon=1$). It is then clear that $n'$, real part of the refractive index, describes **refraction**, namely, the change in speed of light inside the material. In contrast, the imaginary part $n''$ describes **absorption**, the attenuation of the wave amplitude inside the material. 
 
-\begin{figure}[!h]
-\hspace{0cm}
-\begin{minipage}{9cm}
- \includegraphics[scale=1.0]{ch12-reflectivity}
-\end{minipage}
-\hfill
-\begin{minipage}{6.5cm}
-\caption{\label{fig:reflectivity}
+
+```{figure} /figures/ch12-reflectivity.svg
+:name: fig-reflectivity
+
 Propagation of light at the crystal surface. The incident beam splits into the reflected and transmitted beams. Their intensities are determined by the complex refractive index of the crystal, $n=n'+in''$.
-}
-\end{minipage}
-\hfill
-\end{figure}
+```
+
+
 
 Absorption measurements require a suitably chosen sample thickness, such that the fraction of the absorbed intensity is neither too large nor too small. It is often more convenient to measure **reflectivity**, which is defined as the intensity ratio of the incident and reflected light. In the case of normal incidence, all of the incident, reflected, and transmitted waves travel along the $z$ direction perpendicular to the surface (Fig.~\ref{fig:reflectivity}),
 
@@ -150,6 +145,12 @@ Interaction of optical phonon with light. Left: frequency dependence of the perm
 }
 \end{figure}
 
+```{figure} /figures/ch12-epsilon.svg
+:name: fig-phonon-epsilon
+
+Interaction of optical phonon with light. Left: frequency dependence of the permittivity. Middle: polariton dispersion caused by the interaction of light with the phonon. Right: frequency dependence of the reflectivity with the \textit{Reststrahlen} band at $\omega_{\rm TO \,}<\omega<\omega_{\rm LO \,}$. 
+```
+
 The polariton formation causes the crystal to reflect electromagnetic waves. Indeed, at $\omega<\omega_{\rm TO \,}$ and at $\omega>\omega_{\rm LO \,}$, one finds $\varepsilon>0$, such that $n=n'+in''$ is a real number with $n'\neq 0$ and $n''=0$. Crystal refracts light, as we know from NaCl, quartz, and many other ionic crystals. On the other hand, at $\omega_{\rm TO \,}<\omega<\omega_{\rm LO \,}$, negative $\varepsilon$ renders $n$ a purely imaginary number with $n'=0$ and $n''\neq 0$.
 \footnote{This distinction between the purely real and purely imaginary $n$ is, of course, a drawback of our naive approximation. The purely real $\varepsilon(\omega)$ arises from the purely real $\alpha(\omega)$ obtained in Ch.~\ref{sec:dipoles} from the equations of motion that did not include any damping term. Realistically, damping creates a phase shift between $\mu_d(t)$ and $E_{\rm local}(t)$, thus rendering all optical parameters complex numbers.}
  The resulting reflectivity is 
@@ -190,6 +191,12 @@ Schematic representation of different contributions to the permittivity. Re-orie
 \hfill
 \end{figure}
 
+```{figure} /figures/ch12-epsilon-ranges.svg
+:name: fig-epsilon
+
+Schematic representation of different contributions to the permittivity. Re-orientation of permanent dipoles at low frequencies (Fig.~\ref{fig:debye-relaxation}, right) is followed by the ionic polarization due to phonons and eventually by the electronic polarization due to induced dipoles within individual atoms. Electronic and ionic relaxations give rise to wiggles, which are broadened versions of the divergence of $\varepsilon(\omega)$ shown in Fig.~\ref{fig:phonon-epsilon} (left). 
+```
+
 An interesting outcome of this analysis is that static permittivity of a crystal is determined by its phonon frequencies. Even a nonpolar crystal without any permanent dipoles may show $\varepsilon_{\rm st}$ well above 1.0 because charges inside the crystal move as a result of the atomic motion. A crystal with permanent dipoles shows an additional contribution to $\varepsilon_{\rm st}$ due to these pre-existing dipoles. Then, $\varepsilon_{\rm st}$ of the Lyddane-Sachs-Teller relation is $\varepsilon_{\infty}$ of the Debye relaxation (Ch.~\ref{sec:debye-relaxation}). Different contributions to the permittivity are sketched in Fig.~\ref{fig:epsilon}.
 
 ## Infra-red active phonon modes
@@ -208,8 +215,9 @@ Consider the TO phonon. In this case, $\mathbf{D}\perp\mathbf{k}$, so $\mathbf{E
 The situation becomes more complex in crystals with lower symmetry. Indeed, even distinguishing between longitudinal and transverse phonons is not possible in this case, because atomic displacements are not constrained to be parallel or perpendicular to the propagation vector of the phonon (see also Ch.~\ref{sec:ph-reciprocal}). However, what matters for our analysis is not $\mathbf{q}$ but $\mathbf{k}$, the propagation direction of light. One can think of splitting atomic displacements of an arbitrary phonon mode into two components. The component perpendicular to $\mathbf{k}$ leads to a divergence of $\varepsilon(\omega)$ at $\omega=\omega_{\rm TO}$, whereas the component parallel to $\mathbf{k}$ results in the zero crossing at some effective frequency $\omega=\omega_{\rm LO}$. 
 
 It may seem that almost every phonon mode of a non-cubic crystal should show up in $\varepsilon(\omega)$ and in the optical (infrared) spectrum. Not quite. No coupling to light occurs when phonon mode does not generate any dipole moment. This may happen in a covalent crystal or when the phonon preserves inversion symmetry.[^1]
+ 
+[^1]: Such modes are called *even* (*gerade*), in contrast to *odd* (*ungerade*) modes that break the inversion symmetry. For a given crystal, the distribution of modes into odd and even can be analyzed on the basis of crystal symmetry and occupied Wyckoff positions, for example using the SAM utility at the Bilbao server.
 
 What ultimately matters is the formation of a dipole moment (i.e., atomic displacements) parallel to $\mathbf{E}$ of light. The coupling between this dipole moment and oscillating electric field renders phonon-mode **IR-active**. Polarized light is often used to single out modes with a given direction of the atomic displacements.
 
 
- [^1] : Such modes are called *even* (*gerade*), in contrast to *odd* (*ungerade*) modes that break the inversion symmetry. For a given crystal, the distribution of modes into odd and even can be analyzed on the basis of crystal symmetry and occupied Wyckoff positions, for example using the SAM utility at the Bilbao server.

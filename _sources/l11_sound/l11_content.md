@@ -19,12 +19,14 @@ $$
  \mathcal{E}_{\rm elastic}=\frac12\sum_p \mathcal{K}(u_{p+1}-u_p)^2.
 $$
 
-\begin{figure}
-\centerline{\includegraphics{ch11-chain}}
-\caption{\label{fig:chain}
+
+
+
+```{figure} /figures/ch11-chain.svg
+:name: fig-chain
+
 Atomic displacements $u_p$ in the monoatomic chain. The right panel shows the dispersion relations for the displacement wave (orange) and elastic wave (blue). The light-blue arrows indicate the atomic displacements at $q=\pi/a$.
-}
-\end{figure}
+```
 
 Atomic displacements can be determined from the equations of motion,
 
@@ -92,17 +94,14 @@ $$
 
 The speed $v_s$ resembles our earlier result, Eq.~\eqref{eq:v-acoustic} obtained in the $q\rightarrow 0$ limit, and serves as the **speed of sound**. 
 
-\begin{figure}
-\begin{minipage}{9.2cm}
- \includegraphics{ch11-elastic}
-\end{minipage}
-\begin{minipage}{7.3cm}
-\caption{\label{fig:elastic}
+
+
+```{figure} /figures/ch11-elastic.svg
+:name: fig-elastic
+
 Compressional and shear elastic waves. The forces $F(x)$ and $F(x+dx)$ cause the displacements $u_x$ and $u_y$ along the bar and perpendicular to the bar, respectively.
-}
-\vspace{0.5cm}
-\end{minipage}
-\end{figure}
+```
+
 
 An important difference between the compressional elastic wave in a continuous medium, as we considered here, and the displacement wave in a crystal (Ch.~\ref{sec:ph-chain}) is that linear dispersion relation, $\omega=v_s\,q$, breaks down in the latter at higher $q$'s (Fig.~\ref{fig:chain}). This happens because crystal is discrete, so it can't be treated as a continuous medium when period of the displacement wave becomes comparable to the interatomic distance or, in other words, $q$ approaches $\pi/a$. However, the continuum approximation is perfectly justified at low $q$'s where period of the displacement wave is large compared to the interatomic distance. Continuum approximations are widely used in solid-state physics for describing mesoscopic phenomena, for example long-period spin textures and [magnetic skyrmions](https://en.wikipedia.org/wiki/Magnetic_skyrmion).
 
@@ -122,15 +121,12 @@ The phonon described in Ch.~\ref{sec:ph-chain} is called **acoustic* because $q\
 
 
 
-\centerline{%
-\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{c@{\hspace{2cm}}c@{\hspace{2cm}}c}
- \textit{acoustic phonon} & longitudinal & transverse \\
- \textit{elastic wave} & compressional & shear \\
- \textit{seismic wave} & $p$-wave & $s$-wave
-\end{tabular}
-}
-\medskip
+
+| | | |
+| :--: | :--: | :--:|
+|acoustic phonon| longitudinal | transverse|
+|elastic wave| compressional | shear
+|seismic wave| $p$-wave | $s$ -wave|
 
 Speeds of the corresponding waves are given by
 
@@ -162,12 +158,12 @@ $$
  u_p(t)=A_1\,e^{i(qpa-\omega t)},\qquad v_p(t)=A_2\,e^{i(qpa-\omega t)}.
 $$ (eq-ph-diatans)
 
-\begin{figure}
-\centerline{\includegraphics{ch11-diatomic}}
-\caption{\label{fig:diatomic}
+
+```{figure} /figures/ch11-diatomic.svg
+:name: fig-diatomic
+
 Left: atomic displacements in the diatomic chain comprising atoms with the masses $m_1$ and $m_2$ connected by the springs with the same stiffness $\mathcal{K}$. Right: dispersion relation for the two phonon modes, acoustic and optical.
-}
-\end{figure}
+```
 
 The equations of motion become
 $$
@@ -227,7 +223,7 @@ $$
 
 ## Acoustic and optical phonons
 
-There are now two dispersion relations that define two **phonon branches**. The $\omega_-(q)$ branch has zero frequency at $q=0$. It is called \emph{acoustic} because it reduces to an elastic wave in the low-$q$ limit and describes sound propagation. The $\omega_+(q)$ branch is \emph{optical}, because it can interact with light, as we will see in Ch.~\ref{sec:optical}. Optical phonon has the finite frequency of $\sqrt{2\mathcal{K}/\mathcal{m}}$ at $q=0$. 
+There are now two dispersion relations that define two **phonon branches**. The $\omega_-(q)$ branch has zero frequency at $q=0$. It is called \emph{acoustic} because it reduces to an elastic wave in the low-$q$ limit and describes sound propagation. The $\omega_+(q)$ branch is **optical**, because it can interact with light, as we will see in Ch.~\ref{sec:optical}. Optical phonon has the finite frequency of $\sqrt{2\mathcal{K}/\mathcal{m}}$ at $q=0$. 
 
 The main intrinsic difference between the acoustic and optical phonons lies in the amplitudes $A_1$ and $A_2$.  For an optical branch at $q=0$, Eqs.~\eqref{ph-eqamplitude} yield $A_1/A_2=-m_2/m_1$. The atoms of different type oscillate out-of-phase. On the other hand, $\omega_-=0$ of the acoustic mode yields $A_1/A_2=1$, such that atoms of different type oscillate in-phase near $q=0$. 
 
