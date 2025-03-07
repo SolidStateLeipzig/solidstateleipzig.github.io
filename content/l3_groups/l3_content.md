@@ -31,7 +31,7 @@ assuming $S_n\parallel z$. Simple algebra shows that $\bar 3=S_6$, $\bar 6=S_3$,
 
 (sec-pointgroup)
 ## Point groups and crystal classes. Polarity
-A combination of symmetry elements constitutes a **symmetry group**. Here, group is used in [mathematical sense](https://en.wikipedia.org/wiki/Group_(mathematics)), as a closed set of elements with an operation that transforms them into each other. For example, a two-fold rotation axis and a mirror plane perpendicular to it generate the symmetry group (Fig.{numref}`fig-point`):
+A combination of symmetry elements constitutes a **symmetry group**. Here, group is used in [mathematical sense](https://en.wikipedia.org/wiki/Group_(mathematics)), as a closed set of elements with an operation that transforms them into each other. For example, a two-fold rotation axis and a mirror plane perpendicular to it generate the symmetry group ({numref}`fig-point`):
 
 $$
  2/m = \left\{\,1,2,m,\bar 1\,\right\}.
@@ -39,7 +39,7 @@ $$
 
 Repeated application of the two-fold rotation leads to the unitary operation, $2\otimes 2=1$. The same is true for the mirror plane, $m\otimes m=1$. Finally, 2 followed by $m$ results in the inversion center $\bar 1$. 
 
-Another example: a point group composed of three mutually orthogonal mirror planes perpendicular to $\mathbf{a}$, $\mathbf{b}$, and $\mathbf{c}$ (Fig. {numref}`fig-point`). A consecutive application of $m_a$ and $m_b$ leads to the coordinate transformation $x,y,z\longrightarrow \bar x,\bar y,z$, so it is equivalent to a two-fold rotation axis along~$\mathbf{c}$. Each pair of planes generates a rotation axis, but we don't need to list them all, and the point group is labeled simply as $mmm$. It features eight symmetry elements,
+Another example: a point group composed of three mutually orthogonal mirror planes perpendicular to $\mathbf{a}$, $\mathbf{b}$, and $\mathbf{c}$ ({numref}`fig-point`). A consecutive application of $m_a$ and $m_b$ leads to the coordinate transformation $x,y,z\longrightarrow \bar x,\bar y,z$, so it is equivalent to a two-fold rotation axis along~$\mathbf{c}$. Each pair of planes generates a rotation axis, but we don't need to list them all, and the point group is labeled simply as $mmm$. It features eight symmetry elements,
 
 $$
  mmm= \left\{\,1, 2_a, 2_b, 2_c, m_a, m_b, m_c, \bar 1\,\right\}.
@@ -55,7 +55,7 @@ Examples of point groups of symmetry.
 Since one symmetry element can be obtained from a few others, it is customary to label the symmetry group by its main generators, similar to the examples above. One usually chooses rotation axis of the highest order and then symmetry elements perpendicular to it. Consider the following examples:
 
 * $4/m$ is the four-fold rotation along $\mathbf{c}$ and the mirror plane perpendicular to $\mathbf{c}$.
-* $4mm$ is the four-fold rotation along $\mathbf{c}$, the mirror planes perpendicular to $\mathbf{a}$ and $\mathbf{b}$, and the mirror planes perpendicular to $\mathbf{a}\pm\mathbf{b}$. The absence of / means that no mirror plane perpendicular to $\mathbf{c}$ occurs. Moreover, the $\mathbf{a}$ and $\mathbf{b}$ directions are equivalent (orange planes in Fig. {numref}`fig-point`, so they are mentioned only once, while the second $m$ stands for the mirror planes, which are perpendicular to the $ab$-diagonals (green).
+* $4mm$ is the four-fold rotation along $\mathbf{c}$, the mirror planes perpendicular to $\mathbf{a}$ and $\mathbf{b}$, and the mirror planes perpendicular to $\mathbf{a}\pm\mathbf{b}$. The absence of / means that no mirror plane perpendicular to $\mathbf{c}$ occurs. Moreover, the $\mathbf{a}$ and $\mathbf{b}$ directions are equivalent (orange planes in {numref}`fig-point`, so they are mentioned only once, while the second $m$ stands for the mirror planes, which are perpendicular to the $ab$-diagonals (green).
 
 There are altogether 32 **point groups** formed by the symmetry operations from Ch.~\ref{sec:symelements}. The full list can be found [on Wikipedia](https://en.wikipedia.org/wiki/Crystallographic_point_group) along with an explanation of the Sch\"onflies symbols of point groups that we will not consider here. Every point group defines its own **crystal class**, a family of crystals with the similar shape that reflects the underlying symmetry of the crystal structure. 
 
@@ -82,7 +82,7 @@ Crystal system can be combined with the lattice centering from Ch.~\ref{sec:cent
 (sec-open)=
 ## Open symmetry elements
 
-Only point symmetry operations have been considered so far. Crystals also feature translational symmetry, and they are allowed to have combined symmetry elements that contain both local transformations and translations within one operation in the sense of Eq.~\eqref{eq:symoperation}. Such symmetry elements are called **open** because they generate an infinite array out of a single atom. 
+Only point symmetry operations have been considered so far. Crystals also feature translational symmetry, and they are allowed to have combined symmetry elements that contain both local transformations and translations within one operation in the sense of {eq}`eq-symoperation`. Such symmetry elements are called **open** because they generate an infinite array out of a single atom. 
 
 Importantly, open symmetry elements can only occur in crystals, so they are always accompanied by pure translations (Ch.~\ref{sec:centering}) and should be compatible with periodicity. Repeated application of an open symmetry element leads to a simple shift of an atom without any reflection or rotation. This shift should match one of the lattice translations that have been defined in Ch.~\ref{sec:centering}.
 
@@ -142,7 +142,7 @@ Absent symmetry elements are usually not written. For example, $P2/m=P\,1\,2/m\,
 
 (check again Ch.~\ref{sec:pointgroup} for the choice of directions in the 4-fold symmetric case).
 
-An exhaustive list of \emph{230 space groups} can be found on the [Bilbao Crystallographic Server](https://cryst.ehu.es/cgi-bin/cryst/programs/nph-table?from=getwp) and in[International Tables for Crystallography](https://it.iucr.org/).
+An exhaustive list of **230 space groups** can be found on the [Bilbao Crystallographic Server](https://cryst.ehu.es/cgi-bin/cryst/programs/nph-table?from=getwp) and in [International Tables for Crystallography](https://it.iucr.org/).
 ```{note} Many of the universities, including Leipzig, do not have access to this book. Fortunately, symmetry diagrams for many of the space groups can be also obtained free of charge from the [The Fascination of Crystals and Symmetry](https://crystalsymmetry.wordpress.com/space-group-diagrams/) website by Frank Hoffmann.
 
 ```
