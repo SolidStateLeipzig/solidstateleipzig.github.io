@@ -504,19 +504,12 @@ document.write(`
  \mathbf{E}=\mathbf{E}_0\,e^{i(\mathbf{k}\mathbf{r}-\omega t)}=\mathbf{E}_0\,e^{i(n\mathbf{k}_0\mathbf{r}-\omega t)}=\mathbf{E}_0\,e^{-n''\mathbf{k}_0\mathbf{r}}\,e^{i(n'\mathbf{k}_0\mathbf{r}-\omega t)}
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\mathbf{k}_0\)</span> is the propagation vector in vacuum (<span class="math notranslate nohighlight">\(\varepsilon=1\)</span>). It is then clear that <span class="math notranslate nohighlight">\(n'\)</span>, real part of the refractive index, describes <strong>refraction</strong>, namely, the change in speed of light inside the material. In contrast, the imaginary part <span class="math notranslate nohighlight">\(n''\)</span> describes <strong>absorption</strong>, the attenuation of the wave amplitude inside the material.</p>
-<p>\begin{figure}[!h]
-\hspace{0cm}
-\begin{minipage}{9cm}
-\includegraphics[scale=1.0]{ch12-reflectivity}
-\end{minipage}
-\hfill
-\begin{minipage}{6.5cm}
-\caption{\label{fig:reflectivity}
-Propagation of light at the crystal surface. The incident beam splits into the reflected and transmitted beams. Their intensities are determined by the complex refractive index of the crystal, <span class="math notranslate nohighlight">\(n=n'+in''\)</span>.
-}
-\end{minipage}
-\hfill
-\end{figure}</p>
+<figure class="align-default" id="fig-reflectivity">
+<img alt="../_images/ch12-reflectivity.svg" src="../_images/ch12-reflectivity.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Propagation of light at the crystal surface. The incident beam splits into the reflected and transmitted beams. Their intensities are determined by the complex refractive index of the crystal, <span class="math notranslate nohighlight">\(n=n'+in''\)</span>.</span><a class="headerlink" href="#fig-reflectivity" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Absorption measurements require a suitably chosen sample thickness, such that the fraction of the absorbed intensity is neither too large nor too small. It is often more convenient to measure <strong>reflectivity</strong>, which is defined as the intensity ratio of the incident and reflected light. In the case of normal incidence, all of the incident, reflected, and transmitted waves travel along the <span class="math notranslate nohighlight">\(z\)</span> direction perpendicular to the surface (Fig.~\ref{fig:reflectivity}),</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -612,6 +605,12 @@ $$</p>
 Interaction of optical phonon with light. Left: frequency dependence of the permittivity. Middle: polariton dispersion caused by the interaction of light with the phonon. Right: frequency dependence of the reflectivity with the \textit{Reststrahlen} band at <span class="math notranslate nohighlight">\(\omega_{\rm TO \,}&lt;\omega&lt;\omega_{\rm LO \,}\)</span>.
 }
 \end{figure}</p>
+<figure class="align-default" id="fig-phonon-epsilon">
+<img alt="../_images/ch12-epsilon.svg" src="../_images/ch12-epsilon.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Interaction of optical phonon with light. Left: frequency dependence of the permittivity. Middle: polariton dispersion caused by the interaction of light with the phonon. Right: frequency dependence of the reflectivity with the \textit{Reststrahlen} band at <span class="math notranslate nohighlight">\(\omega_{\rm TO \,}&lt;\omega&lt;\omega_{\rm LO \,}\)</span>.</span><a class="headerlink" href="#fig-phonon-epsilon" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The polariton formation causes the crystal to reflect electromagnetic waves. Indeed, at <span class="math notranslate nohighlight">\(\omega&lt;\omega_{\rm TO \,}\)</span> and at <span class="math notranslate nohighlight">\(\omega&gt;\omega_{\rm LO \,}\)</span>, one finds <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>, such that <span class="math notranslate nohighlight">\(n=n'+in''\)</span> is a real number with <span class="math notranslate nohighlight">\(n'\neq 0\)</span> and <span class="math notranslate nohighlight">\(n''=0\)</span>. Crystal refracts light, as we know from NaCl, quartz, and many other ionic crystals. On the other hand, at <span class="math notranslate nohighlight">\(\omega_{\rm TO \,}&lt;\omega&lt;\omega_{\rm LO \,}\)</span>, negative <span class="math notranslate nohighlight">\(\varepsilon\)</span> renders <span class="math notranslate nohighlight">\(n\)</span> a purely imaginary number with <span class="math notranslate nohighlight">\(n'=0\)</span> and <span class="math notranslate nohighlight">\(n''\neq 0\)</span>.
 \footnote{This distinction between the purely real and purely imaginary <span class="math notranslate nohighlight">\(n\)</span> is, of course, a drawback of our naive approximation. The purely real <span class="math notranslate nohighlight">\(\varepsilon(\omega)\)</span> arises from the purely real <span class="math notranslate nohighlight">\(\alpha(\omega)\)</span> obtained in Ch.~\ref{sec:dipoles} from the equations of motion that did not include any damping term. Realistically, damping creates a phase shift between <span class="math notranslate nohighlight">\(\mu_d(t)\)</span> and <span class="math notranslate nohighlight">\(E_{\rm local}(t)\)</span>, thus rendering all optical parameters complex numbers.}
 The resulting reflectivity is
@@ -646,6 +645,12 @@ Schematic representation of different contributions to the permittivity. Re-orie
 \end{minipage}
 \hfill
 \end{figure}</p>
+<figure class="align-default" id="fig-epsilon">
+<img alt="../_images/ch12-epsilon-ranges.svg" src="../_images/ch12-epsilon-ranges.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Schematic representation of different contributions to the permittivity. Re-orientation of permanent dipoles at low frequencies (Fig.~\ref{fig:debye-relaxation}, right) is followed by the ionic polarization due to phonons and eventually by the electronic polarization due to induced dipoles within individual atoms. Electronic and ionic relaxations give rise to wiggles, which are broadened versions of the divergence of <span class="math notranslate nohighlight">\(\varepsilon(\omega)\)</span> shown in Fig.~\ref{fig:phonon-epsilon} (left).</span><a class="headerlink" href="#fig-epsilon" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>An interesting outcome of this analysis is that static permittivity of a crystal is determined by its phonon frequencies. Even a nonpolar crystal without any permanent dipoles may show <span class="math notranslate nohighlight">\(\varepsilon_{\rm st}\)</span> well above 1.0 because charges inside the crystal move as a result of the atomic motion. A crystal with permanent dipoles shows an additional contribution to <span class="math notranslate nohighlight">\(\varepsilon_{\rm st}\)</span> due to these pre-existing dipoles. Then, <span class="math notranslate nohighlight">\(\varepsilon_{\rm st}\)</span> of the Lyddane-Sachs-Teller relation is <span class="math notranslate nohighlight">\(\varepsilon_{\infty}\)</span> of the Debye relaxation (Ch.~\ref{sec:debye-relaxation}). Different contributions to the permittivity are sketched in Fig.~\ref{fig:epsilon}.</p>
 </section>
 <section id="infra-red-active-phonon-modes">
@@ -659,9 +664,15 @@ Schematic representation of different contributions to the permittivity. Re-orie
 <p>The former condition requires <span class="math notranslate nohighlight">\(\mathbf{D}=0\)</span> or <span class="math notranslate nohighlight">\(\mathbf{k}\perp\mathbf{D}\)</span> (hence <span class="math notranslate nohighlight">\(\mathbf{k}\perp\mathbf{E}\)</span>), while the latter requires <span class="math notranslate nohighlight">\(\mathbf{E}=0\)</span> or <span class="math notranslate nohighlight">\(\mathbf{k}\parallel\mathbf{E}\)</span> (hence <span class="math notranslate nohighlight">\(\mathbf{k}\parallel\mathbf{D}\)</span>).</p>
 <p>Consider the TO phonon. In this case, <span class="math notranslate nohighlight">\(\mathbf{D}\perp\mathbf{k}\)</span>, so <span class="math notranslate nohighlight">\(\mathbf{E}\)</span> must be zero for the second condition to be fulfilled. Then, <span class="math notranslate nohighlight">\(\varepsilon\rightarrow\infty\)</span> because <span class="math notranslate nohighlight">\(\mathbf{D}=\varepsilon\varepsilon_0\mathbf{E}\)</span>, so <span class="math notranslate nohighlight">\(\varepsilon(\omega)\)</span> diverges at <span class="math notranslate nohighlight">\(\omega_{\rm TO \,}\)</span>. On the other hand, the LO phonon implies <span class="math notranslate nohighlight">\(\mathbf{E}\|\mathbf{k}\)</span>, so <span class="math notranslate nohighlight">\(\mathbf{D}\)</span> must be zero, which is only possible at <span class="math notranslate nohighlight">\(\varepsilon=0\)</span>. Therefore, a zero crossing of <span class="math notranslate nohighlight">\(\varepsilon(\omega)\)</span> should occur at <span class="math notranslate nohighlight">\(\omega_{\rm LO \,}\)</span>. The pre-condition for these arguments is our assumption that <span class="math notranslate nohighlight">\(\mathbf{D}\parallel\mathbf{E}\)</span> or, basically, the diagonal form of the permittivity tensor expected in crystals with the sufficiently high symmetry (Ch.~\ref{sec:neumann}).</p>
 <p>The situation becomes more complex in crystals with lower symmetry. Indeed, even distinguishing between longitudinal and transverse phonons is not possible in this case, because atomic displacements are not constrained to be parallel or perpendicular to the propagation vector of the phonon (see also Ch.~\ref{sec:ph-reciprocal}). However, what matters for our analysis is not <span class="math notranslate nohighlight">\(\mathbf{q}\)</span> but <span class="math notranslate nohighlight">\(\mathbf{k}\)</span>, the propagation direction of light. One can think of splitting atomic displacements of an arbitrary phonon mode into two components. The component perpendicular to <span class="math notranslate nohighlight">\(\mathbf{k}\)</span> leads to a divergence of <span class="math notranslate nohighlight">\(\varepsilon(\omega)\)</span> at <span class="math notranslate nohighlight">\(\omega=\omega_{\rm TO}\)</span>, whereas the component parallel to <span class="math notranslate nohighlight">\(\mathbf{k}\)</span> results in the zero crossing at some effective frequency <span class="math notranslate nohighlight">\(\omega=\omega_{\rm LO}\)</span>.</p>
-<p>It may seem that almost every phonon mode of a non-cubic crystal should show up in <span class="math notranslate nohighlight">\(\varepsilon(\omega)\)</span> and in the optical (infrared) spectrum. Not quite. No coupling to light occurs when phonon mode does not generate any dipole moment. This may happen in a covalent crystal or when the phonon preserves inversion symmetry.[^1]</p>
+<p>It may seem that almost every phonon mode of a non-cubic crystal should show up in <span class="math notranslate nohighlight">\(\varepsilon(\omega)\)</span> and in the optical (infrared) spectrum. Not quite. No coupling to light occurs when phonon mode does not generate any dipole moment. This may happen in a covalent crystal or when the phonon preserves inversion symmetry.<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
 <p>What ultimately matters is the formation of a dipole moment (i.e., atomic displacements) parallel to <span class="math notranslate nohighlight">\(\mathbf{E}\)</span> of light. The coupling between this dipole moment and oscillating electric field renders phonon-mode <strong>IR-active</strong>. Polarized light is often used to single out modes with a given direction of the atomic displacements.</p>
-<p>[^1] : Such modes are called <em>even</em> (<em>gerade</em>), in contrast to <em>odd</em> (<em>ungerade</em>) modes that break the inversion symmetry. For a given crystal, the distribution of modes into odd and even can be analyzed on the basis of crystal symmetry and occupied Wyckoff positions, for example using the SAM utility at the Bilbao server.</p>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Such modes are called <em>even</em> (<em>gerade</em>), in contrast to <em>odd</em> (<em>ungerade</em>) modes that break the inversion symmetry. For a given crystal, the distribution of modes into odd and even can be analyzed on the basis of crystal symmetry and occupied Wyckoff positions, for example using the SAM utility at the Bilbao server.</p>
+</aside>
+</aside>
 </section>
 </section>
 
