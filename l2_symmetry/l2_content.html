@@ -265,9 +265,17 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_objectives.html">Learning objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_definitions.html">Definitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html"><img height="20" src="static_/logo.png" width="20"/> Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html">Content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_method.html">Experimental method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 12 - Phonons and Light</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_problem.html">Example problem</a></li>
 </ul>
 
     </div>
@@ -481,7 +489,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="content-of-lecture">
-<h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
+<span id="sec-symmetry"></span><h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
 <section id="symmetry-operations">
 <h2>Symmetry operations<a class="headerlink" href="#symmetry-operations" title="Link to this heading">#</a></h2>
 <p>Long-range order of a crystal reflects its underlying symmetry. Most generally, <strong>symmetry</strong> of an object is a set of transformations that leave this object invariant. We will consider geometrical transformations that can be represented as</p>
@@ -491,7 +499,7 @@ document.write(`
 <p>where <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> is a unitary transformation, such as rotation, and <span class="math notranslate nohighlight">\(\mathbf{t}\)</span> is a translation in space by a given vector.</p>
 </section>
 <section id="translational-symmetry-lattice-centering">
-<h2>Translational symmetry: lattice centering<a class="headerlink" href="#translational-symmetry-lattice-centering" title="Link to this heading">#</a></h2>
+<span id="sec-centering"></span><h2>Translational symmetry: lattice centering<a class="headerlink" href="#translational-symmetry-lattice-centering" title="Link to this heading">#</a></h2>
 <p>The simplest translational symmetry of a crystal is its periodicity. From Eq. <a class="reference internal" href="../l1_bravais/l1_content.html#equation-eq-bravais">(1)</a> we know that <span class="math notranslate nohighlight">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span> and their linear combinations are allowed translations, so all of them are symmetry operations of a crystal, as long as this crystal is periodic. Some other translations may be allowed too, leading to a classification of lattices by <strong>lattice centering</strong> into:</p>
 <ul class="simple">
 <li><p><strong>Primitive lattice</strong> (<span class="math notranslate nohighlight">\(P\)</span>) has only <span class="math notranslate nohighlight">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span> and their linear combinations as allowed translations</p></li>
@@ -500,7 +508,7 @@ document.write(`
 <li><p><strong>Base-centered lattice</strong> (<span class="math notranslate nohighlight">\(A,B,C\)</span>) features additional translations by half of the face diagonal, but only for two faces out of six. For example, the <span class="math notranslate nohighlight">\(C\)</span>-centered lattice allows <span class="math notranslate nohighlight">\(\mathbf{t}=\frac12(\mathbf{a}\pm\mathbf{b})\)</span></p></li>
 <li><p><strong>Rhombohedral lattice</strong> (<span class="math notranslate nohighlight">\(R\)</span>) features an additional translation by <span class="math notranslate nohighlight">\(\mathbf{t}=\frac13(\mathbf{a}+\mathbf{b}+\mathbf{c})\)</span> (one third of the body diagonal)</p></li>
 </ul>
-<p>One could then ask why these additional vectors <span class="math notranslate nohighlight">\(\mathbf{t}\)</span> are needed. Should they exist, lattice vectors can be re-defined as the shortest repetition vectors of the crystal, and every lattice will be primitive. True indeed, but some rotational symmetry may be lost on the way, as shown in Fig.~\ref{fig:cell}. Therefore, in a centered lattice one distinguishes:</p>
+<p>One could then ask why these additional vectors <span class="math notranslate nohighlight">\(\mathbf{t}\)</span> are needed. Should they exist, lattice vectors can be re-defined as the shortest repetition vectors of the crystal, and every lattice will be primitive. True indeed, but some rotational symmetry may be lost on the way, as shown in <a class="reference internal" href="#fig-cell"><span class="std std-numref">Fig. 3</span></a>. Therefore, in a centered lattice one distinguishes:</p>
 <ul class="simple">
 <li><p><strong>Primitive cell</strong> , which is the repetition unit with the smallest volume defined by the shortest translations <span class="math notranslate nohighlight">\(\mathbf{a}_p\)</span>, <span class="math notranslate nohighlight">\(\mathbf{b}_p\)</span>, <span class="math notranslate nohighlight">\(\mathbf{c}_p\)</span></p></li>
 <li><p><strong>Conventional cell</strong>, which is the smallest repetition unit of the highest symmetry defined by the lattice vectors <span class="math notranslate nohighlight">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span></p></li>
@@ -512,11 +520,11 @@ document.write(`
 </figcaption>
 </figure>
 <p>In a primitive lattice, both unit cells coincide. In a centered lattice, the volume of the primitive cell is twice (<span class="math notranslate nohighlight">\(A,B,C,I\)</span>), three times (<span class="math notranslate nohighlight">\(R\)</span>), or four times (<span class="math notranslate nohighlight">\(F\)</span>) smaller than the volume of the conventional unit cell.</p>
-<p>From this point on, we will distinguish <strong>lattice vectors</strong> <span class="math notranslate nohighlight">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span> that define the conventional unit cell, from <strong>lattice translations</strong> <span class="math notranslate nohighlight">\(\mathbf{t}\)</span> that include <span class="math notranslate nohighlight">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span> along with other vectors allowed by the lattice centering.</p>
+<p>From this point on, we will distinguish <strong>lattice vectors</strong> <span class="math notranslate nohighlight">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span> that define the conventional unit cell, from <strong>lattice translations</strong> <span class="math notranslate nohighlight">\(\mathbf{t}\)</span> that include <span class="math notranslate nohighlight">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span> along with other vectors allowed by the lattice centering. <a class="reference internal" href="#sec-rotational"><span class="std std-ref">Rotational symmetry and birefringence</span></a>.</p>
 <p>Lattice centering is an important part of describing crystal symmetry, but it may not have any immediate implications. We do not expect crystals with face-centered lattices to be distinct from the body-centered ones. However, in special cases, such as simple metals from <a class="reference internal" href="../l1_bravais/l1_content.html#fig-metals"><span class="std std-numref">Fig. 2</span></a>, lattice centering determines the packing fraction and directly affects density of the crystal.</p>
 </section>
 <section id="rotational-symmetry-and-birefringence">
-<h2>Rotational symmetry and birefringence<a class="headerlink" href="#rotational-symmetry-and-birefringence" title="Link to this heading">#</a></h2>
+<span id="sec-rotational"></span><h2>Rotational symmetry and birefringence<a class="headerlink" href="#rotational-symmetry-and-birefringence" title="Link to this heading">#</a></h2>
 <p>The <span class="math notranslate nohighlight">\(p\)</span>-fold \emph{rotation axis} is defined as the rotation by <span class="math notranslate nohighlight">\(\varphi = 360^{\circ}/p\)</span>. Here, <span class="math notranslate nohighlight">\(p\)</span> must be integer because applying the same operation several times should end up in the full <span class="math notranslate nohighlight">\(360^{\circ}\)</span> rotation. Rotation axes are labeled with numbers: two-fold rotation axis is 2, four-rold rotation axis is 4, etc. For a clockwise rotation, the corresponding transformation matrix is</p>
 <div class="math notranslate nohighlight" id="equation-eq-rotation">
 <span class="eqno">(3)<a class="headerlink" href="#equation-eq-rotation" title="Link to this equation">#</a></span>\[\begin{split}
