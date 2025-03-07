@@ -5,6 +5,7 @@ format: jb-book
 root: intro
 parts:
 - caption: Lecture 1 - Bravais lattice, how to pack a crystal?
+  numbered: True
   chapters:
   - file: l1_bravais/l1_objectives.md
   - file: l1_bravais/l1_definitions.md
@@ -13,6 +14,7 @@ parts:
   - file: l1_bravais/l1_problem.md
 
 - caption: Lecture 2 - Symmetry as the guiding principle
+  numbered: True
   chapters:
   - file: l2_symmetry/l2_objectives.md
   - file: l2_symmetry/l2_definitions.md
@@ -21,6 +23,7 @@ parts:
   - file: l2_symmetry/l2_problem.md
 
 - caption: Lecture 3 - Systematics of crystals - symmetry groups
+  numbered: True
   chapters:
   - file: l3_groups/l3_objectives.md
   - file: l3_groups/l3_definitions.md
@@ -29,6 +32,7 @@ parts:
   - file: l3_groups/l3_problem.md
 
 - caption: Lecture 4 - Unpacking the crystal structure
+  numbered: True
   chapters:
   - file: l4_structure/l4_objectives.md
   - file: l4_structure/l4_definitions.md
@@ -37,6 +41,7 @@ parts:
   - file: l4_structure/l4_problem.md
 
 - caption: Lecture 5 - Spaces of crystallography - Reciprocal lattice
+  numbered: True
   chapters:
   - file: l5_reciprocal/l5_objectives.md
   - file: l5_reciprocal/l5_definitions.md
@@ -45,6 +50,7 @@ parts:
   - file: l5_reciprocal/l5_problem.md
 
 - caption: Lecture 6 - Structure factor - all shades of diffraction
+  numbered: True
   chapters:
   - file: l6_factor/l6_objectives.md
   - file: l6_factor/l6_definitions.md
@@ -53,6 +59,7 @@ parts:
   - file: l6_factor/l6_problem.md
 
 - caption: Lecture 7 - Bonding in crystals - ionic
+  numbered: True
   chapters:
   - file: l7_ionic/l7_objectives.md
   - file: l7_ionic/l7_definitions.md
@@ -61,6 +68,7 @@ parts:
   - file: l7_ionic/l7_problem.md
 
 - caption: Lecture 8 - Bonding in crystals - covalent, metallic, and van der Waals
+  numbered: True
   chapters:
   - file: l8_covalent/l8_objectives.md
   - file: l8_covalent/l8_definitions.md
@@ -69,6 +77,7 @@ parts:
   - file: l8_covalent/l8_problem.md        
 
 - caption: Lecture 9 - Mechanical properties
+  numbered: True
   chapters:
   - file: l9_mechanical/l9_objectives.md
   - file: l9_mechanical/l9_definitions.md
@@ -76,7 +85,8 @@ parts:
   - file: l9_mechanical/l9_method.md
   - file: l9_mechanical/l9_problem.md
 
-- caption: Lecture 10 - Dielectric properties   
+- caption: Lecture 10 - Dielectric properties
+  numbered: True   
   chapters:
   - file: l10_dielectric/l10_objectives.md
   - file: l10_dielectric/l10_definitions.md
@@ -85,6 +95,7 @@ parts:
   - file: l10_dielectric/l10_problem.md
 
 - caption: Lecture 11 - Phonons and Sound
+  numbered: True
   chapters:
   - file: l11_sound/l11_objectives.md  
   - file: l11_sound/l11_definitions.md 
@@ -93,6 +104,7 @@ parts:
   - file: l11_sound/l11_problem.md 
 
 - caption: Lecture 12 - Phonons and Light
+  numbered: True
   chapters:
   - file: l12_light/l12_objectives.md
   - file: l12_light/l12_definitions.md
