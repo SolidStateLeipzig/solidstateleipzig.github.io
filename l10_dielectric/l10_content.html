@@ -265,9 +265,17 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_objectives.html">Learning objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_definitions.html">Definitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html"><img height="20" src="static_/logo.png" width="20"/> Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html">Content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_method.html">Experimental method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 12 - Phonons and Light</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_problem.html">Example problem</a></li>
 </ul>
 
     </div>
@@ -482,7 +490,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="content-of-lecture">
-<h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
+<span id="sec-dielectric"></span><h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
 <section id="permittivity">
 <h2>Permittivity<a class="headerlink" href="#permittivity" title="Link to this heading">#</a></h2>
 <p>Response to the external electric field <span class="math notranslate nohighlight">\(\mathbf{E}\)</span> is described by <strong>permittivity</strong> (<span class="math notranslate nohighlight">\(\varepsilon\)</span>) of the crystal. This parameter shows the onset of the <strong>electric polarization</strong> <span class="math notranslate nohighlight">\(\mathbf{P}\)</span> and of the corresponding <strong>displacement field</strong> <span class="math notranslate nohighlight">\(\mathbf{D}\)</span>,</p>
@@ -539,7 +547,7 @@ Both \)</span>\varepsilon<span class="math notranslate nohighlight">\( and \)</s
 <p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is <strong>polarizability</strong> (again, tensor property that in lucky cases can be reduced to a scalar). This definition is quite tricky because it involves local electric field near the atom/molecule, which is generally different from the applied electric field. We will deal with this problem shortly. For now let’s notice that polarizability has rather non-intuitive SI units of C m <span class="math notranslate nohighlight">\(^2\)</span>/V or Fm <span class="math notranslate nohighlight">\(^2\)</span>. It becomes much more palatable in <a class="reference external" href="https://en.wikipedia.org/wiki/Centimetre-gram-second_system_of_units#Electrostatic_units_(ESU)">electrostatic CGS units</a> [<span class="math notranslate nohighlight">\(\varepsilon_0=1/(4\pi)\)</span>] where <span class="math notranslate nohighlight">\(\alpha\)</span> is measured in cm <span class="math notranslate nohighlight">\(^3\)</span> and corresponds to an effective volume of an atom/molecule.</p>
 </section>
 <section id="local-electric-field">
-<h2>Local electric field<a class="headerlink" href="#local-electric-field" title="Link to this heading">#</a></h2>
+<span id="sec-dielectric-local"></span><h2>Local electric field<a class="headerlink" href="#local-electric-field" title="Link to this heading">#</a></h2>
 <p>Local electric field from Eq.~\eqref{eq:polarizability} includes three contributions (Fig.~\ref{fig:local-field}),</p>
 <div class="math notranslate nohighlight" id="equation-eq-local-1">
 <span class="eqno">(29)<a class="headerlink" href="#equation-eq-local-1" title="Link to this equation">#</a></span>\[
@@ -599,7 +607,7 @@ Both \)</span>\varepsilon<span class="math notranslate nohighlight">\( and \)</s
 <p>the <strong>Clausius-Mossotti relation</strong>, also known as the <strong>Lorentz-Lorenz equation</strong>. Simple at first glance, it has been very significant historically, because it offered the very first experimental tool for probing molecular property (polarizability) using a macroscopic measurement (permittivity).</p>
 </section>
 <section id="permanent-dipoles-debye-relaxation">
-<h2>Permanent dipoles, Debye relaxation<a class="headerlink" href="#permanent-dipoles-debye-relaxation" title="Link to this heading">#</a></h2>
+<span id="sec-debye-relaxation"></span><h2>Permanent dipoles, Debye relaxation<a class="headerlink" href="#permanent-dipoles-debye-relaxation" title="Link to this heading">#</a></h2>
 <p>Let’s now consider permanent dipoles. To a first approximation, they do not change their dipole moment, yet they turn in order to get aligned with the field. This rotation takes time and causes a delay between <span class="math notranslate nohighlight">\(\mathbf{P}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{E}\)</span>, hence the imaginary part of <span class="math notranslate nohighlight">\(\varepsilon\)</span>. To analyze this delay, consider first a simple situation when external electric field is changed abruptly. We assume exponential nature of the relaxation with the characteristic <strong>relaxation time</strong> <span class="math notranslate nohighlight">\(\tau\)</span> (Fig.~\ref{fig:debye-relaxation}), such that</p>
 <div class="math notranslate nohighlight" id="equation-eq-debye-2">
 <span class="eqno">(32)<a class="headerlink" href="#equation-eq-debye-2" title="Link to this equation">#</a></span>\[

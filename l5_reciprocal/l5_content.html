@@ -265,9 +265,17 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_objectives.html">Learning objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_definitions.html">Definitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html"><img height="20" src="static_/logo.png" width="20"/> Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html">Content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_method.html">Experimental method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 12 - Phonons and Light</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_problem.html">Example problem</a></li>
 </ul>
 
     </div>
@@ -479,9 +487,9 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="content-of-lecture">
-<h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
+<span id="sec-reciprocal"></span><h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
 <section id="laue-condition">
-<h2>Laue condition<a class="headerlink" href="#laue-condition" title="Link to this heading">#</a></h2>
+<span id="sec-laue"></span><h2>Laue condition<a class="headerlink" href="#laue-condition" title="Link to this heading">#</a></h2>
 <p>Bragg’s law is so simple that it does not describe all features of the scattering process. It does not account for the presence of different atoms, nor for the different reflection intensities, and it treats atomic planes as simple mirrors that reflect the incident beam in one direction. A more realistic description has been proposed by Laue who considered interference of wmathbf{a}es scattered on two different atoms inside the crystals.</p>
 <figure class="align-default" id="fig-laue">
 <img alt="../_images/ch5-laue.svg" src="../_images/ch5-laue.svg" />
@@ -503,7 +511,7 @@ document.write(`
 <p>with integer <span class="math notranslate nohighlight">\(m\)</span>. This equation is known as the \emph{Laue condition}. It should hold for every lattice vector <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> defined by Eq. <a class="reference internal" href="../l1_bravais/l1_content.html#equation-eq-bravais">(1)</a>, because a pair of atoms can be found for every such vector.</p>
 </section>
 <section id="reciprocal-lattice">
-<h2>Reciprocal lattice<a class="headerlink" href="#reciprocal-lattice" title="Link to this heading">#</a></h2>
+<span id="sec-reciprocal-detail"></span><h2>Reciprocal lattice<a class="headerlink" href="#reciprocal-lattice" title="Link to this heading">#</a></h2>
 <p>The vectors <span class="math notranslate nohighlight">\(\mathbf{k}'-\mathbf{k}\)</span> satisfying the Laue condition form a <strong>reciprocal lattice</strong> of the crystal. One defines the reciprocal lattice as a family of vectors <span class="math notranslate nohighlight">\(\mathbf{G}\)</span> that fulfill</p>
 <div class="math notranslate nohighlight" id="equation-eq-reclat">
 <span class="eqno">(11)<a class="headerlink" href="#equation-eq-reclat" title="Link to this equation">#</a></span>\[
@@ -553,7 +561,7 @@ document.write(`
 <p>At this point, reciprocal lattice may still look like a rather arbitrary mathematical construction, but it is in fact undeniably real because it is observed in every scattering experiment: intensity maxima appear at every or almost every (see Ch.~\ref{sec:extinction}) reciprocal-lattice site. We can also say that each crystal lives two parallel lives. One is in real space and constitutes tangible crystal properties. Another one is in the reciprocal space and incorporates intrinsic effects such as atomic vibrations and electronic transitions. Only by grasping reciprocal-space phenomena can one understand real-space properties of the crystal!</p>
 </section>
 <section id="relation-to-bragg-s-law">
-<h2>Relation to Bragg’s law<a class="headerlink" href="#relation-to-bragg-s-law" title="Link to this heading">#</a></h2>
+<span id="sec-recbragg"></span><h2>Relation to Bragg’s law<a class="headerlink" href="#relation-to-bragg-s-law" title="Link to this heading">#</a></h2>
 <p>The Laue condition and reciprocal lattice have a direct connection to Bragg’s law. In fact, every reciprocal-lattice vector defined by Eq. <a class="reference internal" href="#equation-eq-recvector">(13)</a> corresponds to the lattice planes with the Miller indices <span class="math notranslate nohighlight">\(h,k,l\)</span>. To verify this statement, choose the lattice planes <span class="math notranslate nohighlight">\((hkl)\)</span> and define <span class="math notranslate nohighlight">\(\mathbf{n}\)</span> as the unitary vector perpendicular to these planes. Now choose <span class="math notranslate nohighlight">\(\mathbf{G}=2\pi\mathbf{n}/d_{hkl}\)</span> and consider it as a propagation vector of a wave with the wavelength of <span class="math notranslate nohighlight">\(d_{hkl}\)</span>. This wave has the form <span class="math notranslate nohighlight">\(e^{i\mathbf{G}\mathbf{R}}\)</span>. One expects <span class="math notranslate nohighlight">\(e^{i\mathbf{G}\mathbf{R}}=1\)</span> at <span class="math notranslate nohighlight">\(\mathbf{R}=0\)</span>. Since <span class="math notranslate nohighlight">\(\mathbf{R}=0\)</span> corresponds to one of the lattice planes, the condition <span class="math notranslate nohighlight">\(e^{i\mathbf{G}\mathbf{R}}=1\)</span> should also hold on any other lattice plane because they are separated by an integer number of wavelengths (<a class="reference internal" href="#fig-recbragg"><span class="std std-numref">Fig. 11</span></a>). Each point <span class="math notranslate nohighlight">\(\mathbf{R}\)</span> of the direct lattice belongs to one or another lattice plane. Therefore, <span class="math notranslate nohighlight">\(e^{i\mathbf{G}\mathbf{R}}=1\)</span> for every <span class="math notranslate nohighlight">\(\mathbf{R}\)</span>, and the condition <a class="reference internal" href="#equation-eq-reclat">(11)</a> is fulfilled. Then <span class="math notranslate nohighlight">\(\mathbf{G}\)</span> must be a reciprocal-lattice vector.</p>
 <figure class="align-default" id="fig-recbragg">
 <img alt="../_images/ch5-bragg.svg" src="../_images/ch5-bragg.svg" />
@@ -571,7 +579,7 @@ document.write(`
 <p>This statement also sheds light on Eq. <a class="reference internal" href="../l4_structure/l4_content.html#equation-eq-d-distance">(8)</a> for <span class="math notranslate nohighlight">\(d_{hkl}\)</span> that immediately follows from <span class="math notranslate nohighlight">\(|\mathbf{G}|^2=h^2|\mathbf{a}^*|^2+k^2|\mathbf{b}^*|^2+l^2|\mathbf{c}^*|^2\)</span> as the vector length in the reciprocal space (assuming <span class="math notranslate nohighlight">\(\mathbf{a},\mathbf{b},\mathbf{c}\)</span> are mutually orthogonal). The calculation of <span class="math notranslate nohighlight">\(d_{hkl}\)</span> for an arbitrary lattice also becomes straight-forward, albeit tedious when non-<span class="math notranslate nohighlight">\(90^{\circ}\)</span> angles have to be taken into account.</p>
 </section>
 <section id="aperiodic-crystals">
-<h2>Aperiodic crystals<a class="headerlink" href="#aperiodic-crystals" title="Link to this heading">#</a></h2>
+<span id="sec-aperiodic"></span><h2>Aperiodic crystals<a class="headerlink" href="#aperiodic-crystals" title="Link to this heading">#</a></h2>
 <p>We can also see reciprocal lattice as a Fourier transform of the direct lattice. Bragg peaks at the reciprocal-lattice points indicate periodicity of the crystal in real space. This statement is in fact much more general, because aperiodic crystals also show characteristic diffraction patterns with a series of Bragg peaks. Such peaks manifest the underlying long-range order of the aperiodic crystal. The difference from periodic crystals is that the reciprocal lattice spun by <span class="math notranslate nohighlight">\(\mathbf{a}^*\)</span>, <span class="math notranslate nohighlight">\(\mathbf{b}^*\)</span>, and <span class="math notranslate nohighlight">\(\mathbf{c}^*\)</span> is no longer sufficient to describe the Bragg peaks.</p>
 <p>Many of the aperiodic crystals can be seen as \emph{modulated structures}. Their diffraction patterns are described by a 3D reciprocal lattice plus one or more additional vectors <span class="math notranslate nohighlight">\(\mathbf{t}_i\)</span> known as modulation vectors. Mathematically, these <span class="math notranslate nohighlight">\(\mathbf{t}_i\)</span>’s can be still decomposed into reciprocal-lattice vectors,</p>
 <div class="math notranslate nohighlight">

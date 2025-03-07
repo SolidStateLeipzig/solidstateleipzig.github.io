@@ -275,6 +275,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_definitions.html">Definitions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_content.html">Content of lecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_problem.html">Example problem</a></li>
 </ul>
 
     </div>
@@ -488,7 +489,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="content">
-<h1>Content<a class="headerlink" href="#content" title="Link to this heading">#</a></h1>
+<span id="sec-optical"></span><h1>Content<a class="headerlink" href="#content" title="Link to this heading">#</a></h1>
 <section id="underlying-approximations">
 <h2>Underlying approximations<a class="headerlink" href="#underlying-approximations" title="Link to this heading">#</a></h2>
 <p>Atomic motion determines many, if not all, properties of a crystal. Molecules show characteristic vibrations (normal modes) that occur at special frequencies. Crystals feature collective atomic vibrations too, but their nature is somewhat more involved than in the case of molecules. To understand these vibrations in the simplest possible way, we will take advantage of several approximations:</p>
@@ -499,7 +500,7 @@ document.write(`
 </ul>
 </section>
 <section id="monoatomic-chain">
-<h2>Monoatomic chain<a class="headerlink" href="#monoatomic-chain" title="Link to this heading">#</a></h2>
+<span id="sec-ph-chain"></span><h2>Monoatomic chain<a class="headerlink" href="#monoatomic-chain" title="Link to this heading">#</a></h2>
 <p>Let’s consider the simplest possible case, a chain of atoms with equal spacings <span class="math notranslate nohighlight">\(a\)</span>. We will use the index <span class="math notranslate nohighlight">\(p\)</span> to label atoms along this chain, and introduce the atomic displacements <span class="math notranslate nohighlight">\(u_p\)</span> (Fig.~\ref{fig:chain}). Any displacement changes the interatomic distance, and we will assume that chemical bonds behave as springs with the stiffness <span class="math notranslate nohighlight">\(\mathcal {K}\)</span>. The overall elastic energy is then</p>
 <div class="math notranslate nohighlight">
 \[
@@ -542,7 +543,7 @@ document.write(`
 <p>This is the speed of sound, as we will see shortly.</p>
 </section>
 <section id="elastic-waves-and-sound">
-<h2>Elastic waves and sound<a class="headerlink" href="#elastic-waves-and-sound" title="Link to this heading">#</a></h2>
+<span id="sec-elastic-wave"></span><h2>Elastic waves and sound<a class="headerlink" href="#elastic-waves-and-sound" title="Link to this heading">#</a></h2>
 <p>Sound is an elastic wave that propagates in any compressible medium. Consider a bar with the cross-section <span class="math notranslate nohighlight">\(A\)</span> subject to a deformation that leads to the displacement <span class="math notranslate nohighlight">\(u_x(x)\)</span> of the volume element <span class="math notranslate nohighlight">\(A\,dx\)</span> parallel to the bar (Fig.~\ref{fig:elastic}). Time dependence of the displacement is described by the usual equation of motion,</p>
 <div class="math notranslate nohighlight">
 \[
@@ -581,7 +582,7 @@ document.write(`
 <p>Compressional wave propagates in any elastic medium, whereas shear waves only propagate in solids because gases and liquids feature <span class="math notranslate nohighlight">\(G=0\)</span> (their shape can be changed at no energy cost). This is the main reason why sound is a compressional wave. Shear wave can be thought as sound too, but it’s not audible because our hearing mechanism involves sound transmission through air.</p>
 </section>
 <section id="longitudinal-and-transverse-phonons">
-<h2>Longitudinal and transverse phonons<a class="headerlink" href="#longitudinal-and-transverse-phonons" title="Link to this heading">#</a></h2>
+<span id="sec-ph-lt"></span><h2>Longitudinal and transverse phonons<a class="headerlink" href="#longitudinal-and-transverse-phonons" title="Link to this heading">#</a></h2>
 <p>The phonon described in Ch.~\ref{sec:ph-chain} is called *<em>acoustic</em> because <span class="math notranslate nohighlight">\(q\rightarrow 0\)</span> part of its dispersion relation describes sound propagation in crystals. A similar acoustic phonon with displacements perpendicular to the propagation direction exists too. Different names can be used to describe these two types of motion depending on the context,</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -622,7 +623,7 @@ Just a tooltip<a class="reference internal" href="#_blank"><span class="xref mys
 \]</div>
 </section>
 <section id="diatomic-chain">
-<h2>Diatomic chain<a class="headerlink" href="#diatomic-chain" title="Link to this heading">#</a></h2>
+<span id="sec-ph-diatomic"></span><h2>Diatomic chain<a class="headerlink" href="#diatomic-chain" title="Link to this heading">#</a></h2>
 <p>Let us now extend this analysis to a diatomic chain with alternating atoms and equal separations, such that all bonds have the same stiffness <span class="math notranslate nohighlight">\(\mathcal{K}\)</span>. We will proceed similar to the previous case and consider atomic displacements propagating along the chain, but now the two atoms have different mass and should thus show different displacement amplitudes,</p>
 <div class="math notranslate nohighlight" id="equation-eq-ph-diatans">
 <span class="eqno">(42)<a class="headerlink" href="#equation-eq-ph-diatans" title="Link to this equation">#</a></span>\[

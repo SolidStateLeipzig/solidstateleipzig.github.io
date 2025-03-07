@@ -265,9 +265,17 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_objectives.html">Learning objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_definitions.html">Definitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html"><img height="20" src="static_/logo.png" width="20"/> Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html">Content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_method.html">Experimental method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 12 - Phonons and Light</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_problem.html">Example problem</a></li>
 </ul>
 
     </div>
@@ -481,9 +489,9 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="content-of-lecture">
-<h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
+<span id="sec-symgroups"></span><h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
 <section id="point-symmetry-operations">
-<h2>Point symmetry operations<a class="headerlink" href="#point-symmetry-operations" title="Link to this heading">#</a></h2>
+<span id="sec-symelements"></span><h2>Point symmetry operations<a class="headerlink" href="#point-symmetry-operations" title="Link to this heading">#</a></h2>
 <p>Only a few local (point) symmetry operations <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> are compatible with periodicity. Every periodic crystal can be then assigned to one or another symmetry group that comprises a subset of the following symmetry elements:</p>
 <ul class="simple">
 <li><p>Rotation axes: <span class="math notranslate nohighlight">\(2,3,4,6\)</span> (<span class="math notranslate nohighlight">\(C_2,C_3,C_4,C_6\)</span>)</p></li>
@@ -504,6 +512,7 @@ document.write(`
     \mathbb{R}_{S_n} = \begin{pmatrix} \cos \varphi &amp; \sin \varphi &amp; 0 \\ -\sin \varphi &amp; \cos \varphi &amp; 0 \\ 0 &amp; 0 &amp; -1 \end{pmatrix}
 \end{split}\]</div>
 <p>assuming <span class="math notranslate nohighlight">\(S_n\parallel z\)</span>. Simple algebra shows that <span class="math notranslate nohighlight">\(\bar 3=S_6\)</span>, <span class="math notranslate nohighlight">\(\bar 6=S_3\)</span>, and <span class="math notranslate nohighlight">\(\bar 4=S_4\)</span>, whereas <span class="math notranslate nohighlight">\(S_2=\bar 1\)</span> and <span class="math notranslate nohighlight">\(S_1=m\)</span>, so we end up with exactly the same symmetry operations and an unnecessarily confusing notation.</p>
+<p>(sec-pointgroup)</p>
 </section>
 <section id="point-groups-and-crystal-classes-polarity">
 <h2>Point groups and crystal classes. Polarity<a class="headerlink" href="#point-groups-and-crystal-classes-polarity" title="Link to this heading">#</a></h2>
@@ -578,7 +587,7 @@ document.write(`
 <p>Crystal system can be combined with the lattice centering from Ch.~\ref{sec:centering}. Back then, we mentioned that centering only makes sense when the conventional unit cell has a higher symmetry than the primitive cell. Otherwise, lattice vectors could be re-defined without loss of symmetry. Indeed, a centered triclinic lattice is redundant, because its unit cell can always be reduced. On the other hand, both face and body-centering occur for cubic and some other crystal systems where symmetry elements would be lost otherwise. Combining crystal systems and lattice centering gives rise to <strong>14 Bravais lattices</strong> that can be encountered in periodic crystals.</p>
 </section>
 <section id="open-symmetry-elements">
-<h2>Open symmetry elements<a class="headerlink" href="#open-symmetry-elements" title="Link to this heading">#</a></h2>
+<span id="sec-open"></span><h2>Open symmetry elements<a class="headerlink" href="#open-symmetry-elements" title="Link to this heading">#</a></h2>
 <p>Only point symmetry operations have been considered so far. Crystals also feature translational symmetry, and they are allowed to have combined symmetry elements that contain both local transformations and translations within one operation in the sense of Eq.~\eqref{eq:symoperation}. Such symmetry elements are called <strong>open</strong> because they generate an infinite array out of a single atom.</p>
 <p>Importantly, open symmetry elements can only occur in crystals, so they are always accompanied by pure translations (Ch.~\ref{sec:centering}) and should be compatible with periodicity. Repeated application of an open symmetry element leads to a simple shift of an atom without any reflection or rotation. This shift should match one of the lattice translations that have been defined in Ch.~\ref{sec:centering}.</p>
 <p>Two types of open symmetry elements should be introduced: glide plane and screw axis. <strong>Glide plane</strong> is a mirror reflection followed by a shift <span class="math notranslate nohighlight">\(\mathbf{t}'\)</span>. The label of the glide plane indicates the shift direction:</p>
@@ -600,7 +609,7 @@ document.write(`
 </ul>
 </section>
 <section id="chirality">
-<h2>Chirality<a class="headerlink" href="#chirality" title="Link to this heading">#</a></h2>
+<span id="sec-chirality"></span><h2>Chirality<a class="headerlink" href="#chirality" title="Link to this heading">#</a></h2>
 <p>Screw axes impart their sense of rotation to the atomic arrangement and, therefore, to the crystal as a whole. For example <span class="math notranslate nohighlight">\(3_1\)</span> and <span class="math notranslate nohighlight">\(3_2\)</span> produce similar helical chains with the counter-clockwise and clockwise rotations, respectively (<a class="reference internal" href="#fig-chirality"><span class="std std-numref">Fig. 5</span></a>). It is an example of chirality.</p>
 <figure class="align-default" id="fig-chirality">
 <img alt="../_images/ch3-chirality.svg" src="../_images/ch3-chirality.svg" />

@@ -1,4 +1,7 @@
+(sec-reciprocal)=
 # Content of lecture
+
+(sec-laue)=
 ## Laue condition
 
 Bragg's law is so simple that it does not describe all features of the scattering process. It does not account for the presence of different atoms, nor for the different reflection intensities, and it treats atomic planes as simple mirrors that reflect the incident beam in one direction. A more realistic description has been proposed by Laue who considered interference of wmathbf{a}es scattered on two different atoms inside the crystals. 
@@ -24,7 +27,7 @@ $$ (eq-laue)
 
 with integer $m$. This equation is known as the \emph{Laue condition}. It should hold for every lattice vector $\mathbf{R}$ defined by Eq. {eq}`eq-Bravais`, because a pair of atoms can be found for every such vector.
 
-
+(sec-reciprocal-detail)=
 ## Reciprocal lattice
 
 The vectors $\mathbf{k}'-\mathbf{k}$ satisfying the Laue condition form a **reciprocal lattice** of the crystal. One defines the reciprocal lattice as a family of vectors $\mathbf{G}$ that fulfill
@@ -95,6 +98,7 @@ This result will be needed in the future when we do summations over the reciproc
 
 At this point, reciprocal lattice may still look like a rather arbitrary mathematical construction, but it is in fact undeniably real because it is observed in every scattering experiment: intensity maxima appear at every or almost every (see Ch.~\ref{sec:extinction}) reciprocal-lattice site. We can also say that each crystal lives two parallel lives. One is in real space and constitutes tangible crystal properties. Another one is in the reciprocal space and incorporates intrinsic effects such as atomic vibrations and electronic transitions. Only by grasping reciprocal-space phenomena can one understand real-space properties of the crystal!
 
+(sec-recbragg)=
 ## Relation to Bragg's law
 
 The Laue condition and reciprocal lattice have a direct connection to Bragg's law. In fact, every reciprocal-lattice vector defined by Eq. {eq}`eq-recvector` corresponds to the lattice planes with the Miller indices $h,k,l$. To verify this statement, choose the lattice planes $(hkl)$ and define $\mathbf{n}$ as the unitary vector perpendicular to these planes. Now choose $\mathbf{G}=2\pi\mathbf{n}/d_{hkl}$ and consider it as a propagation vector of a wave with the wavelength of $d_{hkl}$. This wave has the form $e^{i\mathbf{G}\mathbf{R}}$. One expects $e^{i\mathbf{G}\mathbf{R}}=1$ at $\mathbf{R}=0$. Since $\mathbf{R}=0$ corresponds to one of the lattice planes, the condition $e^{i\mathbf{G}\mathbf{R}}=1$ should also hold on any other lattice plane because they are separated by an integer number of wavelengths ({numref}`fig-recbragg`). Each point $\mathbf{R}$ of the direct lattice belongs to one or another lattice plane. Therefore, $e^{i\mathbf{G}\mathbf{R}}=1$ for every $\mathbf{R}$, and the condition {eq}`eq-reclat` is fulfilled. Then $\mathbf{G}$ must be a reciprocal-lattice vector. 
@@ -119,7 +123,7 @@ We now realize that the lattice planes used in Bragg's law are real-space manife
 
 This statement also sheds light on Eq. {eq}`eq-d-distance` for $d_{hkl}$ that immediately follows from $|\mathbf{G}|^2=h^2|\mathbf{a}^*|^2+k^2|\mathbf{b}^*|^2+l^2|\mathbf{c}^*|^2$ as the vector length in the reciprocal space (assuming $\mathbf{a},\mathbf{b},\mathbf{c}$ are mutually orthogonal). The calculation of $d_{hkl}$ for an arbitrary lattice also becomes straight-forward, albeit tedious when non-$90^{\circ}$ angles have to be taken into account.
 
-
+(sec-aperiodic)=
 ## Aperiodic crystals
 
 We can also see reciprocal lattice as a Fourier transform of the direct lattice. Bragg peaks at the reciprocal-lattice points indicate periodicity of the crystal in real space. This statement is in fact much more general, because aperiodic crystals also show characteristic diffraction patterns with a series of Bragg peaks. Such peaks manifest the underlying long-range order of the aperiodic crystal. The difference from periodic crystals is that the reciprocal lattice spun by $\mathbf{a}^*$, $\mathbf{b}^*$, and $\mathbf{c}^*$ is no longer sufficient to describe the Bragg peaks. 

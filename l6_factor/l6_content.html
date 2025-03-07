@@ -265,9 +265,17 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_objectives.html">Learning objectives</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_definitions.html">Definitions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html"><img height="20" src="static_/logo.png" width="20"/> Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_content.html">Content</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_method.html">Experimental method</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../l11_sound/l11_problem.html">Example problem</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Lecture 12 - Phonons and Light</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_objectives.html">Objectives</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_definitions.html">Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_content.html">Content of lecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_method.html">Experimental method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../l12_light/l12_problem.html">Example problem</a></li>
 </ul>
 
     </div>
@@ -480,9 +488,9 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="content-of-lecture">
-<h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
+<span id="sec-diffraction"></span><h1>Content of lecture<a class="headerlink" href="#content-of-lecture" title="Link to this heading">#</a></h1>
 <section id="structure-factor">
-<h2>Structure factor<a class="headerlink" href="#structure-factor" title="Link to this heading">#</a></h2>
+<span id="sec-strfactor"></span><h2>Structure factor<a class="headerlink" href="#structure-factor" title="Link to this heading">#</a></h2>
 <p>Reciprocal lattice serves as a connection between positions of Bragg peaks and lattice parameters of the crystal. Similarly, structure factor connects intensities of Bragg peaks to the atomic coordinates.</p>
 <p>To calculate intensity of a Bragg peak, we go back to Laue’s representation of the scattering process and take the scattering mechanism into account. Atoms are not point-like objects, and atoms are not scatterers <em>per se</em>. Instead, one should consider periodic scattering density <span class="math notranslate nohighlight">\(\rho(\mathbf{r})\)</span> that satisfies <span class="math notranslate nohighlight">\(\rho(\mathbf{r}+\mathbf{r})=\rho(\mathbf{r})\)</span> for every lattice vector <span class="math notranslate nohighlight">\(\mathbf{r}\)</span>.</p>
 <p>Every small volume element <span class="math notranslate nohighlight">\(\mathbf{dr}\)</span> scatters the incident wave. The phase of the scattered wave depends on the position of <span class="math notranslate nohighlight">\(\mathbf{dr}\)</span> inside the crystal. Indeed, from Laue’s argument (Ch.~\ref{sec:laue}) the path difference for a given position <span class="math notranslate nohighlight">\(\mathbf{r}\)</span> relative to the origin is</p>
@@ -536,7 +544,7 @@ document.write(`
 </ul>
 </section>
 <section id="extinction-condition">
-<h2>Extinction condition<a class="headerlink" href="#extinction-condition" title="Link to this heading">#</a></h2>
+<span id="sec-extinction"></span><h2>Extinction condition<a class="headerlink" href="#extinction-condition" title="Link to this heading">#</a></h2>
 <p>The structure factor defined by Eq. <a class="reference internal" href="#equation-eq-strfactor">(14)</a> reflects the arrangement of atoms inside the crystal. Experimental structure factors can be used to determine atomic positions, as we will further discuss in Ch.~\ref{sec:structure-determination}. Interestingly, using only a simple maths one can draw some conclusions on the symmetry of the crystal when lattice centering (Ch.~\ref{sec:centering}) or open symmetry elements (Ch.~\ref{sec:open}) connect different atoms therein.</p>
 <p>i) Lattice centering. Consider a body-centered crystal structure with the lattice translation of <span class="math notranslate nohighlight">\(\mathbf{t}=\frac12(\mathbf{a}+\mathbf{b}+\mathbf{c})\)</span>. Then an atom located at <span class="math notranslate nohighlight">\((x,y,z)\)</span> has a counterpart at <span class="math notranslate nohighlight">\((x+\frac12,y+\frac12,z+\frac12)\)</span>. Using the standard representation <span class="math notranslate nohighlight">\(\mathbf{G}=h\mathbf{a}^*+k\mathbf{b}^*+l\mathbf{c}^*\)</span>, one finds</p>
 <div class="math notranslate nohighlight">
@@ -567,7 +575,7 @@ document.write(`
 <p>More generally, one can see the reflection (extinction) conditions as a manifestation of the periodicity. The reciprocal lattice defined using three lattice vectors, Eq. <a class="reference internal" href="../l5_reciprocal/l5_content.html#equation-eq-recdef">(12)</a>, corresponds to the situation when no additional translations are allowed. Crystals with lattice centering have a shorter periodicity indicated by the primitive cell, so their reciprocal lattices should be more sparse. This effect is achieved by removing some of the reciprocal-lattice points via extinctions. For example, reciprocal lattice of a bcc lattice is an fcc lattice with the periodicity of <span class="math notranslate nohighlight">\(4\pi/a\)</span>.</p>
 </section>
 <section id="crystal-strucutre-determination">
-<h2>Crystal strucutre determination<a class="headerlink" href="#crystal-strucutre-determination" title="Link to this heading">#</a></h2>
+<span id="sec-structure-determination"></span><h2>Crystal strucutre determination<a class="headerlink" href="#crystal-strucutre-determination" title="Link to this heading">#</a></h2>
 <p>Crystal structures are determined from diffraction experiments that involve an accurate measurement of both position and intensity for every Bragg peak. The structure solution includes three consecutive steps:</p>
 <ul class="simple">
 <li><p><em>indexing</em> of the Bragg peaks, finding lattice parameters from the peak positions</p></li>
