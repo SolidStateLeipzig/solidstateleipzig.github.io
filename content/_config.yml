@@ -32,6 +32,8 @@ html:
   use_issues_button: true
   use_repository_button: true
   use_multitoc_numbering: true
+  extra_css: 
+  - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 
 sphinx:
   extra_extensions:

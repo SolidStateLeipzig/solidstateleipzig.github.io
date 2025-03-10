@@ -2,7 +2,13 @@
 # Content
 
 
-This is a :fa-book: icon and a :fa-user: icon.
+This is a 🔍 icon and a :fa-user: icon.
+
+An icon {fas}`spinner;sd-text-primary`
+- An icon {fas}`spinner;sd-text-primary`, some more text.
+- An icon {fab}`github`, some more text.
+- An icon {fab}`gitkraken;sd-text-success fa-xl`, some more text.
+- An icon {fas}`skull;sd-text-danger`, some more text.
 
 ## Underlying approximations
 
