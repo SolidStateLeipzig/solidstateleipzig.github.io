@@ -1,1 +1,1 @@
-# Experimental method
+# Experimental method {fas}`spinner;sd-text-primary`
